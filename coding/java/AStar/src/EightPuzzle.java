@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,6 +6,7 @@ import java.util.PriorityQueue;
 
 public class EightPuzzle {
     public static final String TARGET = "123456789";
+    //public static final String TARGET = "123894765";
     public static char[][] puzzle = new char[3][3];
 
     //{위, 우측, 아래, 좌측} 이동 가능여부 체크를 위한 변수
@@ -15,9 +14,12 @@ public class EightPuzzle {
     public static int[] horTemplate = {0, 1, 0, -1};  //0, 우, 0, 좌
 
     public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     //
     public static HashMap<Integer, Integer> historyMap = new HashMap<>();
     public static HashSet<Integer> impossibleSet = new HashSet<>();
+    static HashMap<Integer, Integer> pNode = new HashMap<>();
+    static HashMap<Integer, Integer> fSave = new HashMap<>();
 
     public static PriorityQueue<Node> priorityQueue = new PriorityQueue<>(new Comparator<Node>() {
         @Override
@@ -42,14 +44,69 @@ public class EightPuzzle {
         }
     }
     public static void main(String[] args) throws Exception{
-        int g = 0;  //시작노드로부터의 거리
-        int h = 0;  //제 위치에 있지 않은 타일 개수
-        int f = 0;  //g + h
+        String str =  "";
+        char cOut = ' ';
+        String Out1 = "";
+
+        System.out.println("Puzzle 입력 예시 : \n283\n164\n795");
+        System.out.println("Puzzle 입력 (Node는 '9'로 입력.) : ");
+
 
         setData();
+        aStar();
 
+        if (historyMap.containsKey(Integer.parseInt(TARGET))){
+            int fValue = Integer.parseInt(TARGET);
+            int fCount = (int) historyMap.get(Integer.parseInt(TARGET));
+            String[][] spNode = new String[fCount][2];
+            String[][] sfSave = new String[fCount][2];
+            int sPosition = 0;
 
-
+            for (int i=0; i < fCount; i++){
+                sPosition = fCount - i - 1;
+                spNode[sPosition][0] = String.valueOf(i);
+                spNode[sPosition][1] = String.valueOf(pNode.get(fValue));
+                sfSave[sPosition][0] = String.valueOf(i);
+                sfSave[sPosition][1] = String.valueOf(fSave.get(fValue));
+                fValue = (int) pNode.get(fValue);
+            }
+            str = "";
+            for (int i=0; i < fCount; i++){
+                Out1 += "Node #" + (i+1) + "\n";
+                for (int j=0; j < 9; j++){
+                    cOut = spNode[i][1].charAt(j);
+                    if (cOut == '9') {
+                        cOut = ' ';
+                    }
+                    Out1 += cOut + " ";
+                    if (j % 3 == 2 && j != 8){
+                        Out1 += "\n";
+                    }
+                }
+                str = " h = " + sfSave[i][1];
+                Out1 += str + "\n\n";
+            }
+            Out1 += "Node #" + (fCount+1) + "\n";
+            for (int j=0; j < 9; j++){
+                cOut = TARGET.charAt(j);
+                if (cOut == '9'){
+                    cOut = ' ';
+                }
+                Out1 += cOut + " ";
+                if (j % 3 == 2 && j != 8){
+                    Out1 += "\n";
+                }
+            }
+            Out1 += "\n\n";
+        } else {
+            for (Integer key : historyMap.keySet()){
+                impossibleSet.add(key);
+            }
+            bw.write("Impossible" + "\n");
+        }
+        bw.write("\n" + Out1 + "\n");
+        bw.flush();
+        bw.close();
     }
 
     public static void aStar(){
@@ -84,9 +141,14 @@ public class EightPuzzle {
                         int f = g + heuristic;
                         priorityQueue.add(new Node(data, g+1, f));
                         historyMap.put(Integer.parseInt(data), g+1);
-                        //여기부터
+                        pNode.put(Integer.parseInt(data), Integer.parseInt(tempPuzzle));
+                        fSave.put(Integer.parseInt(data), heuristic);
                     }
                 }
+            }
+
+            if (historyMap.containsKey(Integer.parseInt(TARGET))) {
+                return;  //목표값(Target)을 찾았다면 return;
             }
         }
     }
@@ -95,7 +157,7 @@ public class EightPuzzle {
     private static int getHeuristicVal(String data){
         int cnt = 0;
         for (int i=0; i < data.length(); i++){
-            if (TARGET.charAt(i) != data.charAt(i)) cnt++;
+            if (TARGET.charAt(i) != data.charAt(i) && data.charAt(i) != 9) cnt++;
         }
         return cnt;
     }

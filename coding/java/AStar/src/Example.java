@@ -20,7 +20,7 @@ public class Example {
     static HashSet<Integer> impossibleSet = new HashSet<Integer>();
     static HashMap<Integer, Integer> pNode = new HashMap<>();
     static HashMap<Integer, Integer> fSave = new HashMap<>();
-    static String uTarget = "123456789";
+    static String uTarget = "123894765";
     static PriorityQueue<Node> pq = new PriorityQueue<>(new Comparator<Node>() {
         @Override
         public int compare(Node o1, Node o2) {
