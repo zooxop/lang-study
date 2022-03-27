@@ -13,7 +13,7 @@
 *.obj
 
 #Mac OS
-.DS_Store
+*.DS_Store
 
 # Precompiled Headers
 *.gch
