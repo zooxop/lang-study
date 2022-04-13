@@ -7,6 +7,7 @@
 #include <cmath>
 using namespace std; 
 
+// 프로토타입(prototype)
 // 주요 함수 선언
 void input(double& invest, double& rate, double& term);
 void process(double invest, double rate, double term,
