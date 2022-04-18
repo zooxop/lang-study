@@ -60,12 +60,17 @@ class RandomInteger {  //주어진 범위의 랜덤한 숫자를 생성하는 �
         int high;
         int value;
     public :
+        RandomInteger();
         RandomInteger(int low, int high);
         ~RandomInteger();
         // 합성 복사 생성자 사용을 못하도록.
         RandomInteger(const RandomInteger& random) = delete;
         void print() const;  //const 키워드가 붙어있으므로, print() 안에서 멤버 변수 값을 변경하는 코딩을 할 수 없음.
 };
+
+RandomInteger::RandomInteger(){
+
+}
 
 RandomInteger::RandomInteger(int low, int high) : low(low), high(high){
     srand(time(0)); 
@@ -104,6 +109,17 @@ int main(){
     cout << "100~200 사이의 랜덤한 숫자 :";
     r1.print();
 
+    // #클래스배열 #클래스동적할당
+    /*RandomInteger* randomIntegers = new RandomInteger[]{ 
+        RandomInteger(10, 20),  // 이 방식은 "복사생성자"를 delete 해놓으면 작동하지 않는다.
+        RandomInteger(30, 40),  // 왜인지는 잘..
+        RandomInteger(100, 200)
+    };*/
+    // 가급적이면 이 방식으로 하자.
+    RandomInteger* randomIntegers[] = {
+        new RandomInteger(10, 20),
+        new RandomInteger(30, 40)
+    };
 
     return 0;
     // 소멸자 호출은 선언의 역순으로 실행된다.(Last In First Out)

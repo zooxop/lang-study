@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <array>
 
 using namespace std;
 
@@ -59,13 +60,22 @@ Soldier::~Soldier() {
 int main() {
     int menu = 0;
     
+    // Soldier* soldiers[] = {
+    //     new Soldier("성윤모", 1, "롤리폴리"),
+    //     new Soldier("차병호", 1, "축구"),
+    //     new Soldier("박민석", 2, "복싱"),
+    //     new Soldier("임다혜", 2, "뺑끼치기"),
+    //     new Soldier("김상훈", 3, "무에타이"),
+    //     new Soldier("최일구", 4, "격투기 시청")
+    // };
+
     Soldier* soldiers = new Soldier[]{
-        Soldier("성윤모", 1, "롤리폴리")
-        // Soldier("차병호", 1, "축구"),
-        // Soldier("박민석", 2, "복싱"),
-        // Soldier("임다혜", 2, "뺑끼치기"),
-        // Soldier("김상훈", 3, "무에타이"),
-        // Soldier("최일구", 4, "격투기 시청")
+            Soldier("성윤모", 1, "롤리폴리"),
+            Soldier("차병호", 1, "축구"),
+            Soldier("박민석", 2, "복싱"),
+            Soldier("임다혜", 2, "뺑끼치기"),
+            Soldier("김상훈", 3, "무에타이"),
+            Soldier("최일구", 4, "격투기 시청")
     };
     return 0;
 }

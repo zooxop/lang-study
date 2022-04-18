@@ -3,5 +3,6 @@
         "*.jsp": "jsp",
         "cstring": "cpp",
         "limits": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
