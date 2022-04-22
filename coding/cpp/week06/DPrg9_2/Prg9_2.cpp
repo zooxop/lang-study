@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// #정적할당 #동적할당
 class Circle
 {
   private: 
@@ -63,14 +63,21 @@ double Circle::getPerimeter() const
   return (2 * PI * radius);
 }
 
-Circle* test() {
+Circle* test() {  // 동적할당!!!!!
     int c6;
-    Circle* c4 = new Circle();
-    Circle* c5 = new Circle(7.7);
+    Circle* c4 = new Circle(100); //동적할당 하는거임
+    Circle* c5 = new Circle(7.7); //동적할당은 Heap에 쌓인다.
     cout << c4 << endl;
     cout << c5 << endl;
     cout << &c6 << endl;
-    delete c4;
+    delete c4;  //이렇게 함수 안에서 할당된 클래스는, 함수 안에서 delete를 해줘야 소멸자가 호출됨. 안해주면 main()이 끝나도 안됨.
+    c4 = nullptr;
+    return c5;
+}
+
+// 리턴 타입이 포인터가 아니라면, new를 쓰면 안된다. (정적할당)
+Circle test22() {
+    Circle c5(30);  //이것이 바로 정적할당. 정적할당은 Stack에 쌓인다.
     return c5;
 }
 
@@ -91,15 +98,18 @@ int main()
     cout << "넓이: " <<  circle2.getArea() << endl;
     cout << "둘레: " << circle2.getPerimeter() << endl << endl;
 
-    Circle* c5 = test();
+    //Circle* c5 = test();
+    Circle* cTest = test();
+    Circle cTest2 = test22();
+    cout << "여기여기 : " << cTest2.getRadius() << endl;
 
     Circle circle3; 
     cout << "반지름: " << circle3.getRadius() << endl;
     cout << "넓이: " <<  circle3.getArea() << endl;
     cout << "둘레: " << circle3.getPerimeter() << endl << endl;
 
-    delete c5;
-    c5 = nullptr;
+    delete cTest;
+    cTest = nullptr;
 
     // 소멸자 호출 시점
     // 소멸자는 Stack이므로, circle3부터 작동한다.

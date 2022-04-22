@@ -23,12 +23,10 @@ int main()
 /**************************************************************
  * 참조로 전달된 문자열을 뒤집는 함수  *
  **************************************************************/
-void reverse(string& strg)
-{
+void reverse(string& strg) {
   string temp(strg);
-  int size = strg.size() ;
-  for(int i = 0; i < size; i++)
-  {
-    strg[i] = temp[size - 1 - i];  
+  int size = strg.size()-1;
+  for(int i = 0; i < size; i++) {
+    strg[i] = temp[size - i];  
   }
 }

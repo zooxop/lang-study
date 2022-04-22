@@ -1,6 +1,6 @@
-
 #include <iostream>
 using namespace std;
+// 문자열 뒤집기를 C 스타일로 작성한 코드
 
 char* reverse(const char* pstr, int len);
 

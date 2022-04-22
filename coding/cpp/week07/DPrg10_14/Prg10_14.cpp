@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
-
+// #string입력 #문자열입력 #cinstring #getline()
 int main()
 { 
   // 빈 문자열 생성

@@ -4,6 +4,7 @@
 
 using namespace std;
 
+void printTemplete();
 
 class Soldier {
     private:
@@ -28,6 +29,8 @@ class Soldier {
     string getHobby() const {
         return hobby;
     }
+
+
 
     static int soldier_count;
     static void PrintSoldierCount();
@@ -60,24 +63,54 @@ Soldier::~Soldier() {
 int main() {
     int menu = 0;
     
-    // Soldier* soldiers[] = {
-    //     new Soldier("성윤모", 1, "롤리폴리"),
-    //     new Soldier("차병호", 1, "축구"),
-    //     new Soldier("박민석", 2, "복싱"),
-    //     new Soldier("임다혜", 2, "뺑끼치기"),
-    //     new Soldier("김상훈", 3, "무에타이"),
-    //     new Soldier("최일구", 4, "격투기 시청")
+    Soldier* soldiers[] = {
+        new Soldier("성윤모", 1, "롤리폴리"),
+        new Soldier("차병호", 1, "축구"),
+        new Soldier("박민석", 2, "복싱"),
+        new Soldier("임다혜", 2, "뺑끼치기"),
+        new Soldier("김상훈", 3, "무에타이"),
+        new Soldier("최일구", 4, "격투기 시청")
+    };
+
+    // Soldier* soldiers = new Soldier[]{
+    //         Soldier("성윤모", 1, "롤리폴리"),
+    //         Soldier("차병호", 1, "축구"),
+    //         Soldier("박민석", 2, "복싱"),
+    //         Soldier("임다혜", 2, "뺑끼치기"),
+    //         Soldier("김상훈", 3, "무에타이"),
+    //         Soldier("최일구", 4, "격투기 시청")
     // };
 
-    Soldier* soldiers = new Soldier[]{
-            Soldier("성윤모", 1, "롤리폴리"),
-            Soldier("차병호", 1, "축구"),
-            Soldier("박민석", 2, "복싱"),
-            Soldier("임다혜", 2, "뺑끼치기"),
-            Soldier("김상훈", 3, "무에타이"),
-            Soldier("최일구", 4, "격투기 시청")
-    };
+    do {
+        printTemplete();
+        cin >> menu;
+
+        switch (menu) {
+        case 1:
+            cout << "현재 총 인원 : " << Soldier::soldier_count << endl;
+            Soldier::PrintSoldierCount();
+            break;
+        case 2:
+            cout << "you input 2." << endl;
+            break;
+        case 0:
+            cout << "종료." << endl;
+            break;
+        default:
+            cout << "그런건 없다." << endl;
+            break;
+        }
+    } while(menu != 0);
+
+
     return 0;
+}
+
+void printTemplete(){
+    cout << "기능을 선택하세요. (종료 : 0)" << endl;
+    cout << "1 : 전체 인원수 출력" << endl;
+    cout << "2 : 뭐임마 " << endl;
+    cout << "입력 : ";
 }
 
 

@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
-
+// #문자열 #string(c++ style)
 int main()
 {  
   // 문자열 객체 생성
