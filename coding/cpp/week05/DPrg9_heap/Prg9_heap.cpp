@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// #배열메모리해제 #포인터배열메모리 #delete[]
 int main() {
     int n;
     int sum=0;
@@ -8,7 +8,7 @@ int main() {
     cout << "몇 분이세요? ";
     cin >> n;
 
-    int* pn = new int[n];
+    int* pn = new int[n];  //#배열포인터
 
     for(int i=0; i < n; i++){
         //cin >> pn[i];

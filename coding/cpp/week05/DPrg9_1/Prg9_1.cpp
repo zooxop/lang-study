@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//#참조 #레퍼런스 #reference
 int main() {
     int score = 90;
     cout << &score << endl;

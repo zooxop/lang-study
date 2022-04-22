@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// #pointer-const #더블포인터
 int main(){
     int score = 90;
     int b = 1;
