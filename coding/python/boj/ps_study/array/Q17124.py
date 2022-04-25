@@ -22,11 +22,14 @@ def binSearch(arr, target):
     while left <= right:
         mid = (left + right) // 2
         if arr[mid] > target:
-            right = mid - 1
+            right = mid
         elif arr[mid] < target:
-            left = mid + 1
+            left = mid
         else:
             return mid
+
+    #  [0, 5, 10, 15, 20]   //7
+
 
     # 현재까지 탐색한 index: mid
     # arr[mid] 보다 arr[mid+1] 값과 더 가까운 경우를 확인 후 return.

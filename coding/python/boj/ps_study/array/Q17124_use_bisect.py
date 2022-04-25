@@ -15,7 +15,7 @@ def binary_search(A, B):
     C = []
     for a in A:
         # bisect : 이분 탐색 function. B = 정렬된 배열, a = target value
-        # 값을 못찾은 경우, 가장 가까운 값 중 최소값의 idx+1 을 리턴한다.
+        # 값을 못찾은 경우, 가장 가까운 값 중 최소값의 idx+1 을 리턴한다.    [0, 5, 10, 15, 20]  //7  [0, 1, 2, 3, 3, 4, 5, 6]   //3
         idx = bisect.bisect(B, a)
         C.append(closer(B[clip(idx - 1)], B[clip(idx)], a))
     return C
