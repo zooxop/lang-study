@@ -21,7 +21,10 @@ class Chromosome:
         self.fitness = 0  # 적합도
         if self.genes.__len__() == 0:
             for i in range(SIZE):
-                self.genes.append(str(random.randrange(0, 10)))
+                num = str(random.randrange(0, 10))
+                while num in self.genes:  # 숫자 중복 방지
+                    num = str(random.randrange(0, 10))
+                self.genes.append(num)
 
     def calc_fitness(self):  # 적합도 계산
         self.fitness = 0
@@ -40,7 +43,7 @@ def pick_baseball_num(length):  # 랜덤 야구 숫자 생성
     num = random.randrange(0, 10)
 
     for i in range(length):
-        while str(num) in target:
+        while str(num) in target:  # 숫자 중복방지
             num = random.randrange(0, 10)
         target.append(str(num))
 
@@ -64,6 +67,7 @@ def select(pop):
 def crossover(pop):
     father = select(pop)
     mother = select(pop)
+
     idx = random.randint(1, SIZE - 2)
     child1 = father.genes[:idx] + mother.genes[idx:]
     child2 = mother.genes[:idx] + father.genes[idx:]
@@ -74,7 +78,11 @@ def crossover(pop):
 def mutate(pop):
     for i in range(SIZE):
         if random.random() < MUTATION_RATE:
-            pop.genes[i] = str(random.randrange(0, 10))
+            num = str(random.randrange(0, 10))
+            while num in pop.genes:  # 숫자 중복방지
+                num = str(random.randrange(0, 10))
+
+            pop.genes[i] = num
 
 
 def print_p(pop, number):
@@ -98,7 +106,7 @@ print_p(population, count)
 count = 1
 isSuccess = True
 
-while population[0].calc_fitness() < 20:
+while population[0].calc_fitness() < 20:  # 4자리 게임이므로, 최대 적합도는 20
     new_pop = []
 
     for _ in range(POPULATION_SIZE//2):
