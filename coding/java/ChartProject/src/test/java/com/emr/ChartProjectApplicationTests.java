@@ -1,4 +1,4 @@
-package com.emr.chartproject;
+package com.emr;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
