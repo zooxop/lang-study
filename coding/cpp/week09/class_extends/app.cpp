@@ -14,6 +14,7 @@ int main() {
   cout << "Student 객체의 정보: " << endl;
   student.print();
   cout << endl;
+  
   return 0;
 }
 
