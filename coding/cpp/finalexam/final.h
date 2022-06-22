@@ -15,12 +15,10 @@ public:
     }
 
     Final(int first, int second) {
-        if (second == 0){
-            cout << "0으로 나눌 수 없습니다. 프로그램을 중단합니다." << endl;
-            assert(false);
-        }
         this->first = first;
         this->second = second;
+
+        this->isAvailable();
 
         this->setGcd();
     }
@@ -41,6 +39,13 @@ public:
     }
     void setSecond(int second) {
         this->second = second;
+    }
+
+    void isAvailable(){
+        if (this->second == 0){
+            cout << "0으로 나눌 수 없습니다. 프로그램을 중단합니다." << endl;
+            assert(false);
+        }
     }
 
     Final operator++() {  // 전위 연산

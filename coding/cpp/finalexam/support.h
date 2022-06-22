@@ -1,13 +1,18 @@
 #pragma once
 
+template <typename T>
 class Support{
 private:
-    Final* final;
+    //Final* final;
+    T final;
 
 public:
-    Support(Final* final){
-        this->final = final;
-    };
+//    Support(Final* final){
+//        this->final = final;
+//    };
+    Support(T final): final(final) {
+
+    }
 
     ~Support(){
         delete final;

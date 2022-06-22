@@ -38,10 +38,7 @@ istream& operator>>(istream& in, Final& right){
 
     cout << "분모 입력: ";
     in >> second;
-    if (second == 0){
-        cout << "0으로 나눌 수 없습니다. 프로그램을 중단합니다." << endl;
-        assert(false);
-    }
+    right.isAvailable();
     right.setSecond(second);
     right.setGcd();
     return in;
