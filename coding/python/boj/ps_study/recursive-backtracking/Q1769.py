@@ -8,7 +8,6 @@ def solution(value):
 
 X = input()
 cnt = 0
-result = 0
 
 while True:
     if len(X) < 2:
