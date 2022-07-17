@@ -36,7 +36,7 @@ if N > 1 then  # 단일 후보일 땐 매수할 필요가 없음.
             - arr[0]의 값을 1 올린다.
             - count의 값을 1 올린다.
         else if max(arr) == arr[0] and max(arr).count() >= 2 then
-            - count긔 값을 1 올린다.
+            - count의 값을 1 올린다.
             - count 출력.
             - break;
         else then
