@@ -41,20 +41,20 @@ def cleaning(cleaner, dx, dy):
 
 R, C, T = map(int, input().split())
 room = [list(map(int, input().split())) for _ in range(R)]
-front = 0
-back = 0
+top = 0
+bottom = 0
 
 # 공기 청정기 위치 확인
 for i in range(R):
     if room[i][0] == -1:
-        front = i
-        back = i + 1
+        top = i
+        bottom = i + 1
         break
 
 for _ in range(T):
     spread()  # 미세먼지 확산
-    cleaning(front, [0, -1, 0, 1], [1, 0, -1, 0])  # dx, dy = 반시계 방향
-    cleaning(back, [0, 1, 0, -1], [1, 0, -1, 0])  # dx, dy = 시계 방향
+    cleaning(top, [0, -1, 0, 1], [1, 0, -1, 0])  # dx, dy = 반시계 방향
+    cleaning(bottom, [0, 1, 0, -1], [1, 0, -1, 0])  # dx, dy = 시계 방향
 
 result = 0
 for i in range(R):
