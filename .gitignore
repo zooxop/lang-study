@@ -73,7 +73,8 @@ xcuserdata/
 *.idea/**/shelf
 
 *.iml
-*.idea/*.xml
+*.idea/**.xml
+*.idea/.gitignore
 
 
 # AWS User-specific
