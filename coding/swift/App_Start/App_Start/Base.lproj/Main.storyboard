@@ -38,13 +38,22 @@
             </objects>
             <point key="canvasLocation" x="-523.1884057971015" y="-67.633928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailVC-->
         <scene sceneID="iNT-SV-YTo">
             <objects>
-                <viewController id="k8E-FK-KK9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="k8E-FK-KK9" customClass="DetailVC" customModule="App_Start" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DTB-3H-Xc9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tw-bf-OOR">
+                                <rect key="frame" x="116" y="127" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LM1-RQ-g00"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

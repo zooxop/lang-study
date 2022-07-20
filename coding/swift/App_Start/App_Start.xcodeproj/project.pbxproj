@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB9E35C92887E1D700073434 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E35C82887E1D700073434 /* DetailVC.swift */; };
 		DBD0FFCA287EBA8C00C23925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0FFC9287EBA8C00C23925 /* AppDelegate.swift */; };
 		DBD0FFCC287EBA8C00C23925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0FFCB287EBA8C00C23925 /* SceneDelegate.swift */; };
 		DBD0FFCE287EBA8C00C23925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0FFCD287EBA8C00C23925 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB9E35C82887E1D700073434 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		DBD0FFC6287EBA8C00C23925 /* App_Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD0FFC9287EBA8C00C23925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD0FFCB287EBA8C00C23925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DBD0FFC9287EBA8C00C23925 /* AppDelegate.swift */,
 				DBD0FFCB287EBA8C00C23925 /* SceneDelegate.swift */,
 				DBD0FFCD287EBA8C00C23925 /* ViewController.swift */,
+				DB9E35C82887E1D700073434 /* DetailVC.swift */,
 				DBD0FFCF287EBA8C00C23925 /* Main.storyboard */,
 				DBD0FFD2287EBA8F00C23925 /* Assets.xcassets */,
 				DBD0FFD4287EBA8F00C23925 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD0FFCE287EBA8C00C23925 /* ViewController.swift in Sources */,
+				DB9E35C92887E1D700073434 /* DetailVC.swift in Sources */,
 				DBD0FFCA287EBA8C00C23925 /* AppDelegate.swift in Sources */,
 				DBD0FFCC287EBA8C00C23925 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AWR77X8V5R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App_Start/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AWR77X8V5R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App_Start/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
