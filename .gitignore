@@ -72,6 +72,10 @@ xcuserdata/
 *.idea/**/dictionaries
 *.idea/**/shelf
 
+*.iml
+*.idea/*.xml
+
+
 # AWS User-specific
 .idea/**/aws.xml
 
