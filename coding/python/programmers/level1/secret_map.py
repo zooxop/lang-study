@@ -4,7 +4,7 @@ def solution(n, arr1, arr2):
     for i in range(0, n):
         result = ""
         val = bin(arr1[i] | arr2[i])[2:]  # 2진수를 의미하는 "0b"를 지우기 위해 [2:] 사용. (리스트 슬라이싱)
-        val = val.zfill(n)  # 앞쪽 비어있는 공간을 0으로 채워준다. (1010 -> 001010)
+        val = val.zfill(n)  # zfill(n) : 앞쪽 비어있는 공간을 n자리 수가 되도록 0으로 채워준다. [zfill(6) : (1010 -> 001010)]
 
         for item in val:
             result += '#' if item == '1' else ' '
