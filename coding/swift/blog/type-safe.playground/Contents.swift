@@ -25,3 +25,37 @@ var intTest: Int = 10
 
 // print(intTest + test)  // 에러 발생.
 print(intTest + Int(test))
+
+
+let stringValue = "10"
+let integer1 = Int(stringValue)
+var integer2 = Int(stringValue)
+var integer3: Int? = Int(stringValue)
+
+
+var intValue: Int = Int(123.75)
+var price: Int = 100
+var totalPrice = Double(price) * 1.1
+print(totalPrice)
+
+
+//var integer_: Int = 10
+//var double_: Double = Double(integer_)
+//var ststst: String = String(integer_)
+
+//var strValue: String = "10"
+//var doubleValue: Double = 10.0
+//var integer_: Int = Int(doubleValue)
+//var tstst = Int(strValue)
+
+var strValue: String = "10"
+var integer_: Int? = Int(strValue)  // 정상 동작.
+
+print(integer_)  // 출력: Optional(10)
+
+
+strValue = "10원"
+integer_ = Int(strValue)
+
+print(integer_)  // 출력: nil
+
