@@ -22,6 +22,11 @@ xcuserdata/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### Xcode Playground ###
+**.playground/timeline.xctimeline
+**.playground/playground.xcworkspace
+
+
 # Compiled Object files
 *.slo
 *.lo
