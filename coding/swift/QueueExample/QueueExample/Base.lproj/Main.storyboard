@@ -31,11 +31,17 @@
                                         <rect key="frame" x="0.0" y="69" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="action2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zy1-HX-vsL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-E4-DIi">
                                         <rect key="frame" x="0.0" y="138" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="action3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ysm-WI-3xR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
