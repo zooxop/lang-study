@@ -29,6 +29,7 @@
 		DB67D0B428C4E6200025697D /* MakePrimeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePrimeNumber.swift; sourceTree = "<group>"; };
 		DB67D0B628C5040F0025697D /* GetReportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportResult.swift; sourceTree = "<group>"; };
 		DB67D0B728C519460025697D /* RecommendId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendId.swift; sourceTree = "<group>"; };
+		DB67D0B928C51AA20025697D /* SumNumbersNotExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNumbersNotExist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +71,21 @@
 		DB67D0B128C4E58B0025697D /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				DB67D0B828C51A600025697D /* Level1 */,
+			);
+			path = Programmers;
+			sourceTree = "<group>";
+		};
+		DB67D0B828C51A600025697D /* Level1 */ = {
+			isa = PBXGroup;
+			children = (
 				DB67D0B228C4E5EA0025697D /* LottoBestWorst.swift */,
 				DB67D0B428C4E6200025697D /* MakePrimeNumber.swift */,
 				DB67D0B628C5040F0025697D /* GetReportResult.swift */,
 				DB67D0B728C519460025697D /* RecommendId.swift */,
+				DB67D0B928C51AA20025697D /* SumNumbersNotExist.swift */,
 			);
-			path = Programmers;
+			path = Level1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
