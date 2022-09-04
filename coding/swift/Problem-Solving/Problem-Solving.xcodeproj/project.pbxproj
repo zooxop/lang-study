@@ -28,6 +28,7 @@
 		DB67D0B228C4E5EA0025697D /* LottoBestWorst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBestWorst.swift; sourceTree = "<group>"; };
 		DB67D0B428C4E6200025697D /* MakePrimeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePrimeNumber.swift; sourceTree = "<group>"; };
 		DB67D0B628C5040F0025697D /* GetReportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportResult.swift; sourceTree = "<group>"; };
+		DB67D0B728C519460025697D /* RecommendId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendId.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				DB67D0B228C4E5EA0025697D /* LottoBestWorst.swift */,
 				DB67D0B428C4E6200025697D /* MakePrimeNumber.swift */,
 				DB67D0B628C5040F0025697D /* GetReportResult.swift */,
+				DB67D0B728C519460025697D /* RecommendId.swift */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
