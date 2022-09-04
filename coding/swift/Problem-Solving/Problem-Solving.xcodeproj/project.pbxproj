@@ -31,6 +31,7 @@
 		DB67D0B728C519460025697D /* RecommendId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendId.swift; sourceTree = "<group>"; };
 		DB67D0B928C51AA20025697D /* SumNumbersNotExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNumbersNotExist.swift; sourceTree = "<group>"; };
 		DB67D0BB28C51C4B0025697D /* DotProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProduct.swift; sourceTree = "<group>"; };
+		DB67D0BD28C523390025697D /* SecretMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 				DB67D0B728C519460025697D /* RecommendId.swift */,
 				DB67D0B928C51AA20025697D /* SumNumbersNotExist.swift */,
 				DB67D0BB28C51C4B0025697D /* DotProduct.swift */,
+				DB67D0BD28C523390025697D /* SecretMap.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
