@@ -37,6 +37,6 @@ func solution(_ nums:[Int]) -> Int {
     return count
 }
 
-
-print(solution([1, 2, 3, 4]))
-print(solution([1, 2, 7, 6, 4]))
+//
+//print(solution([1, 2, 3, 4]))
+//print(solution([1, 2, 7, 6, 4]))
