@@ -16,8 +16,10 @@
 		DB25825D28C1FFAF0089E6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB25825B28C1FFAF0089E6E7 /* LaunchScreen.storyboard */; };
 		DB25826628C205BC0089E6E7 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25826428C205BC0089E6E7 /* MyCell.swift */; };
 		DB25826728C205BC0089E6E7 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB25826528C205BC0089E6E7 /* MyCell.xib */; };
-		DB25826A28C206230089E6E7 /* myBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25826828C206230089E6E7 /* myBubble@2x.png */; };
-		DB25826B28C206230089E6E7 /* yourBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25826928C206230089E6E7 /* yourBubble@2x.png */; };
+		DBA6DECB28C71424003ECAB6 /* yourBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA6DECA28C71424003ECAB6 /* yourBubble@2x.png */; };
+		DBA6DECD28C71435003ECAB6 /* myBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA6DECC28C71435003ECAB6 /* myBubble@2x.png */; };
+		DBA6DEDD28C743AA003ECAB6 /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6DEDB28C743AA003ECAB6 /* YourCell.swift */; };
+		DBA6DEDE28C743AA003ECAB6 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA6DEDC28C743AA003ECAB6 /* YourCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +34,10 @@
 		DB25825E28C1FFAF0089E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB25826428C205BC0089E6E7 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		DB25826528C205BC0089E6E7 /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
-		DB25826828C206230089E6E7 /* myBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "myBubble@2x.png"; path = "../../../../../Desktop/Lecture Images/myBubble@2x.png"; sourceTree = "<group>"; };
-		DB25826928C206230089E6E7 /* yourBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yourBubble@2x.png"; path = "../../../../../Desktop/Lecture Images/yourBubble@2x.png"; sourceTree = "<group>"; };
+		DBA6DECA28C71424003ECAB6 /* yourBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yourBubble@2x.png"; path = "../../../../../../Desktop/Lecture Images/yourBubble@2x.png"; sourceTree = "<group>"; };
+		DBA6DECC28C71435003ECAB6 /* myBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "myBubble@2x.png"; path = "../../../../../../Desktop/Lecture Images/myBubble@2x.png"; sourceTree = "<group>"; };
+		DBA6DEDB28C743AA003ECAB6 /* YourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
+		DBA6DEDC28C743AA003ECAB6 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +72,8 @@
 			children = (
 				DB25824D28C1FFAF0089E6E7 /* AppDelegate.swift */,
 				DB25824F28C1FFAF0089E6E7 /* SceneDelegate.swift */,
-				DB25826828C206230089E6E7 /* myBubble@2x.png */,
-				DB25826928C206230089E6E7 /* yourBubble@2x.png */,
+				DBA6DECA28C71424003ECAB6 /* yourBubble@2x.png */,
+				DBA6DECC28C71435003ECAB6 /* myBubble@2x.png */,
 				DB25825128C1FFAF0089E6E7 /* ViewController.swift */,
 				DB25825328C1FFAF0089E6E7 /* Main.storyboard */,
 				DB25826428C205BC0089E6E7 /* MyCell.swift */,
@@ -78,6 +82,8 @@
 				DB25825B28C1FFAF0089E6E7 /* LaunchScreen.storyboard */,
 				DB25825E28C1FFAF0089E6E7 /* Info.plist */,
 				DB25825628C1FFAF0089E6E7 /* Chat_App.xcdatamodeld */,
+				DBA6DEDB28C743AA003ECAB6 /* YourCell.swift */,
+				DBA6DEDC28C743AA003ECAB6 /* YourCell.xib */,
 			);
 			path = Chat_App;
 			sourceTree = "<group>";
@@ -143,8 +149,9 @@
 				DB25825D28C1FFAF0089E6E7 /* LaunchScreen.storyboard in Resources */,
 				DB25826728C205BC0089E6E7 /* MyCell.xib in Resources */,
 				DB25825A28C1FFAF0089E6E7 /* Assets.xcassets in Resources */,
-				DB25826B28C206230089E6E7 /* yourBubble@2x.png in Resources */,
-				DB25826A28C206230089E6E7 /* myBubble@2x.png in Resources */,
+				DBA6DECB28C71424003ECAB6 /* yourBubble@2x.png in Resources */,
+				DBA6DECD28C71435003ECAB6 /* myBubble@2x.png in Resources */,
+				DBA6DEDE28C743AA003ECAB6 /* YourCell.xib in Resources */,
 				DB25825528C1FFAF0089E6E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 				DB25826628C205BC0089E6E7 /* MyCell.swift in Sources */,
 				DB25825828C1FFAF0089E6E7 /* Chat_App.xcdatamodeld in Sources */,
 				DB25824E28C1FFAF0089E6E7 /* AppDelegate.swift in Sources */,
+				DBA6DEDD28C743AA003ECAB6 /* YourCell.swift in Sources */,
 				DB25825028C1FFAF0089E6E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
