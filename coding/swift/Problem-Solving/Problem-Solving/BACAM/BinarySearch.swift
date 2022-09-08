@@ -1,10 +1,3 @@
-//
-//  BinarySearch.swift
-//  Problem-Solving
-//
-//  Created by 문철현 on 2022/09/07.
-//
-
 import Foundation
 
 func binary_search(array: [Int], target: Int) -> Int? {
@@ -32,11 +25,11 @@ func binary_search(array: [Int], target: Int) -> Int? {
 let numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 let target = 7
 
-if let hasValue = binary_search(array: numbers, target: target) {
-    print("인덱스 :", hasValue)
-} else {
-    print("찾을 수 없음.")
-}
+//if let hasValue = binary_search(array: numbers, target: target) {
+//    print("인덱스 :", hasValue)
+//} else {
+//    print("찾을 수 없음.")
+//}
 
 // 출력
 // 인덱스 : 3

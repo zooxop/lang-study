@@ -32,6 +32,8 @@
 		DB67D0B928C51AA20025697D /* SumNumbersNotExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNumbersNotExist.swift; sourceTree = "<group>"; };
 		DB67D0BB28C51C4B0025697D /* DotProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProduct.swift; sourceTree = "<group>"; };
 		DB67D0BD28C523390025697D /* SecretMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMap.swift; sourceTree = "<group>"; };
+		DB8D895D28C8CB7C005C5CEC /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		DB67D0A928C4E2330025697D /* Problem-Solving */ = {
 			isa = PBXGroup;
 			children = (
+				DB8D895C28C8CB69005C5CEC /* BACAM */,
 				DB67D0B128C4E58B0025697D /* Programmers */,
 				DB67D0AA28C4E2330025697D /* main.swift */,
 			);
@@ -90,6 +93,15 @@
 				DB67D0BD28C523390025697D /* SecretMap.swift */,
 			);
 			path = Level1;
+			sourceTree = "<group>";
+		};
+		DB8D895C28C8CB69005C5CEC /* BACAM */ = {
+			isa = PBXGroup;
+			children = (
+				DB8D895D28C8CB7C005C5CEC /* BinarySearch.swift */,
+				DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */,
+			);
+			path = BACAM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
