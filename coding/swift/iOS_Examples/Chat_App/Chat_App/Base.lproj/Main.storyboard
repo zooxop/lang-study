@@ -22,6 +22,9 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C8s-NO-sIt">
                                         <rect key="frame" x="4" y="4" width="344" height="32"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="97a-b3-33F"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -41,7 +44,6 @@
                                     <constraint firstItem="uPw-FL-zNg" firstAttribute="top" secondItem="tYS-O3-cFr" secondAttribute="top" id="7Af-9z-EJT"/>
                                     <constraint firstAttribute="trailing" secondItem="uPw-FL-zNg" secondAttribute="trailing" id="ATT-u0-qO3"/>
                                     <constraint firstItem="C8s-NO-sIt" firstAttribute="leading" secondItem="tYS-O3-cFr" secondAttribute="leading" constant="4" id="RUo-52-Ke6"/>
-                                    <constraint firstAttribute="height" constant="40" id="Zib-FT-akC"/>
                                     <constraint firstItem="uPw-FL-zNg" firstAttribute="leading" secondItem="C8s-NO-sIt" secondAttribute="trailing" id="cdY-ZE-Kcf"/>
                                     <constraint firstAttribute="bottom" secondItem="C8s-NO-sIt" secondAttribute="bottom" constant="4" id="eF2-LI-Wcl"/>
                                     <constraint firstAttribute="bottom" secondItem="uPw-FL-zNg" secondAttribute="bottom" id="rq7-LX-4sH"/>
@@ -69,6 +71,7 @@
                         <outlet property="chatTableView" destination="Ybv-z7-dMu" id="spT-IL-TFP"/>
                         <outlet property="inputTextView" destination="C8s-NO-sIt" id="poe-4k-zZQ"/>
                         <outlet property="inputViewBottonMargin" destination="EVE-iW-akV" id="1Ur-bI-JvG"/>
+                        <outlet property="inputViewHeight" destination="97a-b3-33F" id="QIS-B6-ZJN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
