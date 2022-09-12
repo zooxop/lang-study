@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		DB558D3428CF2E52004FA340 /* DartGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartGame.swift; sourceTree = "<group>"; };
+		DB558D3728CF5925004FA340 /* GetPrimeCountOnRadix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrimeCountOnRadix.swift; sourceTree = "<group>"; };
 		DB67D0A728C4E2330025697D /* Problem-Solving */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Problem-Solving"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB67D0AA28C4E2330025697D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB67D0B228C4E5EA0025697D /* LottoBestWorst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBestWorst.swift; sourceTree = "<group>"; };
@@ -48,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB558D3628CF58FD004FA340 /* Level2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB558D3728CF5925004FA340 /* GetPrimeCountOnRadix.swift */,
+			);
+			path = Level2;
+			sourceTree = "<group>";
+		};
 		DB67D09E28C4E2330025697D = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +86,7 @@
 		DB67D0B128C4E58B0025697D /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				DB558D3628CF58FD004FA340 /* Level2 */,
 				DB67D0B828C51A600025697D /* Level1 */,
 			);
 			path = Programmers;
