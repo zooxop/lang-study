@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		DB24E02A28D1CB8300698A85 /* ArcheryCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcheryCompetition.swift; sourceTree = "<group>"; };
+		DB24E02C28D20D4700698A85 /* UndestroyedBuildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndestroyedBuildings.swift; sourceTree = "<group>"; };
 		DB558D3428CF2E52004FA340 /* DartGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartGame.swift; sourceTree = "<group>"; };
 		DB558D3728CF5925004FA340 /* GetPrimeCountOnRadix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrimeCountOnRadix.swift; sourceTree = "<group>"; };
 		DB67D0A728C4E2330025697D /* Problem-Solving */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Problem-Solving"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +54,7 @@
 		DB24E02928D1CB6C00698A85 /* Level3 */ = {
 			isa = PBXGroup;
 			children = (
-				DB24E02A28D1CB8300698A85 /* ArcheryCompetition.swift */,
+				DB24E02C28D20D4700698A85 /* UndestroyedBuildings.swift */,
 			);
 			path = Level3;
 			sourceTree = "<group>";
@@ -61,6 +62,7 @@
 		DB558D3628CF58FD004FA340 /* Level2 */ = {
 			isa = PBXGroup;
 			children = (
+				DB24E02A28D1CB8300698A85 /* ArcheryCompetition.swift */,
 				DB558D3728CF5925004FA340 /* GetPrimeCountOnRadix.swift */,
 			);
 			path = Level2;
