@@ -37,6 +37,7 @@
 		DB67D0BB28C51C4B0025697D /* DotProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProduct.swift; sourceTree = "<group>"; };
 		DB67D0BD28C523390025697D /* SecretMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMap.swift; sourceTree = "<group>"; };
 		DB81B56928D309A2006738D5 /* DecimalDecending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalDecending.swift; sourceTree = "<group>"; };
+		DB81B56A28D3142A006738D5 /* GuessOfCollatz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessOfCollatz.swift; sourceTree = "<group>"; };
 		DB8D895D28C8CB7C005C5CEC /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +118,7 @@
 				DB67D0BD28C523390025697D /* SecretMap.swift */,
 				DB558D3428CF2E52004FA340 /* DartGame.swift */,
 				DB81B56928D309A2006738D5 /* DecimalDecending.swift */,
+				DB81B56A28D3142A006738D5 /* GuessOfCollatz.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
