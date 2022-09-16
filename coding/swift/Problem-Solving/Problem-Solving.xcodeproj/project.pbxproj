@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB67D0AB28C4E2330025697D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB67D0AA28C4E2330025697D /* main.swift */; };
+		DBC59EE028D47FD90052EEF0 /* GCDnLCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		DB8D895D28C8CB7C005C5CEC /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointer.swift; sourceTree = "<group>"; };
 		DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNegPosi.swift; sourceTree = "<group>"; };
+		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
+		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				DB81B56928D309A2006738D5 /* DecimalDecending.swift */,
 				DB81B56A28D3142A006738D5 /* GuessOfCollatz.swift */,
 				DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */,
+				DBC59EDE28D47B590052EEF0 /* SquareStar.swift */,
+				DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC59EE028D47FD90052EEF0 /* GCDnLCM.swift in Sources */,
 				DB67D0AB28C4E2330025697D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
