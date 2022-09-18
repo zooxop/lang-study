@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DB67D0AB28C4E2330025697D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB67D0AA28C4E2330025697D /* main.swift */; };
-		DBC59EE028D47FD90052EEF0 /* GCDnLCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +43,8 @@
 		DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNegPosi.swift; sourceTree = "<group>"; };
 		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
+		DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radix3Convert.swift; sourceTree = "<group>"; };
+		DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSortOnMyMind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,8 @@
 				DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */,
 				DBC59EDE28D47B590052EEF0 /* SquareStar.swift */,
 				DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */,
+				DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */,
+				DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
@@ -197,7 +200,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC59EE028D47FD90052EEF0 /* GCDnLCM.swift in Sources */,
 				DB67D0AB28C4E2330025697D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
