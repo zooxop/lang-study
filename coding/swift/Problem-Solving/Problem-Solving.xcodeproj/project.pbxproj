@@ -44,6 +44,7 @@
 		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
 		DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radix3Convert.swift; sourceTree = "<group>"; };
+		DBD3643128D8AD220002D555 /* KthNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthNumber.swift; sourceTree = "<group>"; };
 		DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSortOnMyMind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +130,7 @@
 				DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */,
 				DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */,
 				DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */,
+				DBD3643128D8AD220002D555 /* KthNumber.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
