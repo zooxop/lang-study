@@ -42,6 +42,7 @@
 		DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointer.swift; sourceTree = "<group>"; };
 		DBA3FD8E28D9882500590FE4 /* ConvertStringNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertStringNumber.swift; sourceTree = "<group>"; };
 		DBA3FD8F28D9D4C400590FE4 /* FailureRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureRate.swift; sourceTree = "<group>"; };
+		DBA3FD9028DA06B400590FE4 /* PressKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressKeypad.swift; sourceTree = "<group>"; };
 		DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNegPosi.swift; sourceTree = "<group>"; };
 		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 				DBD3643128D8AD220002D555 /* KthNumber.swift */,
 				DBA3FD8E28D9882500590FE4 /* ConvertStringNumber.swift */,
 				DBA3FD8F28D9D4C400590FE4 /* FailureRate.swift */,
+				DBA3FD9028DA06B400590FE4 /* PressKeypad.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
