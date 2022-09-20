@@ -44,6 +44,7 @@
 		DBA3FD8F28D9D4C400590FE4 /* FailureRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureRate.swift; sourceTree = "<group>"; };
 		DBA3FD9028DA06B400590FE4 /* PressKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressKeypad.swift; sourceTree = "<group>"; };
 		DBA3FD9128DA139500590FE4 /* CrainDoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrainDoll.swift; sourceTree = "<group>"; };
+		DBA3FD9228DA1CA200590FE4 /* KakaoMBTI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMBTI.swift; sourceTree = "<group>"; };
 		DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNegPosi.swift; sourceTree = "<group>"; };
 		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 				DBA3FD8F28D9D4C400590FE4 /* FailureRate.swift */,
 				DBA3FD9028DA06B400590FE4 /* PressKeypad.swift */,
 				DBA3FD9128DA139500590FE4 /* CrainDoll.swift */,
+				DBA3FD9228DA1CA200590FE4 /* KakaoMBTI.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
