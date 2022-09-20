@@ -40,6 +40,7 @@
 		DB81B56A28D3142A006738D5 /* GuessOfCollatz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessOfCollatz.swift; sourceTree = "<group>"; };
 		DB8D895D28C8CB7C005C5CEC /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointer.swift; sourceTree = "<group>"; };
+		DBA3FD8E28D9882500590FE4 /* ConvertStringNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertStringNumber.swift; sourceTree = "<group>"; };
 		DBC59EDD28D45E260052EEF0 /* SumNegPosi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumNegPosi.swift; sourceTree = "<group>"; };
 		DBC59EDE28D47B590052EEF0 /* SquareStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStar.swift; sourceTree = "<group>"; };
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 				DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */,
 				DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */,
 				DBD3643128D8AD220002D555 /* KthNumber.swift */,
+				DBA3FD8E28D9882500590FE4 /* ConvertStringNumber.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
