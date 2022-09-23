@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		DB24E02A28D1CB8300698A85 /* ArcheryCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcheryCompetition.swift; sourceTree = "<group>"; };
 		DB24E02C28D20D4700698A85 /* UndestroyedBuildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndestroyedBuildings.swift; sourceTree = "<group>"; };
+		DB2B480528DDBE12005851F7 /* Example1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1.swift; sourceTree = "<group>"; };
+		DB2B480628DDCD94005851F7 /* Tuple_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple_.swift; sourceTree = "<group>"; };
 		DB4173FA28DAEC4D00EECAD0 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		DB4173FB28DB0AFF00EECAD0 /* NewsClustering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClustering.swift; sourceTree = "<group>"; };
 		DB4173FC28DB3D5900EECAD0 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = Level3;
 			sourceTree = "<group>";
 		};
+		DB2B480428DDBDFF005851F7 /* KakaoTestPage */ = {
+			isa = PBXGroup;
+			children = (
+				DB2B480528DDBE12005851F7 /* Example1.swift */,
+			);
+			path = KakaoTestPage;
+			sourceTree = "<group>";
+		};
 		DB558D3628CF58FD004FA340 /* Level2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 				DB4173FD28DB4F5400EECAD0 /* FriendsBlocks.swift */,
 				DB5938BF28DC1D840050BB9E /* NRadixGame.swift */,
 				DB5938C028DC30870050BB9E /* ThatSongJustNow.swift */,
+				DB2B480628DDCD94005851F7 /* Tuple_.swift */,
 			);
 			path = Level2;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 		DB67D0B128C4E58B0025697D /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				DB2B480428DDBDFF005851F7 /* KakaoTestPage */,
 				DB24E02928D1CB6C00698A85 /* Level3 */,
 				DB558D3628CF58FD004FA340 /* Level2 */,
 				DB67D0B828C51A600025697D /* Level1 */,
