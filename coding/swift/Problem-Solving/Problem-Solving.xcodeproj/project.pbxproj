@@ -58,6 +58,7 @@
 		DBC59EDF28D47FD90052EEF0 /* GCDnLCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDnLCM.swift; sourceTree = "<group>"; };
 		DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radix3Convert.swift; sourceTree = "<group>"; };
 		DBD3643128D8AD220002D555 /* KthNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthNumber.swift; sourceTree = "<group>"; };
+		DBF105BE28DE931A00A458C9 /* OpenChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChat.swift; sourceTree = "<group>"; };
 		DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSortOnMyMind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +101,7 @@
 				DB5938BF28DC1D840050BB9E /* NRadixGame.swift */,
 				DB5938C028DC30870050BB9E /* ThatSongJustNow.swift */,
 				DB2B480628DDCD94005851F7 /* Tuple_.swift */,
+				DBF105BE28DE931A00A458C9 /* OpenChat.swift */,
 			);
 			path = Level2;
 			sourceTree = "<group>";
