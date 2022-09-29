@@ -14,6 +14,7 @@
 		DB81B55D28D2385E006738D5 /* BlogSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB81B55B28D2385E006738D5 /* BlogSample.xcdatamodeld */; };
 		DB81B55F28D23861006738D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB81B55E28D23861006738D5 /* Assets.xcassets */; };
 		DB81B56228D23861006738D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB81B56028D23861006738D5 /* LaunchScreen.storyboard */; };
+		DBE819A928E1D1BF00E43C2C /* SafeAreaBrush in Frameworks */ = {isa = PBXBuildFile; productRef = DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE819A928E1D1BF00E43C2C /* SafeAreaBrush in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = BlogSample;
+			packageProductDependencies = (
+				DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */,
+			);
 			productName = BlogSample;
 			productReference = DB81B54F28D2385E006738D5 /* BlogSample.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = DB81B54628D2385E006738D5;
+			packageReferences = (
+				DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */,
+			);
 			productRefGroup = DB81B55028D2385E006738D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WallabyStuff/SafeAreaBrush.git";
+			requirement = {
+				branch = release;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */;
+			productName = SafeAreaBrush;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DB81B55B28D2385E006738D5 /* BlogSample.xcdatamodeld */ = {

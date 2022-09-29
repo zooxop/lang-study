@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "safeareabrush",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WallabyStuff/SafeAreaBrush.git",
+      "state" : {
+        "branch" : "release",
+        "revision" : "9675e14452262d7170604da0d464d1a4c7111d34"
+      }
+    }
+  ],
+  "version" : 2
+}
