@@ -10,6 +10,20 @@ class ViewController: UIViewController {
       
         // bottom safe area 색칠해주는 custom method
         self.configureCustomView()
+        self.menuLabelTest()
+    }
+    
+    func menuLabelTest() {
+        let testLabel = MenuLabel()
+        testLabel.text = "test 하는 중이라규"
+        testLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        view.addSubview(testLabel)
+
+        let safeArea = view.safeAreaLayoutGuide
+        testLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16).isActive = true
+        testLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -50).isActive = true
+        testLabel.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
     }
     
     // 화면이 회전될 때 마다 호출되는 메서드

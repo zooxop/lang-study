@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0F6D9128E7D12300D93E3F /* SafeAreaBrush in Frameworks */ = {isa = PBXBuildFile; productRef = DB0F6D9028E7D12300D93E3F /* SafeAreaBrush */; };
+		DB52E95628F4B13F00F0F5EB /* CustomHalfModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52E95528F4B13F00F0F5EB /* CustomHalfModalVC.swift */; };
 		DB81B55328D2385E006738D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81B55228D2385E006738D5 /* AppDelegate.swift */; };
 		DB81B55528D2385E006738D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81B55428D2385E006738D5 /* SceneDelegate.swift */; };
 		DB81B55728D2385E006738D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81B55628D2385E006738D5 /* ViewController.swift */; };
@@ -14,10 +16,13 @@
 		DB81B55D28D2385E006738D5 /* BlogSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB81B55B28D2385E006738D5 /* BlogSample.xcdatamodeld */; };
 		DB81B55F28D23861006738D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB81B55E28D23861006738D5 /* Assets.xcassets */; };
 		DB81B56228D23861006738D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB81B56028D23861006738D5 /* LaunchScreen.storyboard */; };
-		DBE819A928E1D1BF00E43C2C /* SafeAreaBrush in Frameworks */ = {isa = PBXBuildFile; productRef = DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */; };
+		DB93822228EC62830040ED81 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93822128EC62830040ED81 /* MenuLabel.swift */; };
+		DB93822828ECBE710040ED81 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93822628ECBE710040ED81 /* TableViewCell.swift */; };
+		DB93822928ECBE710040ED81 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB93822728ECBE710040ED81 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB52E95528F4B13F00F0F5EB /* CustomHalfModalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHalfModalVC.swift; sourceTree = "<group>"; };
 		DB81B54F28D2385E006738D5 /* BlogSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB81B55228D2385E006738D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB81B55428D2385E006738D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +32,9 @@
 		DB81B55E28D23861006738D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB81B56128D23861006738D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB81B56328D23861006738D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB93822128EC62830040ED81 /* MenuLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
+		DB93822628ECBE710040ED81 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DB93822728ECBE710040ED81 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBE819A928E1D1BF00E43C2C /* SafeAreaBrush in Frameworks */,
+				DB0F6D9128E7D12300D93E3F /* SafeAreaBrush in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,10 @@
 				DB81B56028D23861006738D5 /* LaunchScreen.storyboard */,
 				DB81B56328D23861006738D5 /* Info.plist */,
 				DB81B55B28D2385E006738D5 /* BlogSample.xcdatamodeld */,
+				DB93822128EC62830040ED81 /* MenuLabel.swift */,
+				DB93822628ECBE710040ED81 /* TableViewCell.swift */,
+				DB93822728ECBE710040ED81 /* TableViewCell.xib */,
+				DB52E95528F4B13F00F0F5EB /* CustomHalfModalVC.swift */,
 			);
 			path = BlogSample;
 			sourceTree = "<group>";
@@ -89,7 +101,7 @@
 			);
 			name = BlogSample;
 			packageProductDependencies = (
-				DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */,
+				DB0F6D9028E7D12300D93E3F /* SafeAreaBrush */,
 			);
 			productName = BlogSample;
 			productReference = DB81B54F28D2385E006738D5 /* BlogSample.app */;
@@ -120,7 +132,7 @@
 			);
 			mainGroup = DB81B54628D2385E006738D5;
 			packageReferences = (
-				DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */,
+				DB0F6D8F28E7D12300D93E3F /* XCRemoteSwiftPackageReference "SafeAreaBrush" */,
 			);
 			productRefGroup = DB81B55028D2385E006738D5 /* Products */;
 			projectDirPath = "";
@@ -137,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB81B56228D23861006738D5 /* LaunchScreen.storyboard in Resources */,
+				DB93822928ECBE710040ED81 /* TableViewCell.xib in Resources */,
 				DB81B55F28D23861006738D5 /* Assets.xcassets in Resources */,
 				DB81B55A28D2385E006738D5 /* Main.storyboard in Resources */,
 			);
@@ -149,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB52E95628F4B13F00F0F5EB /* CustomHalfModalVC.swift in Sources */,
 				DB81B55728D2385E006738D5 /* ViewController.swift in Sources */,
+				DB93822228EC62830040ED81 /* MenuLabel.swift in Sources */,
 				DB81B55D28D2385E006738D5 /* BlogSample.xcdatamodeld in Sources */,
+				DB93822828ECBE710040ED81 /* TableViewCell.swift in Sources */,
 				DB81B55328D2385E006738D5 /* AppDelegate.swift in Sources */,
 				DB81B55528D2385E006738D5 /* SceneDelegate.swift in Sources */,
 			);
@@ -372,20 +388,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */ = {
+		DB0F6D8F28E7D12300D93E3F /* XCRemoteSwiftPackageReference "SafeAreaBrush" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WallabyStuff/SafeAreaBrush.git";
 			requirement = {
-				branch = release;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DBE819A828E1D1BF00E43C2C /* SafeAreaBrush */ = {
+		DB0F6D9028E7D12300D93E3F /* SafeAreaBrush */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBE819A728E1D1BF00E43C2C /* XCRemoteSwiftPackageReference "SafeAreaBrush" */;
+			package = DB0F6D8F28E7D12300D93E3F /* XCRemoteSwiftPackageReference "SafeAreaBrush" */;
 			productName = SafeAreaBrush;
 		};
 /* End XCSwiftPackageProductDependency section */

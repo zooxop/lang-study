@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WallabyStuff/SafeAreaBrush.git",
       "state" : {
-        "branch" : "release",
-        "revision" : "9675e14452262d7170604da0d464d1a4c7111d34"
+        "revision" : "4943d253687368afbea7ea09c19530a0361ed613",
+        "version" : "1.0.4"
       }
     }
   ],
