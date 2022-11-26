@@ -59,6 +59,7 @@
 		DBD066BF28D5B68900C02A52 /* Radix3Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radix3Convert.swift; sourceTree = "<group>"; };
 		DBD3643128D8AD220002D555 /* KthNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthNumber.swift; sourceTree = "<group>"; };
 		DBF105BE28DE931A00A458C9 /* OpenChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChat.swift; sourceTree = "<group>"; };
+		DBF105C028DED5C900A458C9 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
 		DBFB3CCC28D75E94007604A8 /* StringSortOnMyMind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSortOnMyMind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +136,7 @@
 		DB67D0B128C4E58B0025697D /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				DBF105BF28DEC4FD00A458C9 /* KakaoCodingTest */,
 				DB2B480428DDBDFF005851F7 /* KakaoTestPage */,
 				DB24E02928D1CB6C00698A85 /* Level3 */,
 				DB558D3628CF58FD004FA340 /* Level2 */,
@@ -178,6 +180,14 @@
 				DB8D895F28C8DB0E005C5CEC /* TwoPointer.swift */,
 			);
 			path = BACAM;
+			sourceTree = "<group>";
+		};
+		DBF105BF28DEC4FD00A458C9 /* KakaoCodingTest */ = {
+			isa = PBXGroup;
+			children = (
+				DBF105C028DED5C900A458C9 /* Test1.swift */,
+			);
+			path = KakaoCodingTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
