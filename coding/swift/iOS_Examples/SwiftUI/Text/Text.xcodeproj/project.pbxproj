@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB2C9527295C1EE7004F2BF2 /* SwiftUI_Lecture1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C9526295C1EE7004F2BF2 /* SwiftUI_Lecture1App.swift */; };
-		DB2C9529295C1EE7004F2BF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C9528295C1EE7004F2BF2 /* ContentView.swift */; };
-		DB2C952B295C1EE8004F2BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C952A295C1EE8004F2BF2 /* Assets.xcassets */; };
-		DB2C952E295C1EE8004F2BF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C952D295C1EE8004F2BF2 /* Preview Assets.xcassets */; };
+		DB2C9541295C250F004F2BF2 /* SwiftUI_Lecture2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C9540295C250F004F2BF2 /* SwiftUI_Lecture2App.swift */; };
+		DB2C9543295C250F004F2BF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C9542295C250F004F2BF2 /* ContentView.swift */; };
+		DB2C9545295C2511004F2BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C9544295C2511004F2BF2 /* Assets.xcassets */; };
+		DB2C9548295C2511004F2BF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C9547295C2511004F2BF2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB2C9523295C1EE7004F2BF2 /* SwiftUI_Lecture1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Lecture1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB2C9526295C1EE7004F2BF2 /* SwiftUI_Lecture1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Lecture1App.swift; sourceTree = "<group>"; };
-		DB2C9528295C1EE7004F2BF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DB2C952A295C1EE8004F2BF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB2C952D295C1EE8004F2BF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB2C953D295C250F004F2BF2 /* Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Text.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2C9540295C250F004F2BF2 /* SwiftUI_Lecture2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Lecture2App.swift; sourceTree = "<group>"; };
+		DB2C9542295C250F004F2BF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB2C9544295C2511004F2BF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB2C9547295C2511004F2BF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB2C9520295C1EE7004F2BF2 /* Frameworks */ = {
+		DB2C953A295C250F004F2BF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB2C951A295C1EE7004F2BF2 = {
+		DB2C9534295C250F004F2BF2 = {
 			isa = PBXGroup;
 			children = (
-				DB2C9525295C1EE7004F2BF2 /* SwiftUI_Lecture1 */,
-				DB2C9524295C1EE7004F2BF2 /* Products */,
+				DB2C953F295C250F004F2BF2 /* SwiftUI_Lecture2 */,
+				DB2C953E295C250F004F2BF2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB2C9524295C1EE7004F2BF2 /* Products */ = {
+		DB2C953E295C250F004F2BF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB2C9523295C1EE7004F2BF2 /* SwiftUI_Lecture1.app */,
+				DB2C953D295C250F004F2BF2 /* Text.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB2C9525295C1EE7004F2BF2 /* SwiftUI_Lecture1 */ = {
+		DB2C953F295C250F004F2BF2 /* SwiftUI_Lecture2 */ = {
 			isa = PBXGroup;
 			children = (
-				DB2C9526295C1EE7004F2BF2 /* SwiftUI_Lecture1App.swift */,
-				DB2C9528295C1EE7004F2BF2 /* ContentView.swift */,
-				DB2C952A295C1EE8004F2BF2 /* Assets.xcassets */,
-				DB2C952C295C1EE8004F2BF2 /* Preview Content */,
+				DB2C9540295C250F004F2BF2 /* SwiftUI_Lecture2App.swift */,
+				DB2C9542295C250F004F2BF2 /* ContentView.swift */,
+				DB2C9544295C2511004F2BF2 /* Assets.xcassets */,
+				DB2C9546295C2511004F2BF2 /* Preview Content */,
 			);
-			path = SwiftUI_Lecture1;
+			path = SwiftUI_Lecture2;
 			sourceTree = "<group>";
 		};
-		DB2C952C295C1EE8004F2BF2 /* Preview Content */ = {
+		DB2C9546295C2511004F2BF2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DB2C952D295C1EE8004F2BF2 /* Preview Assets.xcassets */,
+				DB2C9547295C2511004F2BF2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB2C9522295C1EE7004F2BF2 /* SwiftUI_Lecture1 */ = {
+		DB2C953C295C250F004F2BF2 /* Text */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB2C9531295C1EE8004F2BF2 /* Build configuration list for PBXNativeTarget "SwiftUI_Lecture1" */;
+			buildConfigurationList = DB2C954B295C2511004F2BF2 /* Build configuration list for PBXNativeTarget "Text" */;
 			buildPhases = (
-				DB2C951F295C1EE7004F2BF2 /* Sources */,
-				DB2C9520295C1EE7004F2BF2 /* Frameworks */,
-				DB2C9521295C1EE7004F2BF2 /* Resources */,
+				DB2C9539295C250F004F2BF2 /* Sources */,
+				DB2C953A295C250F004F2BF2 /* Frameworks */,
+				DB2C953B295C250F004F2BF2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftUI_Lecture1;
-			productName = SwiftUI_Lecture1;
-			productReference = DB2C9523295C1EE7004F2BF2 /* SwiftUI_Lecture1.app */;
+			name = Text;
+			productName = SwiftUI_Lecture2;
+			productReference = DB2C953D295C250F004F2BF2 /* Text.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB2C951B295C1EE7004F2BF2 /* Project object */ = {
+		DB2C9535295C250F004F2BF2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					DB2C9522295C1EE7004F2BF2 = {
+					DB2C953C295C250F004F2BF2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = DB2C951E295C1EE7004F2BF2 /* Build configuration list for PBXProject "SwiftUI_Lecture1" */;
+			buildConfigurationList = DB2C9538295C250F004F2BF2 /* Build configuration list for PBXProject "Text" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = DB2C951A295C1EE7004F2BF2;
-			productRefGroup = DB2C9524295C1EE7004F2BF2 /* Products */;
+			mainGroup = DB2C9534295C250F004F2BF2;
+			productRefGroup = DB2C953E295C250F004F2BF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB2C9522295C1EE7004F2BF2 /* SwiftUI_Lecture1 */,
+				DB2C953C295C250F004F2BF2 /* Text */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB2C9521295C1EE7004F2BF2 /* Resources */ = {
+		DB2C953B295C250F004F2BF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2C952E295C1EE8004F2BF2 /* Preview Assets.xcassets in Resources */,
-				DB2C952B295C1EE8004F2BF2 /* Assets.xcassets in Resources */,
+				DB2C9548295C2511004F2BF2 /* Preview Assets.xcassets in Resources */,
+				DB2C9545295C2511004F2BF2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB2C951F295C1EE7004F2BF2 /* Sources */ = {
+		DB2C9539295C250F004F2BF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2C9529295C1EE7004F2BF2 /* ContentView.swift in Sources */,
-				DB2C9527295C1EE7004F2BF2 /* SwiftUI_Lecture1App.swift in Sources */,
+				DB2C9543295C250F004F2BF2 /* ContentView.swift in Sources */,
+				DB2C9541295C250F004F2BF2 /* SwiftUI_Lecture2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DB2C952F295C1EE8004F2BF2 /* Debug */ = {
+		DB2C9549295C2511004F2BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		DB2C9530295C1EE8004F2BF2 /* Release */ = {
+		DB2C954A295C2511004F2BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,14 +259,14 @@
 			};
 			name = Release;
 		};
-		DB2C9532295C1EE8004F2BF2 /* Debug */ = {
+		DB2C954C295C2511004F2BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Lecture1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Lecture2/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.examples.SwiftUI-Lecture1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.examples.SwiftUI-Lecture2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -288,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		DB2C9533295C1EE8004F2BF2 /* Release */ = {
+		DB2C954D295C2511004F2BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Lecture1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Lecture2/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.examples.SwiftUI-Lecture1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.examples.SwiftUI-Lecture2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB2C951E295C1EE7004F2BF2 /* Build configuration list for PBXProject "SwiftUI_Lecture1" */ = {
+		DB2C9538295C250F004F2BF2 /* Build configuration list for PBXProject "Text" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB2C952F295C1EE8004F2BF2 /* Debug */,
-				DB2C9530295C1EE8004F2BF2 /* Release */,
+				DB2C9549295C2511004F2BF2 /* Debug */,
+				DB2C954A295C2511004F2BF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB2C9531295C1EE8004F2BF2 /* Build configuration list for PBXNativeTarget "SwiftUI_Lecture1" */ = {
+		DB2C954B295C2511004F2BF2 /* Build configuration list for PBXNativeTarget "Text" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB2C9532295C1EE8004F2BF2 /* Debug */,
-				DB2C9533295C1EE8004F2BF2 /* Release */,
+				DB2C954C295C2511004F2BF2 /* Debug */,
+				DB2C954D295C2511004F2BF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB2C951B295C1EE7004F2BF2 /* Project object */;
+	rootObject = DB2C9535295C250F004F2BF2 /* Project object */;
 }
