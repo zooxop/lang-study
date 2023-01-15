@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB68951329727C7C006BE2FE /* NameSpaceExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68951229727C7C006BE2FE /* NameSpaceExam.swift */; };
+		DB689515297281D6006BE2FE /* KeyboardPubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB689514297281D6006BE2FE /* KeyboardPubView.swift */; };
 		DB8D5F6129705BEA000BD278 /* ScrollToBottomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D5F6029705BEA000BD278 /* ScrollToBottomApp.swift */; };
 		DB8D5F6329705BEA000BD278 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D5F6229705BEA000BD278 /* ContentView.swift */; };
 		DB8D5F6529705BEA000BD278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8D5F6429705BEA000BD278 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB68951229727C7C006BE2FE /* NameSpaceExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceExam.swift; sourceTree = "<group>"; };
+		DB689514297281D6006BE2FE /* KeyboardPubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPubView.swift; sourceTree = "<group>"; };
 		DB8D5F5D29705BE9000BD278 /* ScrollToBottom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollToBottom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D5F6029705BEA000BD278 /* ScrollToBottomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToBottomApp.swift; sourceTree = "<group>"; };
 		DB8D5F6229705BEA000BD278 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 				DB8D5F6229705BEA000BD278 /* ContentView.swift */,
 				DB8D5F6429705BEA000BD278 /* Assets.xcassets */,
 				DB8D5F6629705BEA000BD278 /* Preview Content */,
+				DB68951229727C7C006BE2FE /* NameSpaceExam.swift */,
+				DB689514297281D6006BE2FE /* KeyboardPubView.swift */,
 			);
 			path = ScrollToBottom;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB8D5F6329705BEA000BD278 /* ContentView.swift in Sources */,
+				DB68951329727C7C006BE2FE /* NameSpaceExam.swift in Sources */,
 				DB8D5F6129705BEA000BD278 /* ScrollToBottomApp.swift in Sources */,
+				DB689515297281D6006BE2FE /* KeyboardPubView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
