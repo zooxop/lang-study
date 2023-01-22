@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB24F284297599D40034754F /* LoginExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24F283297599D40034754F /* LoginExamView.swift */; };
+		DB668B5B297DB0BE00919877 /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */; };
 		DB68951329727C7C006BE2FE /* NameSpaceExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68951229727C7C006BE2FE /* NameSpaceExam.swift */; };
 		DB689515297281D6006BE2FE /* KeyboardPubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB689514297281D6006BE2FE /* KeyboardPubView.swift */; };
 		DB8D5F6129705BEA000BD278 /* ScrollToBottomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D5F6029705BEA000BD278 /* ScrollToBottomApp.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB24F283297599D40034754F /* LoginExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExamView.swift; sourceTree = "<group>"; };
+		DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
 		DB68951229727C7C006BE2FE /* NameSpaceExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceExam.swift; sourceTree = "<group>"; };
 		DB689514297281D6006BE2FE /* KeyboardPubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPubView.swift; sourceTree = "<group>"; };
 		DB8D5F5D29705BE9000BD278 /* ScrollToBottom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollToBottom.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +65,8 @@
 				DB8D5F6629705BEA000BD278 /* Preview Content */,
 				DB68951229727C7C006BE2FE /* NameSpaceExam.swift */,
 				DB689514297281D6006BE2FE /* KeyboardPubView.swift */,
+				DB24F283297599D40034754F /* LoginExamView.swift */,
+				DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */,
 			);
 			path = ScrollToBottom;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB24F284297599D40034754F /* LoginExamView.swift in Sources */,
 				DB8D5F6329705BEA000BD278 /* ContentView.swift in Sources */,
+				DB668B5B297DB0BE00919877 /* KeyboardReadable.swift in Sources */,
 				DB68951329727C7C006BE2FE /* NameSpaceExam.swift in Sources */,
 				DB8D5F6129705BEA000BD278 /* ScrollToBottomApp.swift in Sources */,
 				DB689515297281D6006BE2FE /* KeyboardPubView.swift in Sources */,
@@ -290,9 +298,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.ScrollToBottom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.ScrollToBottom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

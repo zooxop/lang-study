@@ -11,7 +11,8 @@ import SwiftUI
 struct ScrollToBottomApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            LoginExamView()
         }
     }
 }
