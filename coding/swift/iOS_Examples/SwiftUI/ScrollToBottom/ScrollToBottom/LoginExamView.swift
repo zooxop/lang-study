@@ -8,82 +8,77 @@
 import SwiftUI
 
 struct LoginExamView: View, KeyboardReadable {
+    @Namespace var logInButtonId
+    @Namespace var logoId
+    
     @State var email = ""
     @State var password = ""
     
-    @Namespace var logInButtonId
-    
     var body: some View {
-        ScrollViewReader { proxy in
+        
             ScrollView(.vertical, showsIndicators: false) {
+                ScrollViewReader { proxy in
                 
-                Image("notebook")
-                    .resizable()
-                    .scaledToFill()
-                    .padding(.horizontal, 70)
-                    .padding(.vertical, 50)
-                
-                HStack {
-                    Image(systemName: "iphone.and.arrow.forward")
+                VStack {
+                    Image(systemName: "apple.logo")
                         .resizable()
-                        .frame(height: 30)
-                        .scaledToFit()
-                        .padding(.leading, 20)
+                        .scaledToFill()
+                        .padding(.horizontal, 70)
+                        .padding(.vertical, 30)
+                        .id(logoId)
                     
-                    Text("로그인")
-                        .font(.largeTitle)
-                        .bold()
-                        
-                    Spacer()
-                }
-                
-                //MARK: - User Input (Email / PW / Remember me)
-                VStack(spacing: 10) {
-                    //MARK: Email
                     HStack {
-                        Image(systemName: "envelope")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .foregroundColor(.accentColor)
-                        
+                        Text("Log in")
+                            .font(.largeTitle)
+                            .bold()
+                            .padding(.leading, 15)
+                            
+                        Spacer()
+                    }
+                    
+                    VStack(spacing: 10) {
+                            
                         TextField("email", text: $email)
                             .textFieldStyle(.roundedBorder)
                             .textContentType(.emailAddress)
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { _ in
-                                withAnimation {
-                                    proxy.scrollTo(logInButtonId)
+                            .onReceive(keyboardPublisher) { noti in
+                                if noti == true {
+                                    withAnimation {
+                                        proxy.scrollTo(logInButtonId)
+                                    }
+                                } else {
+//                                    withAnimation {
+//                                        proxy.scrollTo(logoId)
+//                                    }
                                 }
                             }
-                    }
-                    .padding(.horizontal, 20)
-                    
-                    //MARK: PW
-                    HStack {
-                        Image(systemName: "lock")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .foregroundColor(.accentColor)
+                        .padding(.horizontal, 20)
                         
+                            
                         SecureField("password", text: $password)
                             .textFieldStyle(.roundedBorder)
                             .textContentType(.password)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { _ in
-                                withAnimation {
-                                    proxy.scrollTo(logInButtonId)
+                            .onReceive(keyboardPublisher) { noti in
+                                if noti == true {
+                                    withAnimation {
+                                        proxy.scrollTo(logInButtonId)
+                                    }
+                                } else {
+                                    withAnimation {
+                                        proxy.scrollTo(logoId)
+                                    }
                                 }
                             }
+                        .padding(.horizontal, 20)
                     }
-                    .padding(.horizontal, 20)
-                    
+                    .padding(.bottom, 20)
+                    // MARK: Log in button
                     VStack {
                         Button {
-                            // 유효성 검사
-                        
+                            // action
                         } label: {
                             Text("Sign in")
                                 .foregroundColor(.black)
@@ -93,11 +88,21 @@ struct LoginExamView: View, KeyboardReadable {
                         .frame(height: 50)
                         .background(RoundedRectangle(cornerRadius: 10).fill(.green))
                         .buttonStyle(.plain)
-                        .id(logInButtonId)  // Button ID (for scroll)
+                        .id(logInButtonId)
                         
                         Spacer()
                     }
+                    .onTapGesture {
+                        self.endTextEditing()
+                    }
                 }
+            }
+            .background(Color(UIColor.gray))
+            .onAppear {  // 화면 전체 스크롤 안되도록. (바운스가 안되도록.)
+                UIScrollView.appearance().bounces = false
+            }
+            .onDisappear {
+                UIScrollView.appearance().bounces = true
             }
         }
     }
@@ -109,3 +114,9 @@ struct LoginExamView_Previews: PreviewProvider {
     }
 }
 
+extension View {
+    
+    func endTextEditing() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
