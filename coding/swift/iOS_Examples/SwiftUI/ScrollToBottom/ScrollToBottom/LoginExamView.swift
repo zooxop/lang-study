@@ -9,23 +9,20 @@ import SwiftUI
 
 struct LoginExamView: View, KeyboardReadable {
     @Namespace var logInButtonId
-    @Namespace var logoId
     
     @State var email = ""
     @State var password = ""
     
     var body: some View {
         
-            ScrollView(.vertical, showsIndicators: false) {
-                ScrollViewReader { proxy in
-                
+        ScrollView(.vertical, showsIndicators: false) {
+            ScrollViewReader { proxy in
                 VStack {
                     Image(systemName: "apple.logo")
                         .resizable()
                         .scaledToFill()
                         .padding(.horizontal, 70)
                         .padding(.vertical, 30)
-                        .id(logoId)
                     
                     HStack {
                         Text("Log in")
@@ -43,36 +40,24 @@ struct LoginExamView: View, KeyboardReadable {
                             .textContentType(.emailAddress)
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { noti in
-                                if noti == true {
-                                    withAnimation {
-                                        proxy.scrollTo(logInButtonId)
-                                    }
-                                } else {
-//                                    withAnimation {
-//                                        proxy.scrollTo(logoId)
-//                                    }
+                            .onReceive(keyboardPublisher) { _ in
+                                withAnimation {
+                                    proxy.scrollTo(logInButtonId)
                                 }
                             }
-                        .padding(.horizontal, 20)
+                            .padding(.horizontal, 20)
                         
                             
                         SecureField("password", text: $password)
                             .textFieldStyle(.roundedBorder)
                             .textContentType(.password)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { noti in
-                                if noti == true {
-                                    withAnimation {
-                                        proxy.scrollTo(logInButtonId)
-                                    }
-                                } else {
-                                    withAnimation {
-                                        proxy.scrollTo(logoId)
-                                    }
+                            .onReceive(keyboardPublisher) { _ in
+                                withAnimation {
+                                    proxy.scrollTo(logInButtonId)
                                 }
                             }
-                        .padding(.horizontal, 20)
+                            .padding(.horizontal, 20)
                     }
                     .padding(.bottom, 20)
                     // MARK: Log in button
@@ -92,17 +77,7 @@ struct LoginExamView: View, KeyboardReadable {
                         
                         Spacer()
                     }
-                    .onTapGesture {
-                        self.endTextEditing()
-                    }
                 }
-            }
-            .background(Color(UIColor.gray))
-            .onAppear {  // 화면 전체 스크롤 안되도록. (바운스가 안되도록.)
-                UIScrollView.appearance().bounces = false
-            }
-            .onDisappear {
-                UIScrollView.appearance().bounces = true
             }
         }
     }
@@ -111,12 +86,5 @@ struct LoginExamView: View, KeyboardReadable {
 struct LoginExamView_Previews: PreviewProvider {
     static var previews: some View {
         LoginExamView()
-    }
-}
-
-extension View {
-    
-    func endTextEditing() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
