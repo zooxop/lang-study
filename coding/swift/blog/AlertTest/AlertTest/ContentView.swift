@@ -27,6 +27,9 @@ struct ContentView: View {
             } label: {
                 Text("Alert 2")
             }
+            // .alert(isPresented: $isShow2) {
+            //     return Alert(title: Text("Alert2 show."))
+            // }
         }
         .padding()
         .alert(isPresented: $isShow2) {
