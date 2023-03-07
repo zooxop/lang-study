@@ -37,34 +37,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     private func handleAppRefresh(_ task: BGTask) {
-        let queue = OperationQueue()
-        queue.maxConcurrentOperationCount = 1
-        let appRefreshOperation = MyOperation()
-        queue.addOperation(appRefreshOperation)
-
-        task.expirationHandler = {
-            queue.cancelAllOperations()
-        }
-
-        let lastOperation = queue.operations.last
-        lastOperation?.completionBlock = {
-            task.setTaskCompleted(success: !(lastOperation?.isCancelled ?? false))
-        }
-
+        // 다음 동작 수행, 반복시 필요
         scheduleAppRefresh()
+        
+        task.expirationHandler = {
+            task.setTaskCompleted(success: false)
+        }
+        
+        // 가벼운 백그라운드 작업 작성
+        task.setTaskCompleted(success: true)
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         scheduleAppRefresh()
     }
 
-    private func scheduleAppRefresh() {
+    func scheduleAppRefresh() {
+        let request = BGAppRefreshTaskRequest(identifier: "com.chmun.UIKitBackgroundPractice.refresh")
+        
         do {
-            let request = BGAppRefreshTaskRequest(identifier: "com.chmun.UIKitBackgroundPractice.refresh")
-            request.earliestBeginDate = Date(timeIntervalSinceNow: 3600)
             try BGTaskScheduler.shared.submit(request)
+            request.earliestBeginDate = Date(timeIntervalSinceNow: 5)
+            // Set a breakpoint in the code that executes after a successful call to submit(_:).
+            print("hello")
         } catch {
-            print(error)
+            print("\(Date()): Could not schedule app refresh: \(error)")
         }
     }
     
