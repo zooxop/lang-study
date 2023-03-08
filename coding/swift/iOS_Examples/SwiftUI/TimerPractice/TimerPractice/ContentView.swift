@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import BackgroundTasks
 
 struct ContentView: View {
-    @ObservedObject var vpnTimer = VPNTimer()
+    // @Environment(\.scenePhase) private var scenePhase
+    
+    @ObservedObject var vpnTimer = VPNTimer.shared
     
     var body: some View {
         VStack {
@@ -19,14 +22,38 @@ struct ContentView: View {
             Text("Count : \(vpnTimer.count)")
         }
         .onAppear {
-            vpnTimer.startTimer()
+            // vpnTimer.startTimer()
+        }
+//        .onChange(of: scenePhase) { newValue in
+//            if newValue == .background {
+//                submitBackgroundTask()
+//            } else {
+//                if vpnTimer.state == true {
+//                    // vpnTimer.stopTimer()
+//                }
+//            }
+//        }
+    }
+    
+    func submitBackgroundTask() {
+        do {
+            let identifier = "com.chmun.TimerPractice.bgtask"
+            let request = BGAppRefreshTaskRequest(identifier: identifier)
+            request.earliestBeginDate = .now.addingTimeInterval(24 * 3600)
+            try BGTaskScheduler.shared.submit(request)
+            print("")  // Break Point 걸려고 임시로 써놓은 print문
+        } catch {
+            print("Error registering background task: \(error.localizedDescription)")
         }
     }
 }
 
 class VPNTimer: ObservableObject {
+    static public var shared = VPNTimer()
+    
     private var vpnRefresher: Timer = Timer()
     
+    public var state: Bool = false
     @Published public var count: Int = 0
     
     public func startTimer() {
@@ -36,14 +63,17 @@ class VPNTimer: ObservableObject {
                                             userInfo: nil,
                                             repeats: true)
         
+        state = true
     }
     
     public func stopTimer() {
         vpnRefresher.invalidate()
+        state = false
     }
     
     @objc private func addCount(sender: Timer) {
         count += 1
+        print("Count : \(count)")
     }
 }
 
