@@ -1,14 +1,14 @@
 package ocp;
 
-public class Pokemon {
+public abstract class Pokemon {
     private String name;
-    private int level;
-    private int hp;
+    protected int level;
+    protected int hp;
 
-    public Pokemon(String name, int level) {
+    public Pokemon(String name, int level, int hp) {
         this.name = name;
         this.level = level;
-        this.hp = 100;
+        this.hp = hp;
     }
 
     public String getName() {
@@ -17,26 +17,7 @@ public class Pokemon {
     public void setName(String name) {
         this.name = name;
     }
-    public int getLevel() {
-        return level;
-    }
-    public void setLevel(int level) {
-        this.level = level;
-    }
-    public int getHp() {
-        return hp;
-    }
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
 
-    public void attack(String opponent) {
-        System.out.println(opponent + "를(을) 기본 공격합니다!");
-    }
-
-    public void evolve() {
-        level++;
-        hp = hp + 10;
-        System.out.println(name + "이(가) " + level + "로 UP!");
-    }
+    public abstract void attack();
+    public abstract void evolve();
 }
