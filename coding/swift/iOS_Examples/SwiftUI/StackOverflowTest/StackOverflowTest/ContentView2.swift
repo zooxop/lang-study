@@ -20,7 +20,7 @@ struct CustomGaugeStyleView: View {
    
           }
           .gaugeStyle(twoRingGaugeStyle(outerRingMin: 5.5, outerRingMax: 7.5))
-          //.frame(height: 200)
+          .frame(height: 100)
          
       }
 }
@@ -43,18 +43,18 @@ struct twoRingGaugeStyle: GaugeStyle {
 GeometryReader { geometry in
     ZStack {
         Circle()
-            .stroke(Color(.lightGray).opacity(0.2), style: StrokeStyle(lineWidth: 20))
+            .stroke(Color(.lightGray).opacity(0.2), style: StrokeStyle(lineWidth: geometry.size.height * 0.10))
             .frame(height: geometry.size.height * 0.70)
         Circle()
             .trim(from: 0, to: 0.75 * configuration.value)
-            .stroke(Color.orange.gradient, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+            .stroke(Color.orange.gradient, style: StrokeStyle(lineWidth: geometry.size.height * 0.10, lineCap: .round, lineJoin: .round))
             .rotationEffect(.degrees(270))
             .frame(height: geometry.size.height * 0.70)
         Circle()
             .trim(from: outerRingMin / 10, to: outerRingMax / 10)
-            .stroke(Color.green.gradient, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+            .stroke(Color.green.gradient, style: StrokeStyle(lineWidth: geometry.size.height * 0.10, lineCap: .round, lineJoin: .round))
             .rotationEffect(.degrees(270))
-            .frame(height: geometry.size.height * 0.70)  // 0.82 -> 0.70
+            .frame(height: geometry.size.height * 0.70)
     }
     .padding()
 }
