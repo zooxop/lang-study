@@ -7,65 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB1B349929BE949200F4BDAA /* StackOverflowTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B349829BE949200F4BDAA /* StackOverflowTestApp.swift */; };
-		DB1B349B29BE949200F4BDAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B349A29BE949200F4BDAA /* ContentView.swift */; };
-		DB1B349D29BE949300F4BDAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B349C29BE949300F4BDAA /* Assets.xcassets */; };
-		DB1B34A029BE949300F4BDAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B349F29BE949300F4BDAA /* Preview Assets.xcassets */; };
-		DB1B34AA29BE949300F4BDAA /* StackOverflowTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34A929BE949300F4BDAA /* StackOverflowTestTests.swift */; };
-		DB1B34B429BE949300F4BDAA /* StackOverflowTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34B329BE949300F4BDAA /* StackOverflowTestUITests.swift */; };
-		DB1B34B629BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */; };
-		DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88C429C005E70063EED7 /* ContentView2.swift */; };
-		DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDCCD529C134A10033BE8B /* ToggleView.swift */; };
+		DB4B88D729C04D590063EED7 /* EnvironmentObjectPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88D629C04D590063EED7 /* EnvironmentObjectPracticeApp.swift */; };
+		DB4B88D929C04D590063EED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88D829C04D590063EED7 /* ContentView.swift */; };
+		DB4B88DB29C04D5A0063EED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4B88DA29C04D5A0063EED7 /* Assets.xcassets */; };
+		DB4B88DE29C04D5A0063EED7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4B88DD29C04D5A0063EED7 /* Preview Assets.xcassets */; };
+		DB4B88E829C04D5A0063EED7 /* EnvironmentObjectPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88E729C04D5A0063EED7 /* EnvironmentObjectPracticeTests.swift */; };
+		DB4B88F229C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88F129C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.swift */; };
+		DB4B88F429C04D5A0063EED7 /* EnvironmentObjectPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88F329C04D5A0063EED7 /* EnvironmentObjectPracticeUITestsLaunchTests.swift */; };
+		DB4B890129C04D780063EED7 /* MyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B890029C04D780063EED7 /* MyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DB1B34A629BE949300F4BDAA /* PBXContainerItemProxy */ = {
+		DB4B88E429C04D5A0063EED7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DB1B348D29BE949200F4BDAA /* Project object */;
+			containerPortal = DB4B88CB29C04D590063EED7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB1B349429BE949200F4BDAA;
-			remoteInfo = StackOverflowTest;
+			remoteGlobalIDString = DB4B88D229C04D590063EED7;
+			remoteInfo = EnvironmentObjectPractice;
 		};
-		DB1B34B029BE949300F4BDAA /* PBXContainerItemProxy */ = {
+		DB4B88EE29C04D5A0063EED7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DB1B348D29BE949200F4BDAA /* Project object */;
+			containerPortal = DB4B88CB29C04D590063EED7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB1B349429BE949200F4BDAA;
-			remoteInfo = StackOverflowTest;
+			remoteGlobalIDString = DB4B88D229C04D590063EED7;
+			remoteInfo = EnvironmentObjectPractice;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB1B349529BE949200F4BDAA /* StackOverflowTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB1B349829BE949200F4BDAA /* StackOverflowTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestApp.swift; sourceTree = "<group>"; };
-		DB1B349A29BE949200F4BDAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DB1B349C29BE949300F4BDAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB1B349F29BE949300F4BDAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DB1B34A529BE949300F4BDAA /* StackOverflowTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB1B34A929BE949300F4BDAA /* StackOverflowTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestTests.swift; sourceTree = "<group>"; };
-		DB1B34AF29BE949300F4BDAA /* StackOverflowTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB1B34B329BE949300F4BDAA /* StackOverflowTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestUITests.swift; sourceTree = "<group>"; };
-		DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DB4B88C429C005E70063EED7 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
-		DBEDCCD529C134A10033BE8B /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		DB4B88D329C04D590063EED7 /* EnvironmentObjectPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentObjectPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4B88D629C04D590063EED7 /* EnvironmentObjectPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectPracticeApp.swift; sourceTree = "<group>"; };
+		DB4B88D829C04D590063EED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB4B88DA29C04D5A0063EED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB4B88DD29C04D5A0063EED7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB4B88E329C04D5A0063EED7 /* EnvironmentObjectPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentObjectPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4B88E729C04D5A0063EED7 /* EnvironmentObjectPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectPracticeTests.swift; sourceTree = "<group>"; };
+		DB4B88ED29C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentObjectPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4B88F129C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectPracticeUITests.swift; sourceTree = "<group>"; };
+		DB4B88F329C04D5A0063EED7 /* EnvironmentObjectPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB4B890029C04D780063EED7 /* MyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB1B349229BE949200F4BDAA /* Frameworks */ = {
+		DB4B88D029C04D590063EED7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34A229BE949300F4BDAA /* Frameworks */ = {
+		DB4B88E029C04D5A0063EED7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34AC29BE949300F4BDAA /* Frameworks */ = {
+		DB4B88EA29C04D5A0063EED7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,144 +73,143 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB1B348C29BE949200F4BDAA = {
+		DB4B88CA29C04D590063EED7 = {
 			isa = PBXGroup;
 			children = (
-				DB1B349729BE949200F4BDAA /* StackOverflowTest */,
-				DB1B34A829BE949300F4BDAA /* StackOverflowTestTests */,
-				DB1B34B229BE949300F4BDAA /* StackOverflowTestUITests */,
-				DB1B349629BE949200F4BDAA /* Products */,
+				DB4B88D529C04D590063EED7 /* EnvironmentObjectPractice */,
+				DB4B88E629C04D5A0063EED7 /* EnvironmentObjectPracticeTests */,
+				DB4B88F029C04D5A0063EED7 /* EnvironmentObjectPracticeUITests */,
+				DB4B88D429C04D590063EED7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB1B349629BE949200F4BDAA /* Products */ = {
+		DB4B88D429C04D590063EED7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B349529BE949200F4BDAA /* StackOverflowTest.app */,
-				DB1B34A529BE949300F4BDAA /* StackOverflowTestTests.xctest */,
-				DB1B34AF29BE949300F4BDAA /* StackOverflowTestUITests.xctest */,
+				DB4B88D329C04D590063EED7 /* EnvironmentObjectPractice.app */,
+				DB4B88E329C04D5A0063EED7 /* EnvironmentObjectPracticeTests.xctest */,
+				DB4B88ED29C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB1B349729BE949200F4BDAA /* StackOverflowTest */ = {
+		DB4B88D529C04D590063EED7 /* EnvironmentObjectPractice */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B349829BE949200F4BDAA /* StackOverflowTestApp.swift */,
-				DB1B349A29BE949200F4BDAA /* ContentView.swift */,
-				DB1B349C29BE949300F4BDAA /* Assets.xcassets */,
-				DB1B349E29BE949300F4BDAA /* Preview Content */,
-				DB4B88C429C005E70063EED7 /* ContentView2.swift */,
-				DBEDCCD529C134A10033BE8B /* ToggleView.swift */,
+				DB4B88D629C04D590063EED7 /* EnvironmentObjectPracticeApp.swift */,
+				DB4B88D829C04D590063EED7 /* ContentView.swift */,
+				DB4B88DA29C04D5A0063EED7 /* Assets.xcassets */,
+				DB4B88DC29C04D5A0063EED7 /* Preview Content */,
+				DB4B890029C04D780063EED7 /* MyScoreView.swift */,
 			);
-			path = StackOverflowTest;
+			path = EnvironmentObjectPractice;
 			sourceTree = "<group>";
 		};
-		DB1B349E29BE949300F4BDAA /* Preview Content */ = {
+		DB4B88DC29C04D5A0063EED7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B349F29BE949300F4BDAA /* Preview Assets.xcassets */,
+				DB4B88DD29C04D5A0063EED7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DB1B34A829BE949300F4BDAA /* StackOverflowTestTests */ = {
+		DB4B88E629C04D5A0063EED7 /* EnvironmentObjectPracticeTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B34A929BE949300F4BDAA /* StackOverflowTestTests.swift */,
+				DB4B88E729C04D5A0063EED7 /* EnvironmentObjectPracticeTests.swift */,
 			);
-			path = StackOverflowTestTests;
+			path = EnvironmentObjectPracticeTests;
 			sourceTree = "<group>";
 		};
-		DB1B34B229BE949300F4BDAA /* StackOverflowTestUITests */ = {
+		DB4B88F029C04D5A0063EED7 /* EnvironmentObjectPracticeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DB1B34B329BE949300F4BDAA /* StackOverflowTestUITests.swift */,
-				DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */,
+				DB4B88F129C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.swift */,
+				DB4B88F329C04D5A0063EED7 /* EnvironmentObjectPracticeUITestsLaunchTests.swift */,
 			);
-			path = StackOverflowTestUITests;
+			path = EnvironmentObjectPracticeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB1B349429BE949200F4BDAA /* StackOverflowTest */ = {
+		DB4B88D229C04D590063EED7 /* EnvironmentObjectPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB1B34B929BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTest" */;
+			buildConfigurationList = DB4B88F729C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPractice" */;
 			buildPhases = (
-				DB1B349129BE949200F4BDAA /* Sources */,
-				DB1B349229BE949200F4BDAA /* Frameworks */,
-				DB1B349329BE949200F4BDAA /* Resources */,
+				DB4B88CF29C04D590063EED7 /* Sources */,
+				DB4B88D029C04D590063EED7 /* Frameworks */,
+				DB4B88D129C04D590063EED7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StackOverflowTest;
-			productName = StackOverflowTest;
-			productReference = DB1B349529BE949200F4BDAA /* StackOverflowTest.app */;
+			name = EnvironmentObjectPractice;
+			productName = EnvironmentObjectPractice;
+			productReference = DB4B88D329C04D590063EED7 /* EnvironmentObjectPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB1B34A429BE949300F4BDAA /* StackOverflowTestTests */ = {
+		DB4B88E229C04D5A0063EED7 /* EnvironmentObjectPracticeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB1B34BC29BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTestTests" */;
+			buildConfigurationList = DB4B88FA29C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPracticeTests" */;
 			buildPhases = (
-				DB1B34A129BE949300F4BDAA /* Sources */,
-				DB1B34A229BE949300F4BDAA /* Frameworks */,
-				DB1B34A329BE949300F4BDAA /* Resources */,
+				DB4B88DF29C04D5A0063EED7 /* Sources */,
+				DB4B88E029C04D5A0063EED7 /* Frameworks */,
+				DB4B88E129C04D5A0063EED7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB1B34A729BE949300F4BDAA /* PBXTargetDependency */,
+				DB4B88E529C04D5A0063EED7 /* PBXTargetDependency */,
 			);
-			name = StackOverflowTestTests;
-			productName = StackOverflowTestTests;
-			productReference = DB1B34A529BE949300F4BDAA /* StackOverflowTestTests.xctest */;
+			name = EnvironmentObjectPracticeTests;
+			productName = EnvironmentObjectPracticeTests;
+			productReference = DB4B88E329C04D5A0063EED7 /* EnvironmentObjectPracticeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DB1B34AE29BE949300F4BDAA /* StackOverflowTestUITests */ = {
+		DB4B88EC29C04D5A0063EED7 /* EnvironmentObjectPracticeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB1B34BF29BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTestUITests" */;
+			buildConfigurationList = DB4B88FD29C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPracticeUITests" */;
 			buildPhases = (
-				DB1B34AB29BE949300F4BDAA /* Sources */,
-				DB1B34AC29BE949300F4BDAA /* Frameworks */,
-				DB1B34AD29BE949300F4BDAA /* Resources */,
+				DB4B88E929C04D5A0063EED7 /* Sources */,
+				DB4B88EA29C04D5A0063EED7 /* Frameworks */,
+				DB4B88EB29C04D5A0063EED7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB1B34B129BE949300F4BDAA /* PBXTargetDependency */,
+				DB4B88EF29C04D5A0063EED7 /* PBXTargetDependency */,
 			);
-			name = StackOverflowTestUITests;
-			productName = StackOverflowTestUITests;
-			productReference = DB1B34AF29BE949300F4BDAA /* StackOverflowTestUITests.xctest */;
+			name = EnvironmentObjectPracticeUITests;
+			productName = EnvironmentObjectPracticeUITests;
+			productReference = DB4B88ED29C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB1B348D29BE949200F4BDAA /* Project object */ = {
+		DB4B88CB29C04D590063EED7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					DB1B349429BE949200F4BDAA = {
+					DB4B88D229C04D590063EED7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					DB1B34A429BE949300F4BDAA = {
+					DB4B88E229C04D5A0063EED7 = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = DB1B349429BE949200F4BDAA;
+						TestTargetID = DB4B88D229C04D590063EED7;
 					};
-					DB1B34AE29BE949300F4BDAA = {
+					DB4B88EC29C04D5A0063EED7 = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = DB1B349429BE949200F4BDAA;
+						TestTargetID = DB4B88D229C04D590063EED7;
 					};
 				};
 			};
-			buildConfigurationList = DB1B349029BE949200F4BDAA /* Build configuration list for PBXProject "StackOverflowTest" */;
+			buildConfigurationList = DB4B88CE29C04D590063EED7 /* Build configuration list for PBXProject "EnvironmentObjectPractice" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,36 +217,36 @@
 				en,
 				Base,
 			);
-			mainGroup = DB1B348C29BE949200F4BDAA;
-			productRefGroup = DB1B349629BE949200F4BDAA /* Products */;
+			mainGroup = DB4B88CA29C04D590063EED7;
+			productRefGroup = DB4B88D429C04D590063EED7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB1B349429BE949200F4BDAA /* StackOverflowTest */,
-				DB1B34A429BE949300F4BDAA /* StackOverflowTestTests */,
-				DB1B34AE29BE949300F4BDAA /* StackOverflowTestUITests */,
+				DB4B88D229C04D590063EED7 /* EnvironmentObjectPractice */,
+				DB4B88E229C04D5A0063EED7 /* EnvironmentObjectPracticeTests */,
+				DB4B88EC29C04D5A0063EED7 /* EnvironmentObjectPracticeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB1B349329BE949200F4BDAA /* Resources */ = {
+		DB4B88D129C04D590063EED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1B34A029BE949300F4BDAA /* Preview Assets.xcassets in Resources */,
-				DB1B349D29BE949300F4BDAA /* Assets.xcassets in Resources */,
+				DB4B88DE29C04D5A0063EED7 /* Preview Assets.xcassets in Resources */,
+				DB4B88DB29C04D5A0063EED7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34A329BE949300F4BDAA /* Resources */ = {
+		DB4B88E129C04D5A0063EED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34AD29BE949300F4BDAA /* Resources */ = {
+		DB4B88EB29C04D5A0063EED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,51 +256,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB1B349129BE949200F4BDAA /* Sources */ = {
+		DB4B88CF29C04D590063EED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */,
-				DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */,
-				DB1B349B29BE949200F4BDAA /* ContentView.swift in Sources */,
-				DB1B349929BE949200F4BDAA /* StackOverflowTestApp.swift in Sources */,
+				DB4B890129C04D780063EED7 /* MyScoreView.swift in Sources */,
+				DB4B88D929C04D590063EED7 /* ContentView.swift in Sources */,
+				DB4B88D729C04D590063EED7 /* EnvironmentObjectPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34A129BE949300F4BDAA /* Sources */ = {
+		DB4B88DF29C04D5A0063EED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1B34AA29BE949300F4BDAA /* StackOverflowTestTests.swift in Sources */,
+				DB4B88E829C04D5A0063EED7 /* EnvironmentObjectPracticeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB1B34AB29BE949300F4BDAA /* Sources */ = {
+		DB4B88E929C04D5A0063EED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1B34B429BE949300F4BDAA /* StackOverflowTestUITests.swift in Sources */,
-				DB1B34B629BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift in Sources */,
+				DB4B88F429C04D5A0063EED7 /* EnvironmentObjectPracticeUITestsLaunchTests.swift in Sources */,
+				DB4B88F229C04D5A0063EED7 /* EnvironmentObjectPracticeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DB1B34A729BE949300F4BDAA /* PBXTargetDependency */ = {
+		DB4B88E529C04D5A0063EED7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DB1B349429BE949200F4BDAA /* StackOverflowTest */;
-			targetProxy = DB1B34A629BE949300F4BDAA /* PBXContainerItemProxy */;
+			target = DB4B88D229C04D590063EED7 /* EnvironmentObjectPractice */;
+			targetProxy = DB4B88E429C04D5A0063EED7 /* PBXContainerItemProxy */;
 		};
-		DB1B34B129BE949300F4BDAA /* PBXTargetDependency */ = {
+		DB4B88EF29C04D5A0063EED7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DB1B349429BE949200F4BDAA /* StackOverflowTest */;
-			targetProxy = DB1B34B029BE949300F4BDAA /* PBXContainerItemProxy */;
+			target = DB4B88D229C04D590063EED7 /* EnvironmentObjectPractice */;
+			targetProxy = DB4B88EE29C04D5A0063EED7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DB1B34B729BE949300F4BDAA /* Debug */ = {
+		DB4B88F529C04D5A0063EED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		DB1B34B829BE949300F4BDAA /* Release */ = {
+		DB4B88F629C04D5A0063EED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,14 +413,14 @@
 			};
 			name = Release;
 		};
-		DB1B34BA29BE949300F4BDAA /* Debug */ = {
+		DB4B88F829C04D5A0063EED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StackOverflowTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentObjectPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -438,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,14 +442,14 @@
 			};
 			name = Debug;
 		};
-		DB1B34BB29BE949300F4BDAA /* Release */ = {
+		DB4B88F929C04D5A0063EED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StackOverflowTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentObjectPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -467,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +471,7 @@
 			};
 			name = Release;
 		};
-		DB1B34BD29BE949300F4BDAA /* Debug */ = {
+		DB4B88FB29C04D5A0063EED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,16 +482,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackOverflowTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentObjectPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnvironmentObjectPractice";
 			};
 			name = Debug;
 		};
-		DB1B34BE29BE949300F4BDAA /* Release */ = {
+		DB4B88FC29C04D5A0063EED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -506,16 +502,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackOverflowTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentObjectPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnvironmentObjectPractice";
 			};
 			name = Release;
 		};
-		DB1B34C029BE949300F4BDAA /* Debug */ = {
+		DB4B88FE29C04D5A0063EED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -524,16 +520,16 @@
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPracticeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StackOverflowTest;
+				TEST_TARGET_NAME = EnvironmentObjectPractice;
 			};
 			name = Debug;
 		};
-		DB1B34C129BE949300F4BDAA /* Release */ = {
+		DB4B88FF29C04D5A0063EED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -542,55 +538,55 @@
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.StackOverflowTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitorapp.EnvironmentObjectPracticeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StackOverflowTest;
+				TEST_TARGET_NAME = EnvironmentObjectPractice;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB1B349029BE949200F4BDAA /* Build configuration list for PBXProject "StackOverflowTest" */ = {
+		DB4B88CE29C04D590063EED7 /* Build configuration list for PBXProject "EnvironmentObjectPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB1B34B729BE949300F4BDAA /* Debug */,
-				DB1B34B829BE949300F4BDAA /* Release */,
+				DB4B88F529C04D5A0063EED7 /* Debug */,
+				DB4B88F629C04D5A0063EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB1B34B929BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTest" */ = {
+		DB4B88F729C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB1B34BA29BE949300F4BDAA /* Debug */,
-				DB1B34BB29BE949300F4BDAA /* Release */,
+				DB4B88F829C04D5A0063EED7 /* Debug */,
+				DB4B88F929C04D5A0063EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB1B34BC29BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTestTests" */ = {
+		DB4B88FA29C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPracticeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB1B34BD29BE949300F4BDAA /* Debug */,
-				DB1B34BE29BE949300F4BDAA /* Release */,
+				DB4B88FB29C04D5A0063EED7 /* Debug */,
+				DB4B88FC29C04D5A0063EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB1B34BF29BE949300F4BDAA /* Build configuration list for PBXNativeTarget "StackOverflowTestUITests" */ = {
+		DB4B88FD29C04D5A0063EED7 /* Build configuration list for PBXNativeTarget "EnvironmentObjectPracticeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB1B34C029BE949300F4BDAA /* Debug */,
-				DB1B34C129BE949300F4BDAA /* Release */,
+				DB4B88FE29C04D5A0063EED7 /* Debug */,
+				DB4B88FF29C04D5A0063EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB1B348D29BE949200F4BDAA /* Project object */;
+	rootObject = DB4B88CB29C04D590063EED7 /* Project object */;
 }
