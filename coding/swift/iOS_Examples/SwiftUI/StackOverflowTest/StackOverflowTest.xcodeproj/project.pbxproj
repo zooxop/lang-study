@@ -14,6 +14,7 @@
 		DB1B34AA29BE949300F4BDAA /* StackOverflowTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34A929BE949300F4BDAA /* StackOverflowTestTests.swift */; };
 		DB1B34B429BE949300F4BDAA /* StackOverflowTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34B329BE949300F4BDAA /* StackOverflowTestUITests.swift */; };
 		DB1B34B629BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */; };
+		DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88C429C005E70063EED7 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DB1B34AF29BE949300F4BDAA /* StackOverflowTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B34B329BE949300F4BDAA /* StackOverflowTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestUITests.swift; sourceTree = "<group>"; };
 		DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB4B88C429C005E70063EED7 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				DB1B349A29BE949200F4BDAA /* ContentView.swift */,
 				DB1B349C29BE949300F4BDAA /* Assets.xcassets */,
 				DB1B349E29BE949300F4BDAA /* Preview Content */,
+				DB4B88C429C005E70063EED7 /* ContentView2.swift */,
 			);
 			path = StackOverflowTest;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */,
 				DB1B349B29BE949200F4BDAA /* ContentView.swift in Sources */,
 				DB1B349929BE949200F4BDAA /* StackOverflowTestApp.swift in Sources */,
 			);
