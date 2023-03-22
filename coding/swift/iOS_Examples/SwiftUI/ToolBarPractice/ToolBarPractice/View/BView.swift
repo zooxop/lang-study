@@ -9,11 +9,24 @@ import SwiftUI
 
 struct BView: View {
     @StateObject var coordinator = Coordinator()
+    @State var test: Bool = false
+    @State var text: String = ""
+    
     let product: Product
     var body: some View {
         VStack {
             coordinator.navigationLinkSection()
             Text("BView \(product.name)")
+            
+            Button {
+                test.toggle()
+            } label: {
+                Text("Show Modal")
+            }
+            .sheet(isPresented: $test) {
+                Text("Hello")
+                TextField("omg...", text: $text)
+            }
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
