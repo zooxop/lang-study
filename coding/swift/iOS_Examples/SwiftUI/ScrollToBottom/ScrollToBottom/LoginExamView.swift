@@ -7,22 +7,29 @@
 
 import SwiftUI
 
-struct LoginExamView: View, KeyboardReadable {
+struct LoginExamView: View {
     @Namespace var logInButtonId
+    @Namespace var topId
+    
+    @StateObject var keyboardScroller = KeyboardScroll()
     
     @State var email = ""
     @State var password = ""
     
+    let columns = [
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        
-        ScrollView(.vertical, showsIndicators: false) {
-            ScrollViewReader { proxy in
-                VStack {
-                    Image(systemName: "apple.logo")
+        ScrollViewReader { proxy in
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVGrid(columns: columns) {
+                    Image(systemName: "square.and.arrow.up")
                         .resizable()
                         .scaledToFill()
                         .padding(.horizontal, 70)
                         .padding(.vertical, 30)
+                        .id(topId)
                     
                     HStack {
                         Text("Log in")
@@ -40,11 +47,6 @@ struct LoginExamView: View, KeyboardReadable {
                             .textContentType(.emailAddress)
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { _ in
-                                withAnimation {
-                                    proxy.scrollTo(logInButtonId)
-                                }
-                            }
                             .padding(.horizontal, 20)
                         
                             
@@ -52,11 +54,6 @@ struct LoginExamView: View, KeyboardReadable {
                             .textFieldStyle(.roundedBorder)
                             .textContentType(.password)
                             .autocorrectionDisabled()
-                            .onReceive(keyboardPublisher) { _ in
-                                withAnimation {
-                                    proxy.scrollTo(logInButtonId)
-                                }
-                            }
                             .padding(.horizontal, 20)
                     }
                     .padding(.bottom, 20)
@@ -73,12 +70,35 @@ struct LoginExamView: View, KeyboardReadable {
                         .frame(height: 50)
                         .background(RoundedRectangle(cornerRadius: 10).fill(.green))
                         .buttonStyle(.plain)
-                        .id(logInButtonId)
-                        
-                        Spacer()
+                    }
+                    .id(logInButtonId)
+                }
+            }
+            .onChange(of: keyboardScroller.isKeyboardShow) { newValue in
+                if newValue == true {
+                    withAnimation {
+                        if #available(iOS 16.0, *) {
+                            proxy.scrollTo(logInButtonId, anchor: .top)
+                        } else {
+                            proxy.scrollTo(logInButtonId)
+                        }
+                    }
+                } else {
+                    withAnimation {
+                        if #available(iOS 16.0, *) {
+                            proxy.scrollTo(topId, anchor: .top)
+                        } else {
+                            proxy.scrollTo(topId)
+                        }
                     }
                 }
             }
+        }
+        .onAppear {
+            keyboardScroller.addObservers()
+        }
+        .onDisappear {
+            keyboardScroller.removeObservers()
         }
     }
 }
@@ -86,5 +106,28 @@ struct LoginExamView: View, KeyboardReadable {
 struct LoginExamView_Previews: PreviewProvider {
     static var previews: some View {
         LoginExamView()
+    }
+}
+
+class KeyboardScroll: ObservableObject {
+    
+    @Published public var isKeyboardShow = false
+    
+    func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardUp), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDown), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func removeObservers() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardUp(notification:NSNotification) {
+        isKeyboardShow = true
+    }
+    
+    @objc func keyboardDown(notification: NSNotification) {
+        isKeyboardShow = false
     }
 }
