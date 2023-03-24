@@ -11,7 +11,7 @@ struct LoginExamView: View {
     @Namespace var logInButtonId
     @Namespace var topId
     
-    @StateObject var keyboardScroller = KeyboardScroll()
+    @StateObject var keyboardObserver = KeyboardObserver()
     
     @State var email = ""
     @State var password = ""
@@ -74,7 +74,7 @@ struct LoginExamView: View {
                     .id(logInButtonId)
                 }
             }
-            .onChange(of: keyboardScroller.isKeyboardShow) { newValue in
+            .onChange(of: keyboardObserver.isKeyboardShow) { newValue in
                 if newValue == true {
                     withAnimation {
                         if #available(iOS 16.0, *) {
@@ -95,10 +95,10 @@ struct LoginExamView: View {
             }
         }
         .onAppear {
-            keyboardScroller.addObservers()
+            keyboardObserver.addObservers()
         }
         .onDisappear {
-            keyboardScroller.removeObservers()
+            keyboardObserver.removeObservers()
         }
     }
 }
@@ -109,7 +109,7 @@ struct LoginExamView_Previews: PreviewProvider {
     }
 }
 
-class KeyboardScroll: ObservableObject {
+class KeyboardObserver: ObservableObject {
     
     @Published public var isKeyboardShow = false
     
