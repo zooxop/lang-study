@@ -16,66 +16,61 @@ struct LoginExamView: View {
     @State var email = ""
     @State var password = ""
     
-    let columns = [
-        GridItem(.flexible())
-    ]
-    
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView(.vertical, showsIndicators: false) {
-                LazyVGrid(columns: columns) {
-                    Image(systemName: "square.and.arrow.up")
-                        .resizable()
-                        .scaledToFill()
-                        .padding(.horizontal, 70)
-                        .padding(.vertical, 30)
-                        .id(topId)
-                    
-                    HStack {
-                        Text("Log in")
-                            .font(.largeTitle)
-                            .bold()
-                            .padding(.leading, 15)
-                            
-                        Spacer()
-                    }
-                    
-                    VStack(spacing: 10) {
-                            
-                        TextField("email", text: $email)
-                            .textFieldStyle(.roundedBorder)
-                            .textContentType(.emailAddress)
-                            .autocapitalization(.none)
-                            .autocorrectionDisabled()
-                            .padding(.horizontal, 20)
+                Image(systemName: "apple.logo")
+                    .resizable()
+                    .scaledToFill()
+                    .padding(.horizontal, 70)
+                    .padding(.vertical, 30)
+                    .id(topId)
+                
+                HStack {
+                    Text("Log in")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.leading, 15)
                         
-                            
-                        SecureField("password", text: $password)
-                            .textFieldStyle(.roundedBorder)
-                            .textContentType(.password)
-                            .autocorrectionDisabled()
-                            .padding(.horizontal, 20)
-                    }
-                    .padding(.bottom, 20)
-                    // MARK: Log in button
-                    VStack {
-                        Button {
-                            // action
-                        } label: {
-                            Text("Sign in")
-                                .foregroundColor(.black)
-                                .bold()
-                        }
-                        .frame(maxWidth: 300)
-                        .frame(height: 50)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(.green))
-                        .buttonStyle(.plain)
-                    }
-                    .id(logInButtonId)
+                    Spacer()
                 }
+                
+                VStack(spacing: 10) {
+                        
+                    TextField("email", text: $email)
+                        .textFieldStyle(.roundedBorder)
+                        .textContentType(.emailAddress)
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                        .padding(.horizontal, 20)
+                    
+                        
+                    SecureField("password", text: $password)
+                        .textFieldStyle(.roundedBorder)
+                        .textContentType(.password)
+                        .autocorrectionDisabled()
+                        .padding(.horizontal, 20)
+                }
+                .padding(.bottom, 20)
+                // MARK: Log in button
+                VStack {
+                    Button {
+                        // action
+                    } label: {
+                        Text("Sign in")
+                            .foregroundColor(.black)
+                            .bold()
+                    }
+                    .frame(maxWidth: 300)
+                    .frame(height: 50)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(.green))
+                    .buttonStyle(.plain)
+                }
+                .id(logInButtonId)
+                
             }
-            .onChange(of: keyboardObserver.isKeyboardShow) { newValue in
-                if newValue == true {
+            .onChange(of: keyboardObserver.isKeyboardShow) { isShowKeyboard in
+                if isShowKeyboard == true {
                     withAnimation {
                         if #available(iOS 16.0, *) {
                             proxy.scrollTo(logInButtonId, anchor: .top)
