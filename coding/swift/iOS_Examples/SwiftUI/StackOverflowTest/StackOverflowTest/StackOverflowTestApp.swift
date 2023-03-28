@@ -11,7 +11,8 @@ import SwiftUI
 struct StackOverflowTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            CardSlideView()
         }
     }
 }

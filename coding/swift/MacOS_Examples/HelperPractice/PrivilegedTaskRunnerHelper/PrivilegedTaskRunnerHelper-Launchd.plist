@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   PrivilegedTaskRunnerHelper-Launchd.plist
+   HelperPractice
+
+   Created by 문철현 on 2023/03/27.
+   Copyright (c) 2023 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.chmun.PrivilegedTaskRunnerHelper</string>
+    <key>MachServices</key>
+    <dict>
+        <key>com.chmun.PrivilegedTaskRunnerHelper</key>
+        <true/>
+    </dict>
+    <key>helper tool bundle</key>
+    <true/>
+</dict>
+</plist>
