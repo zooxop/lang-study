@@ -16,6 +16,7 @@
 		DB1B34B629BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */; };
 		DB2B24AB29D2CF1600994AC0 /* CardSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B24AA29D2CF1600994AC0 /* CardSlideView.swift */; };
 		DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88C429C005E70063EED7 /* ContentView2.swift */; };
+		DBC2687A29DBC47700594E39 /* CrashSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC2687929DBC47700594E39 /* CrashSheets.swift */; };
 		DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDCCD529C134A10033BE8B /* ToggleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		DB1B34B529BE949300F4BDAA /* StackOverflowTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB2B24AA29D2CF1600994AC0 /* CardSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSlideView.swift; sourceTree = "<group>"; };
 		DB4B88C429C005E70063EED7 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		DBC2687929DBC47700594E39 /* CrashSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashSheets.swift; sourceTree = "<group>"; };
 		DBEDCCD529C134A10033BE8B /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				DB4B88C429C005E70063EED7 /* ContentView2.swift */,
 				DBEDCCD529C134A10033BE8B /* ToggleView.swift */,
 				DB2B24AA29D2CF1600994AC0 /* CardSlideView.swift */,
+				DBC2687929DBC47700594E39 /* CrashSheets.swift */,
 			);
 			path = StackOverflowTest;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */,
+				DBC2687A29DBC47700594E39 /* CrashSheets.swift in Sources */,
 				DB2B24AB29D2CF1600994AC0 /* CardSlideView.swift in Sources */,
 				DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */,
 				DB1B349B29BE949200F4BDAA /* ContentView.swift in Sources */,

@@ -7,12 +7,19 @@
 
 import SwiftUI
 
+class Benef: ObservableObject {
+    @Published var val: String = ""
+}
+
 @main
 struct StackOverflowTestApp: App {
+    @StateObject var beenf = Benef()
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            CardSlideView()
+//            CardSlideView()
+            SheetView(testt: $beenf.val)
         }
     }
 }
