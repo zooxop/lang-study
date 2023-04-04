@@ -13,13 +13,15 @@ class Benef: ObservableObject {
 
 @main
 struct StackOverflowTestApp: App {
-    @StateObject var beenf = Benef()
+    //@StateObject var beenf = Benef()
+    @State var benef = ""
     
     var body: some Scene {
         WindowGroup {
 //            ContentView()
 //            CardSlideView()
-            SheetView(testt: $beenf.val)
+//            SheetView(testt: $benef)
+            StateObjectTestView()
         }
     }
 }

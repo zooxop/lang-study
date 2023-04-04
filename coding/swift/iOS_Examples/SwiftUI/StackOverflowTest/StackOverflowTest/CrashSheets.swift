@@ -56,12 +56,12 @@ struct FirstSheetiew: View {
         VStack {
             Text("First Sheet")
             Button("Dismiss") {
-                //action()  <-- 👀 remove
+                action()//  <-- 👀 remove
                 dismiss()
             }
         }
-        .onDisappear {  //<-- 👀 add
-            action()
-        }
+//        .onDisappear {  //<-- 👀 add
+//            action()
+//        }
     }
 }
