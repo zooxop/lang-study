@@ -21,7 +21,8 @@ struct StackOverflowTestApp: App {
 //            ContentView()
 //            CardSlideView()
 //            SheetView(testt: $benef)
-            StateObjectTestView()
+//            StateObjectTestView()
+            ImagePixelView()
         }
     }
 }
