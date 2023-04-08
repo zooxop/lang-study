@@ -13,8 +13,8 @@ public class KoreanSubscriber implements Subscriber {
     }
 
     @Override
-    public void update(int value) {
-        this.value = value;
+    public void update() {
+        this.value = landCh.getPrice();  // pull 방식
         System.out.println(name + "님 가격이 " + value + "원으로 변경되었습니다.");
     }
 }

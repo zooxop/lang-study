@@ -12,6 +12,10 @@ public class LandCh implements Subject {
         subscribers = new ArrayList<>();
     }
 
+    public int getPrice() {
+        return price;
+    }
+
     public void setPrice(int price) {
         this.price = price;
         this.notifySubscriber();
@@ -29,12 +33,6 @@ public class LandCh implements Subject {
 
     @Override
     public void notifySubscriber() {
-//        for(Subscriber subscriber : subscribers) {
-//            subscriber.update(price);
-//        }
-
-        subscribers.forEach(s ->
-                s.update(price)
-        );
+        subscribers.forEach(s -> s.update());
     }
 }
