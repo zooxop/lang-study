@@ -23,6 +23,7 @@ struct StackOverflowTestApp: App {
 //            SheetView(testt: $benef)
 //            StateObjectTestView()
             ImagePixelView()
+//            NaviStackCrash()
         }
     }
 }
