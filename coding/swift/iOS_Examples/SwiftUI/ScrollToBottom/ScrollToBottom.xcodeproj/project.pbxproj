@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2138C629E9060300668E52 /* FixedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2138C529E9060300668E52 /* FixedImageView.swift */; };
 		DB24F284297599D40034754F /* LoginExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24F283297599D40034754F /* LoginExamView.swift */; };
 		DB668B5B297DB0BE00919877 /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */; };
 		DB68951329727C7C006BE2FE /* NameSpaceExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68951229727C7C006BE2FE /* NameSpaceExam.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		DB1FD3032985791900855C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB2138C529E9060300668E52 /* FixedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedImageView.swift; sourceTree = "<group>"; };
 		DB24F283297599D40034754F /* LoginExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExamView.swift; sourceTree = "<group>"; };
 		DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
 		DB68951229727C7C006BE2FE /* NameSpaceExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceExam.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				DB24F283297599D40034754F /* LoginExamView.swift */,
 				DB668B5A297DB0BE00919877 /* KeyboardReadable.swift */,
 				DBCB216B29802B1700802CF3 /* TestView.swift */,
+				DB2138C529E9060300668E52 /* FixedImageView.swift */,
 			);
 			path = ScrollToBottom;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB24F284297599D40034754F /* LoginExamView.swift in Sources */,
+				DB2138C629E9060300668E52 /* FixedImageView.swift in Sources */,
 				DB8D5F6329705BEA000BD278 /* ContentView.swift in Sources */,
 				DB668B5B297DB0BE00919877 /* KeyboardReadable.swift in Sources */,
 				DBCB216C29802B1700802CF3 /* TestView.swift in Sources */,

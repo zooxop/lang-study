@@ -32,6 +32,7 @@ struct ContentView: View {
                         result = "False"
                     }
                     
+                    _ = testWhileReturn()
                 }
             } label: {
                 Text("Go Go")
@@ -48,7 +49,21 @@ struct ContentView: View {
         test.toggle()
         return test
     }
-   
+    
+    func testWhileReturn() -> Bool {
+        var count = 0
+        
+        while count < 50 {
+            count += 1
+            
+            if count == 5 {
+                return false
+            }
+            print(count)
+        }
+        
+        return true
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

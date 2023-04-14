@@ -12,7 +12,8 @@ struct ScrollToBottomApp: App {
     var body: some Scene {
         WindowGroup {
             // ContentView()
-            LoginExamView()
+//            LoginExamView()
+            FixedImageView()
 //            TestView()
         }
     }
