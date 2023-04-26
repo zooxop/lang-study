@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+class UserSetting: ObservableObject {
+    @Published var score = 0
+}
+
 struct ContentView: View {
     @ObservedObject var userSetting = UserSetting()
         

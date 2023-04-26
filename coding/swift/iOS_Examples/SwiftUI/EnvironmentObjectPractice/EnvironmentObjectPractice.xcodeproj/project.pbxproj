@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB33723129F8C5CA00947EAE /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB33723029F8C5CA00947EAE /* ScoreView.swift */; };
 		DB4B88D729C04D590063EED7 /* EnvironmentObjectPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88D629C04D590063EED7 /* EnvironmentObjectPracticeApp.swift */; };
 		DB4B88D929C04D590063EED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B88D829C04D590063EED7 /* ContentView.swift */; };
 		DB4B88DB29C04D5A0063EED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4B88DA29C04D5A0063EED7 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB33723029F8C5CA00947EAE /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		DB4B88D329C04D590063EED7 /* EnvironmentObjectPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentObjectPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4B88D629C04D590063EED7 /* EnvironmentObjectPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectPracticeApp.swift; sourceTree = "<group>"; };
 		DB4B88D829C04D590063EED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				DB4B88DA29C04D5A0063EED7 /* Assets.xcassets */,
 				DB4B88DC29C04D5A0063EED7 /* Preview Content */,
 				DB4B890029C04D780063EED7 /* MyScoreView.swift */,
+				DB33723029F8C5CA00947EAE /* ScoreView.swift */,
 			);
 			path = EnvironmentObjectPractice;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4B890129C04D780063EED7 /* MyScoreView.swift in Sources */,
+				DB33723129F8C5CA00947EAE /* ScoreView.swift in Sources */,
 				DB4B88D929C04D590063EED7 /* ContentView.swift in Sources */,
 				DB4B88D729C04D590063EED7 /* EnvironmentObjectPracticeApp.swift in Sources */,
 			);
