@@ -20,6 +20,18 @@ struct ContentView: View {
 struct MyView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    var backButton : some View {
+        Button {
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            HStack {
+                Image(systemName: "chevron.left") // BackButton Image
+                    .aspectRatio(contentMode: .fit)
+                Text("뒤뒤뒤")
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             Text("MyView")
@@ -31,6 +43,7 @@ struct MyView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: backButton)
     }
 }
 
