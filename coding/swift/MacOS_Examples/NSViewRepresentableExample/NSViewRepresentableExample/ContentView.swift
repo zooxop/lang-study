@@ -34,8 +34,16 @@ struct TableViewTest: NSViewRepresentable {
         tableView.delegate = context.coordinator
         tableView.dataSource = context.coordinator
         
-        tableView.rowHeight = 30.0
-        tableView.gridStyleMask = [.solidVerticalGridLineMask, .solidHorizontalGridLineMask]
+        tableView.gridStyleMask = [.solidVerticalGridLineMask]
+        tableView.style = .fullWidth
+        tableView.autoresizesSubviews = true
+        tableView.columnAutoresizingStyle = .uniformColumnAutoresizingStyle
+        tableView.usesAlternatingRowBackgroundColors = true
+        
+        tableView.allowsEmptySelection = true
+        tableView.allowsTypeSelect = true
+        tableView.allowsMultipleSelection = false
+        tableView.allowsColumnSelection = false
         
         let nameColumn = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "Name"))
         nameColumn.title = "Name"
@@ -45,9 +53,15 @@ struct TableViewTest: NSViewRepresentable {
         ageColumn.title = "Age"
         tableView.addTableColumn(ageColumn)
         
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        tableView.tableColumns.forEach { (column) in
+            column.headerCell.attributedStringValue = NSAttributedString(string: column.title, attributes: [NSAttributedString.Key.font: NSFont.systemFont(ofSize: 14, weight: .semibold), NSAttributedString.Key.paragraphStyle: paragraph])
+        }
         
         tableContainer.documentView = tableView
         tableContainer.hasVerticalScroller = true
+        tableContainer.autohidesScrollers = true
         
         return tableContainer
     }
@@ -67,18 +81,33 @@ extension TableViewTest {
     final class Coordinator: NSObject, NSTableViewDelegate, NSTableViewDataSource {
         
         func numberOfRows(in tableView: NSTableView) -> Int {
-          return 15
+            return 15
         }
         
-        func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+            let text = NSTextField()
             switch tableColumn?.identifier.rawValue {
             case "Name":
-                return "Person \(row)"
+                text.stringValue = "Person \(row)"
             case "Age":
-                return "\(25 + row)"
+                text.stringValue = "\(25 + row)"
             default:
-                return nil
+                break
             }
+            text.alignment = .center
+            text.drawsBackground = false
+            text.isEditable = false
+            text.isBordered = false
+            text.font = NSFont.systemFont(ofSize: 13, weight: .regular)
+            
+            let cell = NSTableCellView()
+            cell.addSubview(text)
+            
+            text.translatesAutoresizingMaskIntoConstraints = false
+            cell.addConstraint(NSLayoutConstraint(item: text, attribute: .centerY, relatedBy: .equal, toItem: cell, attribute: .centerY, multiplier: 1, constant: 0))
+            cell.addConstraint(NSLayoutConstraint(item: text, attribute: .left, relatedBy: .equal, toItem: cell, attribute: .left, multiplier: 1, constant: 0))
+            cell.addConstraint(NSLayoutConstraint(item: text, attribute: .right, relatedBy: .equal, toItem: cell, attribute: .right, multiplier: 1, constant: 0))
+            return cell
         }
         
         func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTableColumn?, row: Int) -> Bool {
@@ -86,6 +115,10 @@ extension TableViewTest {
         }
         
         func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
+        }
+        
+        func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+            return 30.0
         }
     }
 }
