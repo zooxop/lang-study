@@ -7,6 +7,7 @@
 
 import Cocoa
 
+/// 참고용: NSTableView auto-layout, 기타 설정 등
 class SidebarViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     
     var initialized = false

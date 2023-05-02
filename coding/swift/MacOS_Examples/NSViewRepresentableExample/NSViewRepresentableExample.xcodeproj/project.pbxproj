@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3EAD0A2A00ACB100328E08 /* CodeBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3EAD092A00ACB100328E08 /* CodeBackup.swift */; };
 		DBA9381729FE4ACF00ED43BE /* NSViewRepresentableExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9381629FE4ACF00ED43BE /* NSViewRepresentableExampleApp.swift */; };
 		DBA9381929FE4ACF00ED43BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9381829FE4ACF00ED43BE /* ContentView.swift */; };
 		DBA9381B29FE4AD000ED43BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA9381A29FE4AD000ED43BE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB3EAD092A00ACB100328E08 /* CodeBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBackup.swift; sourceTree = "<group>"; };
 		DBA9381329FE4ACF00ED43BE /* NSViewRepresentableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSViewRepresentableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA9381629FE4ACF00ED43BE /* NSViewRepresentableExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewRepresentableExampleApp.swift; sourceTree = "<group>"; };
 		DBA9381829FE4ACF00ED43BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				DBA9381C29FE4AD000ED43BE /* Preview Content */,
 				DBA9382529FE603400ED43BE /* TestCellView.swift */,
 				DBA9382729FE61A200ED43BE /* FromGistView.swift */,
+				DB3EAD092A00ACB100328E08 /* CodeBackup.swift */,
 			);
 			path = NSViewRepresentableExample;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA9381929FE4ACF00ED43BE /* ContentView.swift in Sources */,
+				DB3EAD0A2A00ACB100328E08 /* CodeBackup.swift in Sources */,
 				DBA9381729FE4ACF00ED43BE /* NSViewRepresentableExampleApp.swift in Sources */,
 				DBA9382629FE603400ED43BE /* TestCellView.swift in Sources */,
 				DBA9382829FE61A200ED43BE /* FromGistView.swift in Sources */,
