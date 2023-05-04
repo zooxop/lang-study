@@ -12,6 +12,7 @@
 		DB921A6629D7F9E000F98226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB921A6529D7F9E000F98226 /* Assets.xcassets */; };
 		DB921A6929D7F9E000F98226 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB921A6829D7F9E000F98226 /* Preview Assets.xcassets */; };
 		DB921A7129D7F9FC00F98226 /* TextOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB921A7029D7F9FC00F98226 /* TextOffset.swift */; };
+		DBC9ABBA2A032C3900CE3396 /* ProgressViewAnimationGlitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9ABB92A032C3900CE3396 /* ProgressViewAnimationGlitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DB921A6829D7F9E000F98226 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB921A6A29D7F9E000F98226 /* StackoverflowExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StackoverflowExample.entitlements; sourceTree = "<group>"; };
 		DB921A7029D7F9FC00F98226 /* TextOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOffset.swift; sourceTree = "<group>"; };
+		DBC9ABB92A032C3900CE3396 /* ProgressViewAnimationGlitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewAnimationGlitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DB921A6A29D7F9E000F98226 /* StackoverflowExample.entitlements */,
 				DB921A6729D7F9E000F98226 /* Preview Content */,
 				DB921A7029D7F9FC00F98226 /* TextOffset.swift */,
+				DBC9ABB92A032C3900CE3396 /* ProgressViewAnimationGlitch.swift */,
 			);
 			path = StackoverflowExample;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB921A6429D7F9DF00F98226 /* ContentView.swift in Sources */,
+				DBC9ABBA2A032C3900CE3396 /* ProgressViewAnimationGlitch.swift in Sources */,
 				DB921A6229D7F9DF00F98226 /* StackoverflowExampleApp.swift in Sources */,
 				DB921A7129D7F9FC00F98226 /* TextOffset.swift in Sources */,
 			);

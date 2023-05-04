@@ -20,6 +20,7 @@
 		DBC2687A29DBC47700594E39 /* CrashSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC2687929DBC47700594E39 /* CrashSheets.swift */; };
 		DBC2687C29DBE5D500594E39 /* StateObjectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC2687B29DBE5D500594E39 /* StateObjectTestView.swift */; };
 		DBC2687E29DCE58900594E39 /* ImagePixelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC2687D29DCE58900594E39 /* ImagePixelView.swift */; };
+		DBC9ABB82A0329BF00CE3396 /* ProgressViewAnimationGlitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9ABB72A0329BF00CE3396 /* ProgressViewAnimationGlitch.swift */; };
 		DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDCCD529C134A10033BE8B /* ToggleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		DBC2687929DBC47700594E39 /* CrashSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashSheets.swift; sourceTree = "<group>"; };
 		DBC2687B29DBE5D500594E39 /* StateObjectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectTestView.swift; sourceTree = "<group>"; };
 		DBC2687D29DCE58900594E39 /* ImagePixelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePixelView.swift; sourceTree = "<group>"; };
+		DBC9ABB72A0329BF00CE3396 /* ProgressViewAnimationGlitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewAnimationGlitch.swift; sourceTree = "<group>"; };
 		DBEDCCD529C134A10033BE8B /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				DBC2687B29DBE5D500594E39 /* StateObjectTestView.swift */,
 				DBC2687D29DCE58900594E39 /* ImagePixelView.swift */,
 				DB08AAC429E3C30900CA1F7F /* NaviStackCrash.swift */,
+				DBC9ABB72A0329BF00CE3396 /* ProgressViewAnimationGlitch.swift */,
 			);
 			path = StackOverflowTest;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				DBEDCCD629C134A10033BE8B /* ToggleView.swift in Sources */,
 				DBC2687A29DBC47700594E39 /* CrashSheets.swift in Sources */,
 				DB08AAC529E3C30900CA1F7F /* NaviStackCrash.swift in Sources */,
+				DBC9ABB82A0329BF00CE3396 /* ProgressViewAnimationGlitch.swift in Sources */,
 				DB2B24AB29D2CF1600994AC0 /* CardSlideView.swift in Sources */,
 				DB4B88C529C005E70063EED7 /* ContentView2.swift in Sources */,
 				DBC2687C29DBE5D500594E39 /* StateObjectTestView.swift in Sources */,

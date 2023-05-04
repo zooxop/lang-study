@@ -12,7 +12,8 @@ struct StackoverflowExampleApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            TextOffset()
+//            TextOffset()
+            ProgressViewAnimationGlitch()
         }
     }
 }

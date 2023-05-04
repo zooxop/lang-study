@@ -22,8 +22,9 @@ struct StackOverflowTestApp: App {
 //            CardSlideView()
 //            SheetView(testt: $benef)
 //            StateObjectTestView()
-            ImagePixelView()
+//            ImagePixelView()
 //            NaviStackCrash()
+            ProgressViewAnimationGlitch()
         }
     }
 }
