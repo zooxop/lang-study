@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB15550E2A1B02FB00BF561E /* CertificateInstallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15550D2A1B02FB00BF561E /* CertificateInstallerApp.swift */; };
+		DB1555102A1B02FB00BF561E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15550F2A1B02FB00BF561E /* ContentView.swift */; };
+		DB1555122A1B02FC00BF561E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1555112A1B02FC00BF561E /* Assets.xcassets */; };
+		DB1555152A1B02FC00BF561E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1555142A1B02FC00BF561E /* Preview Assets.xcassets */; };
+		DB15551E2A1B043A00BF561E /* CertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15551D2A1B043A00BF561E /* CertManager.swift */; };
+		DB1555212A1B048900BF561E /* FileIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1555202A1B048900BF561E /* FileIOManager.swift */; };
+		DB1555262A1B090200BF561E /* cert.crt in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB1555232A1B08DA00BF561E /* cert.crt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB1555252A1B08F000BF561E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/External;
+			dstSubfolderSpec = 1;
+			files = (
+				DB1555262A1B090200BF561E /* cert.crt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB15553B2A1B270D00BF561E /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB15550A2A1B02FB00BF561E /* CertificateInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CertificateInstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB15550D2A1B02FB00BF561E /* CertificateInstallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateInstallerApp.swift; sourceTree = "<group>"; };
+		DB15550F2A1B02FB00BF561E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB1555112A1B02FC00BF561E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1555142A1B02FC00BF561E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB1555162A1B02FC00BF561E /* CertificateInstaller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CertificateInstaller.entitlements; sourceTree = "<group>"; };
+		DB15551D2A1B043A00BF561E /* CertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertManager.swift; sourceTree = "<group>"; };
+		DB1555202A1B048900BF561E /* FileIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOManager.swift; sourceTree = "<group>"; };
+		DB1555232A1B08DA00BF561E /* cert.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cert.crt; sourceTree = "<group>"; };
+		DB15552E2A1B270D00BF561E /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		DB1555312A1B270D00BF561E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DB1555332A1B270D00BF561E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1555342A1B270D00BF561E /* Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test.entitlements; sourceTree = "<group>"; };
+		DB15553C2A1B276600BF561E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1555072A1B02FB00BF561E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1555012A1B02FB00BF561E = {
+			isa = PBXGroup;
+			children = (
+				DB15550C2A1B02FB00BF561E /* CertificateInstaller */,
+				DB1555302A1B270D00BF561E /* Test */,
+				DB15552D2A1B270D00BF561E /* Frameworks */,
+				DB15550B2A1B02FB00BF561E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB15550B2A1B02FB00BF561E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB15550A2A1B02FB00BF561E /* CertificateInstaller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB15550C2A1B02FB00BF561E /* CertificateInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				DB15553C2A1B276600BF561E /* Info.plist */,
+				DB1555272A1B094C00BF561E /* View */,
+				DB1555222A1B086800BF561E /* Cert */,
+				DB15551C2A1B042E00BF561E /* Util */,
+				DB15550D2A1B02FB00BF561E /* CertificateInstallerApp.swift */,
+				DB1555112A1B02FC00BF561E /* Assets.xcassets */,
+				DB1555162A1B02FC00BF561E /* CertificateInstaller.entitlements */,
+				DB1555132A1B02FC00BF561E /* Preview Content */,
+			);
+			path = CertificateInstaller;
+			sourceTree = "<group>";
+		};
+		DB1555132A1B02FC00BF561E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB1555142A1B02FC00BF561E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB15551C2A1B042E00BF561E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DB15551F2A1B047F00BF561E /* Static */,
+				DB15551D2A1B043A00BF561E /* CertManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DB15551F2A1B047F00BF561E /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				DB1555202A1B048900BF561E /* FileIOManager.swift */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		DB1555222A1B086800BF561E /* Cert */ = {
+			isa = PBXGroup;
+			children = (
+				DB1555232A1B08DA00BF561E /* cert.crt */,
+			);
+			path = Cert;
+			sourceTree = "<group>";
+		};
+		DB1555272A1B094C00BF561E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB15550F2A1B02FB00BF561E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB15552D2A1B270D00BF561E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB15552E2A1B270D00BF561E /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB1555302A1B270D00BF561E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DB1555312A1B270D00BF561E /* main.swift */,
+				DB1555332A1B270D00BF561E /* Info.plist */,
+				DB1555342A1B270D00BF561E /* Test.entitlements */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1555092A1B02FB00BF561E /* CertificateInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1555192A1B02FC00BF561E /* Build configuration list for PBXNativeTarget "CertificateInstaller" */;
+			buildPhases = (
+				DB1555062A1B02FB00BF561E /* Sources */,
+				DB1555072A1B02FB00BF561E /* Frameworks */,
+				DB1555082A1B02FB00BF561E /* Resources */,
+				DB1555252A1B08F000BF561E /* CopyFiles */,
+				DB15553B2A1B270D00BF561E /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CertificateInstaller;
+			productName = CertificateInstaller;
+			productReference = DB15550A2A1B02FB00BF561E /* CertificateInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1555022A1B02FB00BF561E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DB1555092A1B02FB00BF561E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = DB1555052A1B02FB00BF561E /* Build configuration list for PBXProject "CertificateInstaller" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1555012A1B02FB00BF561E;
+			productRefGroup = DB15550B2A1B02FB00BF561E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1555092A1B02FB00BF561E /* CertificateInstaller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1555082A1B02FB00BF561E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1555152A1B02FC00BF561E /* Preview Assets.xcassets in Resources */,
+				DB1555122A1B02FC00BF561E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1555062A1B02FB00BF561E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1555102A1B02FB00BF561E /* ContentView.swift in Sources */,
+				DB1555212A1B048900BF561E /* FileIOManager.swift in Sources */,
+				DB15550E2A1B02FB00BF561E /* CertificateInstallerApp.swift in Sources */,
+				DB15551E2A1B043A00BF561E /* CertManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB1555172A1B02FC00BF561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB1555182A1B02FC00BF561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DB15551A2A1B02FC00BF561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CertificateInstaller/CertificateInstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CertificateInstaller/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CertificateInstaller/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.chmun.CertificateInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB15551B2A1B02FC00BF561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CertificateInstaller/CertificateInstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CertificateInstaller/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CertificateInstaller/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.chmun.CertificateInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1555052A1B02FB00BF561E /* Build configuration list for PBXProject "CertificateInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1555172A1B02FC00BF561E /* Debug */,
+				DB1555182A1B02FC00BF561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1555192A1B02FC00BF561E /* Build configuration list for PBXNativeTarget "CertificateInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB15551A2A1B02FC00BF561E /* Debug */,
+				DB15551B2A1B02FC00BF561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1555022A1B02FB00BF561E /* Project object */;
+}
