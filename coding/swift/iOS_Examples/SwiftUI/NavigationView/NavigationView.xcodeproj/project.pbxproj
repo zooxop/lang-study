@@ -11,6 +11,7 @@
 		DB0EE8582962B8D2008A63A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EE8572962B8D2008A63A9 /* ContentView.swift */; };
 		DB0EE85A2962B8D3008A63A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0EE8592962B8D3008A63A9 /* Assets.xcassets */; };
 		DB0EE85D2962B8D3008A63A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0EE85C2962B8D3008A63A9 /* Preview Assets.xcassets */; };
+		DB736E562A204B4A000F5114 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E552A204B4A000F5114 /* ToolBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB0EE8572962B8D2008A63A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB0EE8592962B8D3008A63A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB0EE85C2962B8D3008A63A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB736E552A204B4A000F5114 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				DB0EE8572962B8D2008A63A9 /* ContentView.swift */,
 				DB0EE8592962B8D3008A63A9 /* Assets.xcassets */,
 				DB0EE85B2962B8D3008A63A9 /* Preview Content */,
+				DB736E552A204B4A000F5114 /* ToolBarView.swift */,
 			);
 			path = NavigationView;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB736E562A204B4A000F5114 /* ToolBarView.swift in Sources */,
 				DB0EE8582962B8D2008A63A9 /* ContentView.swift in Sources */,
 				DB0EE8562962B8D2008A63A9 /* NavigationViewApp.swift in Sources */,
 			);
