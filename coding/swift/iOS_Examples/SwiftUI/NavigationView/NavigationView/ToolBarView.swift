@@ -10,21 +10,22 @@ import SwiftUI
 struct ToolBarView: View {
     var body: some View {
         NavigationView {
-            Text("My app")
+            ZStack {
+                Text("My app")
+                Color.gray.ignoresSafeArea()
+            }
             .toolbar {
                 ToolbarItemGroup(placement: .navigation) {
                     Image(systemName: "person")
                     Spacer()
                         .frame(width: .infinity)
-                    VStack(alignment: .trailing) {
-                        HStack {
-                            Image(systemName: "ellipsis")
-                            Divider()
-                            Image(systemName: "trash")
-                                .frame(width: 32, height: 32)
-                                .background(Color.blue)
-                                .mask(Circle())
-                        }
+                    HStack {
+                        Image(systemName: "ellipsis")
+                        Divider()
+                        Image(systemName: "trash")
+                            .frame(width: 32, height: 32)
+                            .background(Color.blue)
+                            .mask(Circle())
                     }
                 }
             }
