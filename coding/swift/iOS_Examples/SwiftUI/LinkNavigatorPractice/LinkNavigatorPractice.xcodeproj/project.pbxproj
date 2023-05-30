@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB736E652A256B16000F5114 /* LinkNavigatorPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E642A256B16000F5114 /* LinkNavigatorPracticeApp.swift */; };
+		DB736E672A256B16000F5114 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E662A256B16000F5114 /* ContentView.swift */; };
+		DB736E692A256B17000F5114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB736E682A256B17000F5114 /* Assets.xcassets */; };
+		DB736E6C2A256B17000F5114 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB736E6B2A256B17000F5114 /* Preview Assets.xcassets */; };
+		DB736E742A256BAA000F5114 /* LinkNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = DB736E732A256BAA000F5114 /* LinkNavigator */; };
+		DB736E762A256C99000F5114 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E752A256C99000F5114 /* AppDependency.swift */; };
+		DB736E792A256CDB000F5114 /* AppRouterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E782A256CDB000F5114 /* AppRouterGroup.swift */; };
+		DB736E7B2A256D9B000F5114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E7A2A256D9B000F5114 /* AppDelegate.swift */; };
+		DB736E7E2A256F14000F5114 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E7D2A256F14000F5114 /* HomeView.swift */; };
+		DB736E812A256F73000F5114 /* HomeRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E802A256F73000F5114 /* HomeRouteBuilder.swift */; };
+		DB736E832A25709C000F5114 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E822A25709C000F5114 /* NextView.swift */; };
+		DB736E862A25711B000F5114 /* NextRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E852A25711B000F5114 /* NextRouteBuilder.swift */; };
+		DB736E882A257248000F5114 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E872A257248000F5114 /* NextViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB736E612A256B16000F5114 /* LinkNavigatorPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkNavigatorPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB736E642A256B16000F5114 /* LinkNavigatorPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkNavigatorPracticeApp.swift; sourceTree = "<group>"; };
+		DB736E662A256B16000F5114 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB736E682A256B17000F5114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB736E6B2A256B17000F5114 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB736E752A256C99000F5114 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		DB736E782A256CDB000F5114 /* AppRouterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterGroup.swift; sourceTree = "<group>"; };
+		DB736E7A2A256D9B000F5114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB736E7D2A256F14000F5114 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DB736E802A256F73000F5114 /* HomeRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouteBuilder.swift; sourceTree = "<group>"; };
+		DB736E822A25709C000F5114 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		DB736E852A25711B000F5114 /* NextRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRouteBuilder.swift; sourceTree = "<group>"; };
+		DB736E872A257248000F5114 /* NextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB736E5E2A256B16000F5114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB736E742A256BAA000F5114 /* LinkNavigator in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB736E582A256B16000F5114 = {
+			isa = PBXGroup;
+			children = (
+				DB736E632A256B16000F5114 /* LinkNavigatorPractice */,
+				DB736E622A256B16000F5114 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB736E622A256B16000F5114 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E612A256B16000F5114 /* LinkNavigatorPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB736E632A256B16000F5114 /* LinkNavigatorPractice */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E7C2A256F09000F5114 /* Views */,
+				DB736E772A256CC6000F5114 /* LinkNavigatorSettings */,
+				DB736E642A256B16000F5114 /* LinkNavigatorPracticeApp.swift */,
+				DB736E662A256B16000F5114 /* ContentView.swift */,
+				DB736E682A256B17000F5114 /* Assets.xcassets */,
+				DB736E6A2A256B17000F5114 /* Preview Content */,
+			);
+			path = LinkNavigatorPractice;
+			sourceTree = "<group>";
+		};
+		DB736E6A2A256B17000F5114 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E6B2A256B17000F5114 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB736E772A256CC6000F5114 /* LinkNavigatorSettings */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E752A256C99000F5114 /* AppDependency.swift */,
+				DB736E782A256CDB000F5114 /* AppRouterGroup.swift */,
+				DB736E7A2A256D9B000F5114 /* AppDelegate.swift */,
+			);
+			path = LinkNavigatorSettings;
+			sourceTree = "<group>";
+		};
+		DB736E7C2A256F09000F5114 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E842A25709F000F5114 /* Next */,
+				DB736E7F2A256F64000F5114 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB736E7F2A256F64000F5114 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E7D2A256F14000F5114 /* HomeView.swift */,
+				DB736E802A256F73000F5114 /* HomeRouteBuilder.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DB736E842A25709F000F5114 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E822A25709C000F5114 /* NextView.swift */,
+				DB736E852A25711B000F5114 /* NextRouteBuilder.swift */,
+				DB736E872A257248000F5114 /* NextViewModel.swift */,
+			);
+			path = Next;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB736E602A256B16000F5114 /* LinkNavigatorPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB736E6F2A256B17000F5114 /* Build configuration list for PBXNativeTarget "LinkNavigatorPractice" */;
+			buildPhases = (
+				DB736E5D2A256B16000F5114 /* Sources */,
+				DB736E5E2A256B16000F5114 /* Frameworks */,
+				DB736E5F2A256B16000F5114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkNavigatorPractice;
+			packageProductDependencies = (
+				DB736E732A256BAA000F5114 /* LinkNavigator */,
+			);
+			productName = LinkNavigatorPractice;
+			productReference = DB736E612A256B16000F5114 /* LinkNavigatorPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB736E592A256B16000F5114 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DB736E602A256B16000F5114 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = DB736E5C2A256B16000F5114 /* Build configuration list for PBXProject "LinkNavigatorPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB736E582A256B16000F5114;
+			packageReferences = (
+				DB736E722A256BAA000F5114 /* XCRemoteSwiftPackageReference "LinkNavigator" */,
+			);
+			productRefGroup = DB736E622A256B16000F5114 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB736E602A256B16000F5114 /* LinkNavigatorPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB736E5F2A256B16000F5114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB736E6C2A256B17000F5114 /* Preview Assets.xcassets in Resources */,
+				DB736E692A256B17000F5114 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB736E5D2A256B16000F5114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB736E762A256C99000F5114 /* AppDependency.swift in Sources */,
+				DB736E672A256B16000F5114 /* ContentView.swift in Sources */,
+				DB736E792A256CDB000F5114 /* AppRouterGroup.swift in Sources */,
+				DB736E882A257248000F5114 /* NextViewModel.swift in Sources */,
+				DB736E7E2A256F14000F5114 /* HomeView.swift in Sources */,
+				DB736E832A25709C000F5114 /* NextView.swift in Sources */,
+				DB736E7B2A256D9B000F5114 /* AppDelegate.swift in Sources */,
+				DB736E652A256B16000F5114 /* LinkNavigatorPracticeApp.swift in Sources */,
+				DB736E812A256F73000F5114 /* HomeRouteBuilder.swift in Sources */,
+				DB736E862A25711B000F5114 /* NextRouteBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB736E6D2A256B17000F5114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB736E6E2A256B17000F5114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB736E702A256B17000F5114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LinkNavigatorPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.chmun.LinkNavigatorPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB736E712A256B17000F5114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LinkNavigatorPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.chmun.LinkNavigatorPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB736E5C2A256B16000F5114 /* Build configuration list for PBXProject "LinkNavigatorPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB736E6D2A256B17000F5114 /* Debug */,
+				DB736E6E2A256B17000F5114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB736E6F2A256B17000F5114 /* Build configuration list for PBXNativeTarget "LinkNavigatorPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB736E702A256B17000F5114 /* Debug */,
+				DB736E712A256B17000F5114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB736E722A256BAA000F5114 /* XCRemoteSwiftPackageReference "LinkNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/interactord/LinkNavigator.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB736E732A256BAA000F5114 /* LinkNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB736E722A256BAA000F5114 /* XCRemoteSwiftPackageReference "LinkNavigator" */;
+			productName = LinkNavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB736E592A256B16000F5114 /* Project object */;
+}
