@@ -9,6 +9,8 @@ import Foundation
 import LinkNavigator
 
 class NextViewModel: ObservableObject {
+    @Published public var count: Int = 0
+    
     let navigator: LinkNavigatorType
     
     init(navigator: LinkNavigatorType) {

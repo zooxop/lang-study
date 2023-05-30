@@ -9,16 +9,22 @@ import SwiftUI
 import LinkNavigator
 
 struct NextView: View {
-    let viewModel: NextViewModel
+    @StateObject var viewModel: NextViewModel
     
-    init(preventViewModel: NextViewModel) {
-        self.viewModel = preventViewModel
-    }
+//    init(preventViewModel: NextViewModel) {
+//        self.viewModel = preventViewModel
+//    }
     
     var body: some View {
         VStack {
             Text("Next View")
                 .font(.title)
+            Text(viewModel.count.description)
+                .padding()
+            
+            Button("Up") {
+                viewModel.count += 1
+            }
         }
     }
 }

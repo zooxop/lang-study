@@ -18,7 +18,8 @@ struct RootView: View {
                     Image(systemName: "house")
                     Text("홈")
                 }
-            NextView(preventViewModel: NextViewModel(navigator: navigator))
+//            NextView(preventViewModel: NextViewModel(navigator: navigator))
+            NextView(viewModel: NextViewModel(navigator: navigator))
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("예방")

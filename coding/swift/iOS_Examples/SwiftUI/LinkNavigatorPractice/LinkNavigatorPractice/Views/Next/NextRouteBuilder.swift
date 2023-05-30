@@ -14,7 +14,7 @@ struct NextRouteBuilder: RouteBuilder {
     var build: (LinkNavigatorType, [String: String], DependencyType) -> MatchingViewController? {
         { navigator, items, dependency in
             return WrappingController(matchPath: matchPath) {
-                NextView(preventViewModel: NextViewModel(navigator: navigator)) // ✅ ViewModel (MVVM)
+                NextView(viewModel: NextViewModel(navigator: navigator)) // ✅ ViewModel (MVVM)
             }
         }
     }
