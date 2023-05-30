@@ -20,10 +20,11 @@ struct LinkNavigatorPracticeApp: App {
     var body: some Scene {
         WindowGroup {
             navigator
-                .launch(paths: ["home"], items: [:])  // paths 파라메터의 인자가 시작 페이지가 된다.
+                .launch(paths: ["root"], items: [:])  // paths 파라메터의 인자가 시작 페이지가 된다.
                 .onOpenURL { url in
                     // 딥링크 기능 사용시 작성.
                 }
+                .ignoresSafeArea(edges: .all)
         }
     }
 }

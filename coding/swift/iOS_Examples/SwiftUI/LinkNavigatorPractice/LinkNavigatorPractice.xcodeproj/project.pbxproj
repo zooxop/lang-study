@@ -20,6 +20,8 @@
 		DB736E832A25709C000F5114 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E822A25709C000F5114 /* NextView.swift */; };
 		DB736E862A25711B000F5114 /* NextRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E852A25711B000F5114 /* NextRouteBuilder.swift */; };
 		DB736E882A257248000F5114 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E872A257248000F5114 /* NextViewModel.swift */; };
+		DB736E8D2A25769B000F5114 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E8C2A25769B000F5114 /* RootView.swift */; };
+		DB736E8F2A257726000F5114 /* RootRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB736E8E2A257726000F5114 /* RootRouteBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DB736E822A25709C000F5114 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		DB736E852A25711B000F5114 /* NextRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRouteBuilder.swift; sourceTree = "<group>"; };
 		DB736E872A257248000F5114 /* NextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
+		DB736E8C2A25769B000F5114 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		DB736E8E2A257726000F5114 /* RootRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouteBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		DB736E7C2A256F09000F5114 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DB736E8B2A257690000F5114 /* Root */,
 				DB736E842A25709F000F5114 /* Next */,
 				DB736E7F2A256F64000F5114 /* Home */,
 			);
@@ -123,6 +128,15 @@
 				DB736E872A257248000F5114 /* NextViewModel.swift */,
 			);
 			path = Next;
+			sourceTree = "<group>";
+		};
+		DB736E8B2A257690000F5114 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DB736E8C2A25769B000F5114 /* RootView.swift */,
+				DB736E8E2A257726000F5114 /* RootRouteBuilder.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +218,7 @@
 				DB736E762A256C99000F5114 /* AppDependency.swift in Sources */,
 				DB736E672A256B16000F5114 /* ContentView.swift in Sources */,
 				DB736E792A256CDB000F5114 /* AppRouterGroup.swift in Sources */,
+				DB736E8F2A257726000F5114 /* RootRouteBuilder.swift in Sources */,
 				DB736E882A257248000F5114 /* NextViewModel.swift in Sources */,
 				DB736E7E2A256F14000F5114 /* HomeView.swift in Sources */,
 				DB736E832A25709C000F5114 /* NextView.swift in Sources */,
@@ -211,6 +226,7 @@
 				DB736E652A256B16000F5114 /* LinkNavigatorPracticeApp.swift in Sources */,
 				DB736E812A256F73000F5114 /* HomeRouteBuilder.swift in Sources */,
 				DB736E862A25711B000F5114 /* NextRouteBuilder.swift in Sources */,
+				DB736E8D2A25769B000F5114 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

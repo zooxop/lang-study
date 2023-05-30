@@ -10,6 +10,7 @@ import LinkNavigator
 struct AppRouterGroup {
     var routers: [RouteBuilder] {
         [
+            RootRouteBuilder(),
             HomeRouteBuilder(),
             NextRouteBuilder(),
         ]
