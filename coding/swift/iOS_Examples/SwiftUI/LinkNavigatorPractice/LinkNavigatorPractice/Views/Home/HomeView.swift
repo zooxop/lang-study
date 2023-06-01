@@ -16,13 +16,22 @@ struct HomeView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Home View")
-                .font(.title)
-            Button {
-                navigator.next(paths: ["next"], items: [:], isAnimated: true)
-            } label: {
-                Text("Next View")
+        NavigationView {
+            VStack {
+                Text("Home View")
+                    .font(.title)
+                Button {
+                    navigator.next(paths: ["next"], items: [:], isAnimated: true)
+                } label: {
+                    Text("Next View")
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("asfd") {
+                        
+                    }
+                }
             }
         }
     }
