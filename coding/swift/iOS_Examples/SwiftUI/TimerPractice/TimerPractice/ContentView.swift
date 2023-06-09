@@ -20,6 +20,10 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             
             Text("Count : \(vpnTimer.count)")
+            
+            Button("Action") {
+                vpnTimer.startBackgroundTask()
+            }
         }
         .onAppear {
             // vpnTimer.startTimer()
@@ -74,6 +78,28 @@ class VPNTimer: ObservableObject {
     @objc private func addCount(sender: Timer) {
         count += 1
         print("Count : \(count)")
+    }
+    
+    func startBackgroundTask() {
+        var backgroundTask: UIBackgroundTaskIdentifier = .invalid // Declare backgroundTask outside the closure
+            
+        backgroundTask = UIApplication.shared.beginBackgroundTask(withName: "BackgroundTask") {
+            // Background task completion handler
+            UIApplication.shared.endBackgroundTask(backgroundTask)
+        }
+        
+        DispatchQueue.global().async {
+            // Perform your task within the background queue
+            // For example, executing the VPN connection process
+            if self.state {
+                self.stopTimer()
+            } else {
+                self.startTimer()
+            }
+            DispatchQueue.main.async {
+                UIApplication.shared.endBackgroundTask(backgroundTask) // Notify the system that the task is completed
+            }
+        }
     }
 }
 
