@@ -10,7 +10,7 @@ public class ElectricDecorator implements PokemonDecorator {
     @Override
     public void attack() {
         pokemon.attack();
-        System.out.println("화속성 공격~");
+        System.out.println("전기속성 공격~");
     }
 
     @Override
