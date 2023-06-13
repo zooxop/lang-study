@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "bettersafariview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stleamist/BetterSafariView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dffd42bc70287e761979bc81dd278db5c80f0deb"
+      }
+    },
+    {
+      "identity" : "swiftuiwkwebview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JakubMazur/SwiftUIWKWebView.git",
+      "state" : {
+        "revision" : "f2ceb5d9350cf6e320db657b7700409d5bae3a8c",
+        "version" : "1.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}
