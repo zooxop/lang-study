@@ -63,6 +63,9 @@ struct FixedImageView: View {
             
             Spacer()
         }
+        .background(Color.blue)
+        .ignoresSafeArea()
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         
     }
 }
