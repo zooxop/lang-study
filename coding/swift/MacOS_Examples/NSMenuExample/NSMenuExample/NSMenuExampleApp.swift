@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NSMeneExampleApp: App {
+struct NSMenuExampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
