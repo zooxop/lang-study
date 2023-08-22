@@ -1,5 +1,5 @@
 //
-//  FeatureCore.swift
+//  TemplateCore.swift
 //  TCATemplateExample
 //
 //  Created by 문철현 on 2023/08/23.
@@ -8,7 +8,7 @@
 
 import ComposableArchitecture
 
-struct Feature: Reducer {
+struct Template: Reducer {
   struct State: Equatable {
     static let initialState: State = .init()
   }
@@ -17,7 +17,7 @@ struct Feature: Reducer {
     case onAppear
   }
 
-  func reduce(into state: inout State, action: Action) -> ComposableArchitecture.Effect<Action> {
+  func reduce(into state: inout State, action: Action) -> Effect<Action> {
     switch action {
     case .onAppear:
       return .none

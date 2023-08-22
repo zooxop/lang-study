@@ -1,5 +1,5 @@
 //
-//  FeatureView.swift
+//  TemplateView.swift
 //  TCATemplateExample
 //
 //  Created by 문철현 on 2023/08/23.
@@ -9,11 +9,11 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct FeatureView: View {
-  let store: StoreOf<Feature>
+struct TemplateView: View {
+  let store: StoreOf<Template>
 
   var body: some View {
-    WithViewStore(self.store, observe: { $0 }) { viewStore in
+      WithViewStore(self.store, observe: { $0 }) { viewStore in
       VStack(spacing: 10) {
 
       }
@@ -24,12 +24,12 @@ struct FeatureView: View {
   }
 }
 
-struct FeatureView_Previews: PreviewProvider {
+struct TemplateView_Previews: PreviewProvider {
   static var previews: some View {
-    FeatureView(
-        store: Store(initialState: Feature.State()) {
-            Feature()
-        }
+    TemplateView(
+      store: Store(initialState: Template.State()) {
+        Template()
+      }
     )
   }
 }

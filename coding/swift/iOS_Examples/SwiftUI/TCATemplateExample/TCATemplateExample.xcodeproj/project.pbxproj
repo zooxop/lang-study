@@ -14,6 +14,8 @@
 		DB96B8822A95081D00A80A34 /* FeatureCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB96B8802A95081D00A80A34 /* FeatureCore.swift */; };
 		DB96B8832A95081D00A80A34 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB96B8812A95081D00A80A34 /* FeatureView.swift */; };
 		DB96B8862A95084700A80A34 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DB96B8852A95084700A80A34 /* ComposableArchitecture */; };
+		DB96B88D2A9515C900A80A34 /* TemplateCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB96B88B2A9515C900A80A34 /* TemplateCore.swift */; };
+		DB96B88E2A9515C900A80A34 /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB96B88C2A9515C900A80A34 /* TemplateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DB96B8792A9507F900A80A34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB96B8802A95081D00A80A34 /* FeatureCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCore.swift; sourceTree = "<group>"; };
 		DB96B8812A95081D00A80A34 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
+		DB96B88B2A9515C900A80A34 /* TemplateCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCore.swift; sourceTree = "<group>"; };
+		DB96B88C2A9515C900A80A34 /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DB96B8782A9507F900A80A34 /* Preview Content */,
 				DB96B8802A95081D00A80A34 /* FeatureCore.swift */,
 				DB96B8812A95081D00A80A34 /* FeatureView.swift */,
+				DB96B88B2A9515C900A80A34 /* TemplateCore.swift */,
+				DB96B88C2A9515C900A80A34 /* TemplateView.swift */,
 			);
 			path = TCATemplateExample;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB96B8752A9507F800A80A34 /* ContentView.swift in Sources */,
+				DB96B88D2A9515C900A80A34 /* TemplateCore.swift in Sources */,
+				DB96B88E2A9515C900A80A34 /* TemplateView.swift in Sources */,
 				DB96B8732A9507F800A80A34 /* TCATemplateExampleApp.swift in Sources */,
 				DB96B8822A95081D00A80A34 /* FeatureCore.swift in Sources */,
 				DB96B8832A95081D00A80A34 /* FeatureView.swift in Sources */,
