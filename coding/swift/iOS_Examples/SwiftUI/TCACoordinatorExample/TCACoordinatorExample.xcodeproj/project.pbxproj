@@ -15,16 +15,25 @@
 		DB49A7222A9CB2CA00F21F65 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = DB49A7212A9CB2CA00F21F65 /* TCACoordinators */; };
 		DB49A7242A9CB41400F21F65 /* IdentifiedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */; };
 		DB49A7262A9CB49400F21F65 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7252A9CB49400F21F65 /* Screen.swift */; };
+		DB49A7322A9D75D300F21F65 /* ConnectorBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */; };
+		DB49A7342A9D75D300F21F65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7332A9D75D300F21F65 /* ContentView.swift */; };
+		DB49A7362A9D75D400F21F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB49A7352A9D75D400F21F65 /* Assets.xcassets */; };
+		DB49A7392A9D75D400F21F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB49A70A2A9CB23F00F21F65 /* TCACoordinatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCACoordinatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB49A70A2A9CB23F00F21F65 /* OfficialTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficialTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB49A70D2A9CB23F00F21F65 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		DB49A7112A9CB24000F21F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB49A7142A9CB24000F21F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB49A71B2A9CB29500F21F65 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
 		DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiedCoordinator.swift; sourceTree = "<group>"; };
 		DB49A7252A9CB49400F21F65 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		DB49A72F2A9D75D300F21F65 /* ConnectorBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectorBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorBaseApp.swift; sourceTree = "<group>"; };
+		DB49A7332A9D75D300F21F65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB49A7352A9D75D400F21F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,13 +46,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB49A72C2A9D75D300F21F65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DB49A7012A9CB23F00F21F65 = {
 			isa = PBXGroup;
 			children = (
-				DB49A70C2A9CB23F00F21F65 /* TCACoordinatorExample */,
+				DB49A70C2A9CB23F00F21F65 /* OfficialTutorials */,
+				DB49A7302A9D75D300F21F65 /* ConnectorBase */,
 				DB49A70B2A9CB23F00F21F65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,20 +68,23 @@
 		DB49A70B2A9CB23F00F21F65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB49A70A2A9CB23F00F21F65 /* TCACoordinatorExample.app */,
+				DB49A70A2A9CB23F00F21F65 /* OfficialTutorials.app */,
+				DB49A72F2A9D75D300F21F65 /* ConnectorBase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB49A70C2A9CB23F00F21F65 /* TCACoordinatorExample */ = {
+		DB49A70C2A9CB23F00F21F65 /* OfficialTutorials */ = {
 			isa = PBXGroup;
 			children = (
 				DB49A70D2A9CB23F00F21F65 /* App.swift */,
-				DB49A7272A9D73BB00F21F65 /* OfficialTutorials */,
+				DB49A7252A9CB49400F21F65 /* Screen.swift */,
+				DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */,
+				DB49A71B2A9CB29500F21F65 /* MainTabCoordinator.swift */,
 				DB49A7112A9CB24000F21F65 /* Assets.xcassets */,
 				DB49A7132A9CB24000F21F65 /* Preview Content */,
 			);
-			path = TCACoordinatorExample;
+			path = OfficialTutorials;
 			sourceTree = "<group>";
 		};
 		DB49A7132A9CB24000F21F65 /* Preview Content */ = {
@@ -75,22 +95,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DB49A7272A9D73BB00F21F65 /* OfficialTutorials */ = {
+		DB49A7302A9D75D300F21F65 /* ConnectorBase */ = {
 			isa = PBXGroup;
 			children = (
-				DB49A7252A9CB49400F21F65 /* Screen.swift */,
-				DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */,
-				DB49A71B2A9CB29500F21F65 /* MainTabCoordinator.swift */,
+				DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */,
+				DB49A7332A9D75D300F21F65 /* ContentView.swift */,
+				DB49A7352A9D75D400F21F65 /* Assets.xcassets */,
+				DB49A7372A9D75D400F21F65 /* Preview Content */,
 			);
-			path = OfficialTutorials;
+			path = ConnectorBase;
+			sourceTree = "<group>";
+		};
+		DB49A7372A9D75D400F21F65 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB49A7092A9CB23F00F21F65 /* TCACoordinatorExample */ = {
+		DB49A7092A9CB23F00F21F65 /* OfficialTutorials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB49A7182A9CB24000F21F65 /* Build configuration list for PBXNativeTarget "TCACoordinatorExample" */;
+			buildConfigurationList = DB49A7182A9CB24000F21F65 /* Build configuration list for PBXNativeTarget "OfficialTutorials" */;
 			buildPhases = (
 				DB49A7062A9CB23F00F21F65 /* Sources */,
 				DB49A7072A9CB23F00F21F65 /* Frameworks */,
@@ -100,13 +129,30 @@
 			);
 			dependencies = (
 			);
-			name = TCACoordinatorExample;
+			name = OfficialTutorials;
 			packageProductDependencies = (
 				DB49A71E2A9CB2B900F21F65 /* ComposableArchitecture */,
 				DB49A7212A9CB2CA00F21F65 /* TCACoordinators */,
 			);
 			productName = TCACoordinatorExample;
-			productReference = DB49A70A2A9CB23F00F21F65 /* TCACoordinatorExample.app */;
+			productReference = DB49A70A2A9CB23F00F21F65 /* OfficialTutorials.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB49A72E2A9D75D300F21F65 /* ConnectorBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB49A73A2A9D75D400F21F65 /* Build configuration list for PBXNativeTarget "ConnectorBase" */;
+			buildPhases = (
+				DB49A72B2A9D75D300F21F65 /* Sources */,
+				DB49A72C2A9D75D300F21F65 /* Frameworks */,
+				DB49A72D2A9D75D300F21F65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectorBase;
+			productName = ConnectorBase;
+			productReference = DB49A72F2A9D75D300F21F65 /* ConnectorBase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,6 +166,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					DB49A7092A9CB23F00F21F65 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DB49A72E2A9D75D300F21F65 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -141,7 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB49A7092A9CB23F00F21F65 /* TCACoordinatorExample */,
+				DB49A7092A9CB23F00F21F65 /* OfficialTutorials */,
+				DB49A72E2A9D75D300F21F65 /* ConnectorBase */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +206,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB49A72D2A9D75D300F21F65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB49A7392A9D75D400F21F65 /* Preview Assets.xcassets in Resources */,
+				DB49A7362A9D75D400F21F65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -167,6 +226,15 @@
 				DB49A71C2A9CB29500F21F65 /* MainTabCoordinator.swift in Sources */,
 				DB49A70E2A9CB23F00F21F65 /* App.swift in Sources */,
 				DB49A7242A9CB41400F21F65 /* IdentifiedCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB49A72B2A9D75D300F21F65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB49A7342A9D75D300F21F65 /* ContentView.swift in Sources */,
+				DB49A7322A9D75D300F21F65 /* ConnectorBaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OfficialTutorials/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -323,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OfficialTutorials/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -345,6 +413,66 @@
 			};
 			name = Release;
 		};
+		DB49A73B2A9D75D400F21F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectorBase/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.ConnectorBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB49A73C2A9D75D400F21F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectorBase/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.ConnectorBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,11 +485,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB49A7182A9CB24000F21F65 /* Build configuration list for PBXNativeTarget "TCACoordinatorExample" */ = {
+		DB49A7182A9CB24000F21F65 /* Build configuration list for PBXNativeTarget "OfficialTutorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DB49A7192A9CB24000F21F65 /* Debug */,
 				DB49A71A2A9CB24000F21F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB49A73A2A9D75D400F21F65 /* Build configuration list for PBXNativeTarget "ConnectorBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB49A73B2A9D75D400F21F65 /* Debug */,
+				DB49A73C2A9D75D400F21F65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
