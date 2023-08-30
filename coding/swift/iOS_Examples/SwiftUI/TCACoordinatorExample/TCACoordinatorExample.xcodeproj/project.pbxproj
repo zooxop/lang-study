@@ -15,10 +15,19 @@
 		DB49A7222A9CB2CA00F21F65 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = DB49A7212A9CB2CA00F21F65 /* TCACoordinators */; };
 		DB49A7242A9CB41400F21F65 /* IdentifiedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */; };
 		DB49A7262A9CB49400F21F65 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7252A9CB49400F21F65 /* Screen.swift */; };
-		DB49A7322A9D75D300F21F65 /* ConnectorBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */; };
-		DB49A7342A9D75D300F21F65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7332A9D75D300F21F65 /* ContentView.swift */; };
+		DB49A7322A9D75D300F21F65 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7312A9D75D300F21F65 /* App.swift */; };
+		DB49A7342A9D75D300F21F65 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7332A9D75D300F21F65 /* SignIn.swift */; };
 		DB49A7362A9D75D400F21F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB49A7352A9D75D400F21F65 /* Assets.xcassets */; };
 		DB49A7392A9D75D400F21F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */; };
+		DB49A73E2A9D7E6400F21F65 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A73D2A9D7E6400F21F65 /* Screen.swift */; };
+		DB49A7412A9D80CA00F21F65 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7402A9D80CA00F21F65 /* Coordinator.swift */; };
+		DB49A7442A9D86D700F21F65 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DB49A7432A9D86D700F21F65 /* ComposableArchitecture */; };
+		DB49A7462A9D86D700F21F65 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = DB49A7452A9D86D700F21F65 /* TCACoordinators */; };
+		DB49A7492A9D88AB00F21F65 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7482A9D88AB00F21F65 /* MainTab.swift */; };
+		DB49A74B2A9D8D2D00F21F65 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A74A2A9D8D2D00F21F65 /* Home.swift */; };
+		DB49A74D2A9DB43C00F21F65 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A74C2A9DB43C00F21F65 /* Stats.swift */; };
+		DB49A74F2A9DC6C000F21F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A74E2A9DC6C000F21F65 /* Settings.swift */; };
+		DB49A7512A9DDC9C00F21F65 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49A7502A9DDC9C00F21F65 /* SignOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +39,17 @@
 		DB49A7232A9CB41400F21F65 /* IdentifiedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiedCoordinator.swift; sourceTree = "<group>"; };
 		DB49A7252A9CB49400F21F65 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		DB49A72F2A9D75D300F21F65 /* ConnectorBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectorBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorBaseApp.swift; sourceTree = "<group>"; };
-		DB49A7332A9D75D300F21F65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB49A7312A9D75D300F21F65 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		DB49A7332A9D75D300F21F65 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		DB49A7352A9D75D400F21F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB49A73D2A9D7E6400F21F65 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		DB49A7402A9D80CA00F21F65 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DB49A7482A9D88AB00F21F65 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		DB49A74A2A9D8D2D00F21F65 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DB49A74C2A9DB43C00F21F65 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		DB49A74E2A9DC6C000F21F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DB49A7502A9DDC9C00F21F65 /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB49A7462A9D86D700F21F65 /* TCACoordinators in Frameworks */,
+				DB49A7442A9D86D700F21F65 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 				DB49A70C2A9CB23F00F21F65 /* OfficialTutorials */,
 				DB49A7302A9D75D300F21F65 /* ConnectorBase */,
 				DB49A70B2A9CB23F00F21F65 /* Products */,
+				DB49A7422A9D86D700F21F65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +117,10 @@
 		DB49A7302A9D75D300F21F65 /* ConnectorBase */ = {
 			isa = PBXGroup;
 			children = (
-				DB49A7312A9D75D300F21F65 /* ConnectorBaseApp.swift */,
-				DB49A7332A9D75D300F21F65 /* ContentView.swift */,
+				DB49A7312A9D75D300F21F65 /* App.swift */,
+				DB49A73D2A9D7E6400F21F65 /* Screen.swift */,
+				DB49A7402A9D80CA00F21F65 /* Coordinator.swift */,
+				DB49A73F2A9D80AE00F21F65 /* Views */,
 				DB49A7352A9D75D400F21F65 /* Assets.xcassets */,
 				DB49A7372A9D75D400F21F65 /* Preview Content */,
 			);
@@ -112,6 +133,26 @@
 				DB49A7382A9D75D400F21F65 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB49A73F2A9D80AE00F21F65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB49A7332A9D75D300F21F65 /* SignIn.swift */,
+				DB49A7482A9D88AB00F21F65 /* MainTab.swift */,
+				DB49A74A2A9D8D2D00F21F65 /* Home.swift */,
+				DB49A74C2A9DB43C00F21F65 /* Stats.swift */,
+				DB49A74E2A9DC6C000F21F65 /* Settings.swift */,
+				DB49A7502A9DDC9C00F21F65 /* SignOut.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB49A7422A9D86D700F21F65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +192,10 @@
 			dependencies = (
 			);
 			name = ConnectorBase;
+			packageProductDependencies = (
+				DB49A7432A9D86D700F21F65 /* ComposableArchitecture */,
+				DB49A7452A9D86D700F21F65 /* TCACoordinators */,
+			);
 			productName = ConnectorBase;
 			productReference = DB49A72F2A9D75D300F21F65 /* ConnectorBase.app */;
 			productType = "com.apple.product-type.application";
@@ -233,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB49A7342A9D75D300F21F65 /* ContentView.swift in Sources */,
-				DB49A7322A9D75D300F21F65 /* ConnectorBaseApp.swift in Sources */,
+				DB49A7342A9D75D300F21F65 /* SignIn.swift in Sources */,
+				DB49A7322A9D75D300F21F65 /* App.swift in Sources */,
+				DB49A74F2A9DC6C000F21F65 /* Settings.swift in Sources */,
+				DB49A7492A9D88AB00F21F65 /* MainTab.swift in Sources */,
+				DB49A74D2A9DB43C00F21F65 /* Stats.swift in Sources */,
+				DB49A73E2A9D7E6400F21F65 /* Screen.swift in Sources */,
+				DB49A74B2A9D8D2D00F21F65 /* Home.swift in Sources */,
+				DB49A7412A9D80CA00F21F65 /* Coordinator.swift in Sources */,
+				DB49A7512A9DDC9C00F21F65 /* SignOut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +479,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +490,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.ConnectorBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,9 +513,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +524,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.ConnectorBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,6 +591,16 @@
 			productName = ComposableArchitecture;
 		};
 		DB49A7212A9CB2CA00F21F65 /* TCACoordinators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB49A7202A9CB2CA00F21F65 /* XCRemoteSwiftPackageReference "TCACoordinators" */;
+			productName = TCACoordinators;
+		};
+		DB49A7432A9D86D700F21F65 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB49A71D2A9CB2B900F21F65 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		DB49A7452A9D86D700F21F65 /* TCACoordinators */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB49A7202A9CB2CA00F21F65 /* XCRemoteSwiftPackageReference "TCACoordinators" */;
 			productName = TCACoordinators;
