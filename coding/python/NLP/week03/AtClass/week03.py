@@ -18,7 +18,8 @@ for i in range(1, 52):
         shop_name = tds[1].string  # 매장명
         shop_addr = tds[3].string  # 주소
         shop_phone = tds[5].string  # 전화번호
-        shops.append([shop_name] + [shop_addr] + [shop_phone] + [datetime.datetime.now()])  # 2차원 리스트로 append 시켜줌. ("+" 문법)
+        #shops.append([shop_name] + [shop_addr] + [shop_phone] + [datetime.datetime.now()])  # 2차원 리스트로 append 시켜줌. ("+" 문법)
+        shops.append([shop_name, shop_addr, shop_phone, datetime.datetime.now()])
 
 hollys_df = pd.DataFrame(shops, columns=('매장명', '주소', '전화번호', '일시'))
 hollys_df.to_csv("hollys.csv", mode='w', index=True)

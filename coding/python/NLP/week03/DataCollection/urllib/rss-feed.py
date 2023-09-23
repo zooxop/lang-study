@@ -12,4 +12,4 @@ print(url)  # https://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=105
 
 urls = urllib.request.urlopen(url).read()
 texts = urls.decode('utf-8')
-# print(texts)
+print(texts)
