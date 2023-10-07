@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tv">
+        <item>무빙</item>
+        <item>마스크걸</item>
+        <item>오징어게임</item>
+        <item>카지노</item>
+    </string-array>
+</resources>
