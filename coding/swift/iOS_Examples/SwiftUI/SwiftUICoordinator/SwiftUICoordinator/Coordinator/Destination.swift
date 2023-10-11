@@ -8,19 +8,19 @@
 import SwiftUI
 
 enum Destination {
-  case aView
-  case bView(Product)
-  case cView
+  //case signIn
+  case tabView
+  case settings
   
   @ViewBuilder
   var view: some View {
     switch self {
-    case .aView:
-      AView()
-    case .bView(let product):
-      BView(product: product)
-    case .cView:
-      CView()
+//    case .signIn:
+//      SignInView()
+    case .tabView:
+      MyTabView()
+    case .settings:
+      SettingsView()
     }
   }
 }

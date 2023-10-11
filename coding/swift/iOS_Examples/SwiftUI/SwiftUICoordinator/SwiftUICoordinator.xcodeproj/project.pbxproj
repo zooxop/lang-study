@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB7C87772AD6213500001203 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C87762AD6213500001203 /* MyTabView.swift */; };
+		DB7C87792AD6246C00001203 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C87782AD6246C00001203 /* HelloView.swift */; };
+		DB7C877B2AD6247100001203 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C877A2AD6247100001203 /* WorldView.swift */; };
+		DB7C877D2AD62A4400001203 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C877C2AD62A4400001203 /* SettingsView.swift */; };
+		DB7C87802AD62F1800001203 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C877F2AD62F1800001203 /* SignInViewModel.swift */; };
 		DBFDF44F2AD515D10004ACDD /* SwiftUICoordinatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF44E2AD515D10004ACDD /* SwiftUICoordinatorApp.swift */; };
-		DBFDF4512AD515D10004ACDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4502AD515D10004ACDD /* ContentView.swift */; };
+		DBFDF4512AD515D10004ACDD /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4502AD515D10004ACDD /* RootView.swift */; };
 		DBFDF4532AD515D10004ACDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFDF4522AD515D10004ACDD /* Assets.xcassets */; };
 		DBFDF4562AD515D10004ACDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFDF4552AD515D10004ACDD /* Preview Assets.xcassets */; };
 		DBFDF45D2AD516580004ACDD /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF45C2AD516580004ACDD /* Destination.swift */; };
 		DBFDF45F2AD516A70004ACDD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF45E2AD516A70004ACDD /* Coordinator.swift */; };
-		DBFDF4612AD518950004ACDD /* AView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4602AD518950004ACDD /* AView.swift */; };
-		DBFDF4642AD518A50004ACDD /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4632AD518A50004ACDD /* BView.swift */; };
-		DBFDF4662AD518AC0004ACDD /* CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4652AD518AC0004ACDD /* CView.swift */; };
+		DBFDF4612AD518950004ACDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4602AD518950004ACDD /* SignInView.swift */; };
 		DBFDF46A2AD52C1A0004ACDD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDF4692AD52C1A0004ACDD /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB7C87762AD6213500001203 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		DB7C87782AD6246C00001203 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		DB7C877A2AD6247100001203 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		DB7C877C2AD62A4400001203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB7C877F2AD62F1800001203 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		DBFDF44B2AD515D10004ACDD /* SwiftUICoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFDF44E2AD515D10004ACDD /* SwiftUICoordinatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICoordinatorApp.swift; sourceTree = "<group>"; };
-		DBFDF4502AD515D10004ACDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBFDF4502AD515D10004ACDD /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DBFDF4522AD515D10004ACDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFDF4552AD515D10004ACDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBFDF45C2AD516580004ACDD /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		DBFDF45E2AD516A70004ACDD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		DBFDF4602AD518950004ACDD /* AView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AView.swift; sourceTree = "<group>"; };
-		DBFDF4632AD518A50004ACDD /* BView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BView.swift; sourceTree = "<group>"; };
-		DBFDF4652AD518AC0004ACDD /* CView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CView.swift; sourceTree = "<group>"; };
+		DBFDF4602AD518950004ACDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		DBFDF4692AD52C1A0004ACDD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB7C877E2AD62EFD00001203 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB7C877F2AD62F1800001203 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DBFDF4422AD515D10004ACDD = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				DBFDF44E2AD515D10004ACDD /* SwiftUICoordinatorApp.swift */,
-				DBFDF4502AD515D10004ACDD /* ContentView.swift */,
+				DBFDF4502AD515D10004ACDD /* RootView.swift */,
 				DBFDF4682AD52C0B0004ACDD /* Model */,
 				DBFDF4672AD51F6C0004ACDD /* Coordinator */,
 				DBFDF4622AD5189A0004ACDD /* Views */,
+				DB7C877E2AD62EFD00001203 /* ViewModel */,
 				DBFDF4522AD515D10004ACDD /* Assets.xcassets */,
 				DBFDF4542AD515D10004ACDD /* Preview Content */,
 			);
@@ -85,9 +100,11 @@
 		DBFDF4622AD5189A0004ACDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DBFDF4602AD518950004ACDD /* AView.swift */,
-				DBFDF4632AD518A50004ACDD /* BView.swift */,
-				DBFDF4652AD518AC0004ACDD /* CView.swift */,
+				DBFDF4602AD518950004ACDD /* SignInView.swift */,
+				DB7C87762AD6213500001203 /* MyTabView.swift */,
+				DB7C87782AD6246C00001203 /* HelloView.swift */,
+				DB7C877A2AD6247100001203 /* WorldView.swift */,
+				DB7C877C2AD62A4400001203 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,11 +198,14 @@
 			files = (
 				DBFDF45F2AD516A70004ACDD /* Coordinator.swift in Sources */,
 				DBFDF46A2AD52C1A0004ACDD /* Product.swift in Sources */,
-				DBFDF4642AD518A50004ACDD /* BView.swift in Sources */,
-				DBFDF4512AD515D10004ACDD /* ContentView.swift in Sources */,
+				DB7C87792AD6246C00001203 /* HelloView.swift in Sources */,
+				DBFDF4512AD515D10004ACDD /* RootView.swift in Sources */,
+				DB7C877B2AD6247100001203 /* WorldView.swift in Sources */,
+				DB7C877D2AD62A4400001203 /* SettingsView.swift in Sources */,
 				DBFDF44F2AD515D10004ACDD /* SwiftUICoordinatorApp.swift in Sources */,
-				DBFDF4662AD518AC0004ACDD /* CView.swift in Sources */,
-				DBFDF4612AD518950004ACDD /* AView.swift in Sources */,
+				DBFDF4612AD518950004ACDD /* SignInView.swift in Sources */,
+				DB7C87802AD62F1800001203 /* SignInViewModel.swift in Sources */,
+				DB7C87772AD6213500001203 /* MyTabView.swift in Sources */,
 				DBFDF45D2AD516580004ACDD /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

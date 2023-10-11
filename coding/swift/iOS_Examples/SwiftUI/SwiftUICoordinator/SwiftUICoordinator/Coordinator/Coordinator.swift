@@ -12,20 +12,8 @@ fileprivate extension Notification.Name {
   static let popToRoot = Notification.Name("PopToRoot")
 }
 
-//protocol CoordinatorInjector {
-//  var coordinator: Coordinator { get }
-//}
-//
-//extension CoordinatorInjector {
-//  var coordinator: Coordinator {
-//    return sharedCoordinator
-//  }
-//}
-//
-//fileprivate let sharedCoordinator: Coordinator = Coordinator()
-
 final class Coordinator: ObservableObject {
-  private var destination: Destination = .aView
+  private var destination: Destination = .tabView
   private let isRoot: Bool
   private var cancellable: Set<AnyCancellable> = []
   @Published private var navigationTrigger = false
