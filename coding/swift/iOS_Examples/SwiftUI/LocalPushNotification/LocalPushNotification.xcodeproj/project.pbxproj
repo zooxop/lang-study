@@ -12,6 +12,11 @@
 		DB096FB92ADCEE42000B1D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB096FB82ADCEE42000B1D15 /* Assets.xcassets */; };
 		DB096FBC2ADCEE42000B1D15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB096FBB2ADCEE42000B1D15 /* Preview Assets.xcassets */; };
 		DB096FC52ADCF691000B1D15 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = DB096FC42ADCF691000B1D15 /* user.png */; };
+		DB096FC72ADD16D3000B1D15 /* NotiCenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB096FC62ADD16D3000B1D15 /* NotiCenterService.swift */; };
+		DB096FC92ADD20EE000B1D15 /* NotiContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB096FC82ADD20EE000B1D15 /* NotiContent.swift */; };
+		DB096FCB2ADD2106000B1D15 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB096FCA2ADD2106000B1D15 /* ContentViewModel.swift */; };
+		DB096FCD2ADD937D000B1D15 /* NotiContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB096FCC2ADD937D000B1D15 /* NotiContentBuilder.swift */; };
+		DB096FD42ADD97B8000B1D15 /* View+openSettingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB096FD32ADD97B8000B1D15 /* View+openSettingsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		DB096FB82ADCEE42000B1D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB096FBB2ADCEE42000B1D15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB096FC42ADCF691000B1D15 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		DB096FC62ADD16D3000B1D15 /* NotiCenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiCenterService.swift; sourceTree = "<group>"; };
+		DB096FC82ADD20EE000B1D15 /* NotiContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiContent.swift; sourceTree = "<group>"; };
+		DB096FCA2ADD2106000B1D15 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DB096FCC2ADD937D000B1D15 /* NotiContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiContentBuilder.swift; sourceTree = "<group>"; };
+		DB096FD32ADD97B8000B1D15 /* View+openSettingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+openSettingsApp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +63,12 @@
 		DB096FB32ADCEE41000B1D15 /* LocalPushNotification */ = {
 			isa = PBXGroup;
 			children = (
-				DB096FC42ADCF691000B1D15 /* user.png */,
 				DB096FB42ADCEE41000B1D15 /* LocalPushNotificationApp.swift */,
-				DB096FB62ADCEE41000B1D15 /* ContentView.swift */,
+				DB096FCF2ADD9608000B1D15 /* Domain */,
+				DB096FCE2ADD95FB000B1D15 /* Service */,
+				DB096FD02ADD9642000B1D15 /* View */,
+				DB096FD12ADD964C000B1D15 /* ViewModel */,
+				DB096FC42ADCF691000B1D15 /* user.png */,
 				DB096FB82ADCEE42000B1D15 /* Assets.xcassets */,
 				DB096FBA2ADCEE42000B1D15 /* Preview Content */,
 			);
@@ -68,6 +81,48 @@
 				DB096FBB2ADCEE42000B1D15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB096FCE2ADD95FB000B1D15 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB096FC62ADD16D3000B1D15 /* NotiCenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DB096FCF2ADD9608000B1D15 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DB096FD22ADD9674000B1D15 /* LocalPushNotification */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DB096FD02ADD9642000B1D15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB096FB62ADCEE41000B1D15 /* ContentView.swift */,
+				DB096FD32ADD97B8000B1D15 /* View+openSettingsApp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB096FD12ADD964C000B1D15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB096FCA2ADD2106000B1D15 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB096FD22ADD9674000B1D15 /* LocalPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DB096FC82ADD20EE000B1D15 /* NotiContent.swift */,
+				DB096FCC2ADD937D000B1D15 /* NotiContentBuilder.swift */,
+			);
+			path = LocalPushNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB096FB72ADCEE41000B1D15 /* ContentView.swift in Sources */,
+				DB096FCD2ADD937D000B1D15 /* NotiContentBuilder.swift in Sources */,
+				DB096FC92ADD20EE000B1D15 /* NotiContent.swift in Sources */,
+				DB096FD42ADD97B8000B1D15 /* View+openSettingsApp.swift in Sources */,
+				DB096FC72ADD16D3000B1D15 /* NotiCenterService.swift in Sources */,
 				DB096FB52ADCEE41000B1D15 /* LocalPushNotificationApp.swift in Sources */,
+				DB096FCB2ADD2106000B1D15 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
