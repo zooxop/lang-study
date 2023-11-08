@@ -7,13 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB13ED952AFB2ADF0029E941 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13ED942AFB2ADF0029E941 /* main.swift */; };
+		DB13ED9C2AFB59320029E941 /* ExamplePrivilegedHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DB41902D2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41902C2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift */; };
 		DB41902F2AF9CFAB00DB4F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41902E2AF9CFAB00DB4F34 /* ContentView.swift */; };
 		DB4190312AF9CFAC00DB4F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4190302AF9CFAC00DB4F34 /* Assets.xcassets */; };
 		DB4190342AF9CFAC00DB4F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4190332AF9CFAC00DB4F34 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DB13ED902AFB2ADF0029E941 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DB13ED9B2AFB59190029E941 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				DB13ED9C2AFB59320029E941 /* ExamplePrivilegedHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamplePrivilegedHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB13ED942AFB2ADF0029E941 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DB13ED992AFB2B500029E941 /* ExamplePrivilegedHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExamplePrivilegedHelper-Info.plist"; sourceTree = "<group>"; };
+		DB13ED9A2AFB2B660029E941 /* ExamplePrivilegedHelper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExamplePrivilegedHelper-Launchd.plist"; sourceTree = "<group>"; };
 		DB4190292AF9CFAB00DB4F34 /* LaunchdExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchdExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB41902C2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchdExampleApp.swift; sourceTree = "<group>"; };
 		DB41902E2AF9CFAB00DB4F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB13ED8F2AFB2ADF0029E941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB4190262AF9CFAB00DB4F34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB13ED932AFB2ADF0029E941 /* ExamplePrivilegedHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DB13ED942AFB2ADF0029E941 /* main.swift */,
+				DB13ED992AFB2B500029E941 /* ExamplePrivilegedHelper-Info.plist */,
+				DB13ED9A2AFB2B660029E941 /* ExamplePrivilegedHelper-Launchd.plist */,
+			);
+			path = ExamplePrivilegedHelper;
+			sourceTree = "<group>";
+		};
 		DB4190202AF9CFAB00DB4F34 = {
 			isa = PBXGroup;
 			children = (
 				DB41902B2AF9CFAB00DB4F34 /* LaunchdExample */,
+				DB13ED932AFB2ADF0029E941 /* ExamplePrivilegedHelper */,
 				DB41902A2AF9CFAB00DB4F34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				DB4190292AF9CFAB00DB4F34 /* LaunchdExample.app */,
+				DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +119,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB13ED912AFB2ADF0029E941 /* ExamplePrivilegedHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB13ED982AFB2ADF0029E941 /* Build configuration list for PBXNativeTarget "ExamplePrivilegedHelper" */;
+			buildPhases = (
+				DB13ED8E2AFB2ADF0029E941 /* Sources */,
+				DB13ED8F2AFB2ADF0029E941 /* Frameworks */,
+				DB13ED902AFB2ADF0029E941 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExamplePrivilegedHelper;
+			productName = ExamplePrivilegedHelper;
+			productReference = DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 		DB4190282AF9CFAB00DB4F34 /* LaunchdExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB4190382AF9CFAC00DB4F34 /* Build configuration list for PBXNativeTarget "LaunchdExample" */;
@@ -79,6 +143,7 @@
 				DB4190252AF9CFAB00DB4F34 /* Sources */,
 				DB4190262AF9CFAB00DB4F34 /* Frameworks */,
 				DB4190272AF9CFAB00DB4F34 /* Resources */,
+				DB13ED9B2AFB59190029E941 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -99,6 +164,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					DB13ED912AFB2ADF0029E941 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					DB4190282AF9CFAB00DB4F34 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -118,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				DB4190282AF9CFAB00DB4F34 /* LaunchdExample */,
+				DB13ED912AFB2ADF0029E941 /* ExamplePrivilegedHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +204,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB13ED8E2AFB2ADF0029E941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB13ED952AFB2ADF0029E941 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB4190252AF9CFAB00DB4F34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +224,58 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DB13ED962AFB2ADF0029E941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample.PrivilegedHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB13ED972AFB2ADF0029E941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample.PrivilegedHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DB4190362AF9CFAC00DB4F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,11 +400,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LaunchdExample/LaunchdExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaunchdExample/Preview Content\"";
-				DEVELOPMENT_TEAM = AWR77X8V5R;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -287,6 +417,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -298,11 +429,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LaunchdExample/LaunchdExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaunchdExample/Preview Content\"";
-				DEVELOPMENT_TEAM = AWR77X8V5R;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,6 +446,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -322,6 +455,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB13ED982AFB2ADF0029E941 /* Build configuration list for PBXNativeTarget "ExamplePrivilegedHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB13ED962AFB2ADF0029E941 /* Debug */,
+				DB13ED972AFB2ADF0029E941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB4190242AF9CFAB00DB4F34 /* Build configuration list for PBXProject "LaunchdExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

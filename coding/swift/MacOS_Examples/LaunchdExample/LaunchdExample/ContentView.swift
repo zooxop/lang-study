@@ -8,17 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+  var body: some View {
+    VStack {
+      Button {
+        
+      } label: {
+        HStack {
+          Image(systemName: "helm")
+            .imageScale(.large)
+            .foregroundStyle(.tint)
+          
+          Text("Helper Install & Start")
         }
-        .padding()
+      }
+      .padding()
+      
+      Button {
+        
+      } label: {
+        HStack {
+          Image(systemName: "globe")
+            .imageScale(.large)
+            .foregroundStyle(.tint)
+          
+          Text("Launch Daemon Install & Start")
+        }
+      }
+      .padding()
     }
+    .padding()
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
