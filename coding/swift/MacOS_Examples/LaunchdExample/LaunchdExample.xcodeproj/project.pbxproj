@@ -8,11 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DB13ED952AFB2ADF0029E941 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13ED942AFB2ADF0029E941 /* main.swift */; };
-		DB13ED9C2AFB59320029E941 /* ExamplePrivilegedHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DB13ED9C2AFB59320029E941 /* com.chmun.LaunchdExample.PrivilegedHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB13ED922AFB2ADF0029E941 /* com.chmun.LaunchdExample.PrivilegedHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DB41902D2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41902C2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift */; };
 		DB41902F2AF9CFAB00DB4F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41902E2AF9CFAB00DB4F34 /* ContentView.swift */; };
 		DB4190312AF9CFAC00DB4F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4190302AF9CFAC00DB4F34 /* Assets.xcassets */; };
 		DB4190342AF9CFAC00DB4F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4190332AF9CFAC00DB4F34 /* Preview Assets.xcassets */; };
+		DBCA19512AFE0FEA00FF068A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19502AFE0FEA00FF068A /* AppDelegate.swift */; };
+		DBCA19532AFE104200FF068A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19522AFE104200FF068A /* Helper.swift */; };
+		DBCA19542AFE104800FF068A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19522AFE104200FF068A /* Helper.swift */; };
+		DBCA19562AFE107600FF068A /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19552AFE107600FF068A /* HelperAuthorization.swift */; };
+		DBCA19572AFE107800FF068A /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19552AFE107600FF068A /* HelperAuthorization.swift */; };
+		DBCA19592AFE109900FF068A /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19582AFE109900FF068A /* HelperAuthorizationRight.swift */; };
+		DBCA195A2AFE109B00FF068A /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19582AFE109900FF068A /* HelperAuthorizationRight.swift */; };
+		DBCA195C2AFE10B800FF068A /* HelperContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA195B2AFE10B800FF068A /* HelperContents.swift */; };
+		DBCA195E2AFE10E500FF068A /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA195D2AFE10E500FF068A /* HelperProtocol.swift */; };
+		DBCA195F2AFE10ED00FF068A /* HelperContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA195B2AFE10B800FF068A /* HelperContents.swift */; };
+		DBCA19602AFE10F100FF068A /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA195D2AFE10E500FF068A /* HelperProtocol.swift */; };
+		DBCA19622AFE114000FF068A /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19612AFE114000FF068A /* AppProtocol.swift */; };
+		DBCA19632AFE114E00FF068A /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19612AFE114000FF068A /* AppProtocol.swift */; };
+		DBCA19652AFE11C000FF068A /* CodeSignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19642AFE11C000FF068A /* CodeSignCheck.swift */; };
+		DBCA19662AFE11CA00FF068A /* CodeSignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA19642AFE11C000FF068A /* CodeSignCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,14 +46,14 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				DB13ED9C2AFB59320029E941 /* ExamplePrivilegedHelper in CopyFiles */,
+				DB13ED9C2AFB59320029E941 /* com.chmun.LaunchdExample.PrivilegedHelper in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamplePrivilegedHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB13ED922AFB2ADF0029E941 /* com.chmun.LaunchdExample.PrivilegedHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.chmun.LaunchdExample.PrivilegedHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB13ED942AFB2ADF0029E941 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB13ED992AFB2B500029E941 /* ExamplePrivilegedHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExamplePrivilegedHelper-Info.plist"; sourceTree = "<group>"; };
 		DB13ED9A2AFB2B660029E941 /* ExamplePrivilegedHelper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExamplePrivilegedHelper-Launchd.plist"; sourceTree = "<group>"; };
@@ -48,6 +63,15 @@
 		DB4190302AF9CFAC00DB4F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4190332AF9CFAC00DB4F34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB4190352AF9CFAC00DB4F34 /* LaunchdExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchdExample.entitlements; sourceTree = "<group>"; };
+		DBCA19502AFE0FEA00FF068A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBCA19522AFE104200FF068A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DBCA19552AFE107600FF068A /* HelperAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		DBCA19582AFE109900FF068A /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		DBCA195B2AFE10B800FF068A /* HelperContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperContents.swift; sourceTree = "<group>"; };
+		DBCA195D2AFE10E500FF068A /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		DBCA19612AFE114000FF068A /* AppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocol.swift; sourceTree = "<group>"; };
+		DBCA19642AFE11C000FF068A /* CodeSignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignCheck.swift; sourceTree = "<group>"; };
+		DBCA19672AFE180000FF068A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +95,14 @@
 		DB13ED932AFB2ADF0029E941 /* ExamplePrivilegedHelper */ = {
 			isa = PBXGroup;
 			children = (
-				DB13ED942AFB2ADF0029E941 /* main.swift */,
 				DB13ED992AFB2B500029E941 /* ExamplePrivilegedHelper-Info.plist */,
 				DB13ED9A2AFB2B660029E941 /* ExamplePrivilegedHelper-Launchd.plist */,
+				DB13ED942AFB2ADF0029E941 /* main.swift */,
+				DBCA19522AFE104200FF068A /* Helper.swift */,
+				DBCA19552AFE107600FF068A /* HelperAuthorization.swift */,
+				DBCA19582AFE109900FF068A /* HelperAuthorizationRight.swift */,
+				DBCA195B2AFE10B800FF068A /* HelperContents.swift */,
+				DBCA195D2AFE10E500FF068A /* HelperProtocol.swift */,
 			);
 			path = ExamplePrivilegedHelper;
 			sourceTree = "<group>";
@@ -91,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				DB4190292AF9CFAB00DB4F34 /* LaunchdExample.app */,
-				DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */,
+				DB13ED922AFB2ADF0029E941 /* com.chmun.LaunchdExample.PrivilegedHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,11 +128,15 @@
 		DB41902B2AF9CFAB00DB4F34 /* LaunchdExample */ = {
 			isa = PBXGroup;
 			children = (
+				DBCA19612AFE114000FF068A /* AppProtocol.swift */,
+				DBCA19502AFE0FEA00FF068A /* AppDelegate.swift */,
 				DB41902C2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift */,
 				DB41902E2AF9CFAB00DB4F34 /* ContentView.swift */,
+				DBCA19642AFE11C000FF068A /* CodeSignCheck.swift */,
 				DB4190302AF9CFAC00DB4F34 /* Assets.xcassets */,
 				DB4190352AF9CFAC00DB4F34 /* LaunchdExample.entitlements */,
 				DB4190322AF9CFAC00DB4F34 /* Preview Content */,
+				DBCA19672AFE180000FF068A /* Info.plist */,
 			);
 			path = LaunchdExample;
 			sourceTree = "<group>";
@@ -133,7 +166,7 @@
 			);
 			name = ExamplePrivilegedHelper;
 			productName = ExamplePrivilegedHelper;
-			productReference = DB13ED922AFB2ADF0029E941 /* ExamplePrivilegedHelper */;
+			productReference = DB13ED922AFB2ADF0029E941 /* com.chmun.LaunchdExample.PrivilegedHelper */;
 			productType = "com.apple.product-type.tool";
 		};
 		DB4190282AF9CFAB00DB4F34 /* LaunchdExample */ = {
@@ -208,7 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCA19662AFE11CA00FF068A /* CodeSignCheck.swift in Sources */,
+				DBCA19592AFE109900FF068A /* HelperAuthorizationRight.swift in Sources */,
+				DBCA195C2AFE10B800FF068A /* HelperContents.swift in Sources */,
 				DB13ED952AFB2ADF0029E941 /* main.swift in Sources */,
+				DBCA19632AFE114E00FF068A /* AppProtocol.swift in Sources */,
+				DBCA19532AFE104200FF068A /* Helper.swift in Sources */,
+				DBCA19562AFE107600FF068A /* HelperAuthorization.swift in Sources */,
+				DBCA195E2AFE10E500FF068A /* HelperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCA195A2AFE109B00FF068A /* HelperAuthorizationRight.swift in Sources */,
+				DBCA19602AFE10F100FF068A /* HelperProtocol.swift in Sources */,
+				DBCA19572AFE107800FF068A /* HelperAuthorization.swift in Sources */,
+				DBCA19512AFE0FEA00FF068A /* AppDelegate.swift in Sources */,
+				DBCA19622AFE114000FF068A /* AppProtocol.swift in Sources */,
 				DB41902F2AF9CFAB00DB4F34 /* ContentView.swift in Sources */,
+				DBCA19652AFE11C000FF068A /* CodeSignCheck.swift in Sources */,
+				DBCA195F2AFE10ED00FF068A /* HelperContents.swift in Sources */,
 				DB41902D2AF9CFAB00DB4F34 /* LaunchdExampleApp.swift in Sources */,
+				DBCA19542AFE104800FF068A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -243,7 +292,7 @@
 					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Launchd.plist\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample.PrivilegedHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = com.chmun.LaunchdExample.PrivilegedHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -254,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -269,7 +319,7 @@
 					"\"$(SRCROOT)/ExamplePrivilegedHelper/ExamplePrivilegedHelper-Launchd.plist\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.LaunchdExample.PrivilegedHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = com.chmun.LaunchdExample.PrivilegedHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +379,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -386,7 +436,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -409,7 +459,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LaunchdExample/Info.plist";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -438,7 +491,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LaunchdExample/Info.plist";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
