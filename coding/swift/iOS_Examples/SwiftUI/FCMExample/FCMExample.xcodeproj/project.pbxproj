@@ -13,6 +13,13 @@
 		DB0D69C22AF32D0900C6E8E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0D69C12AF32D0900C6E8E1 /* Preview Assets.xcassets */; };
 		DB0D69C92AF32DAD00C6E8E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */; };
 		DB0D69CC2AF3304900C6E8E1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DB0D69CB2AF3304900C6E8E1 /* FirebaseMessaging */; };
+		DB9700422B025C7A00954C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9700412B025C7A00954C20 /* AppDelegate.swift */; };
+		DB97004A2B025F8F00954C20 /* FCMExample_macApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9700492B025F8F00954C20 /* FCMExample_macApp.swift */; };
+		DB97004C2B025F8F00954C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97004B2B025F8F00954C20 /* ContentView.swift */; };
+		DB97004E2B025F8F00954C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB97004D2B025F8F00954C20 /* Assets.xcassets */; };
+		DB9700512B025F8F00954C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9700502B025F8F00954C20 /* Preview Assets.xcassets */; };
+		DB9700592B025FAF00954C20 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DB9700582B025FAF00954C20 /* FirebaseMessaging */; };
+		DB97005B2B02601F00954C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97005A2B02601F00954C20 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,15 @@
 		DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB0D69CD2AF333AA00C6E8E1 /* FCMExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMExample.entitlements; sourceTree = "<group>"; };
 		DB0D69CE2AF335A000C6E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB9700412B025C7A00954C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB9700472B025F8F00954C20 /* FCMExample-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCMExample-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9700492B025F8F00954C20 /* FCMExample_macApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMExample_macApp.swift; sourceTree = "<group>"; };
+		DB97004B2B025F8F00954C20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB97004D2B025F8F00954C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB9700502B025F8F00954C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB9700522B025F8F00954C20 /* FCMExample_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMExample_mac.entitlements; sourceTree = "<group>"; };
+		DB9700562B025FA600954C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB97005A2B02601F00954C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB9700442B025F8F00954C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9700592B025FAF00954C20 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				DB0D69B92AF32D0800C6E8E1 /* FCMExample */,
+				DB9700482B025F8F00954C20 /* FCMExample-mac */,
 				DB0D69B82AF32D0800C6E8E1 /* Products */,
+				DB9700572B025FAF00954C20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DB0D69B72AF32D0800C6E8E1 /* FCMExample.app */,
+				DB9700472B025F8F00954C20 /* FCMExample-mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				DB0D69CE2AF335A000C6E8E1 /* Info.plist */,
+				DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */,
 				DB0D69CD2AF333AA00C6E8E1 /* FCMExample.entitlements */,
 				DB0D69BA2AF32D0800C6E8E1 /* FCMExampleApp.swift */,
+				DB9700412B025C7A00954C20 /* AppDelegate.swift */,
 				DB0D69BC2AF32D0800C6E8E1 /* ContentView.swift */,
 				DB0D69BE2AF32D0900C6E8E1 /* Assets.xcassets */,
-				DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */,
 				DB0D69C02AF32D0900C6E8E1 /* Preview Content */,
 			);
 			path = FCMExample;
@@ -74,6 +102,35 @@
 				DB0D69C12AF32D0900C6E8E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB9700482B025F8F00954C20 /* FCMExample-mac */ = {
+			isa = PBXGroup;
+			children = (
+				DB9700562B025FA600954C20 /* Info.plist */,
+				DB9700522B025F8F00954C20 /* FCMExample_mac.entitlements */,
+				DB9700492B025F8F00954C20 /* FCMExample_macApp.swift */,
+				DB97005A2B02601F00954C20 /* AppDelegate.swift */,
+				DB97004B2B025F8F00954C20 /* ContentView.swift */,
+				DB97004D2B025F8F00954C20 /* Assets.xcassets */,
+				DB97004F2B025F8F00954C20 /* Preview Content */,
+			);
+			path = "FCMExample-mac";
+			sourceTree = "<group>";
+		};
+		DB97004F2B025F8F00954C20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB9700502B025F8F00954C20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB9700572B025FAF00954C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +156,26 @@
 			productReference = DB0D69B72AF32D0800C6E8E1 /* FCMExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DB9700462B025F8F00954C20 /* FCMExample-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9700532B025F8F00954C20 /* Build configuration list for PBXNativeTarget "FCMExample-mac" */;
+			buildPhases = (
+				DB9700432B025F8F00954C20 /* Sources */,
+				DB9700442B025F8F00954C20 /* Frameworks */,
+				DB9700452B025F8F00954C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FCMExample-mac";
+			packageProductDependencies = (
+				DB9700582B025FAF00954C20 /* FirebaseMessaging */,
+			);
+			productName = "FCMExample-mac";
+			productReference = DB9700472B025F8F00954C20 /* FCMExample-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,11 +183,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					DB0D69B62AF32D0800C6E8E1 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					DB9700462B025F8F00954C20 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
@@ -131,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				DB0D69B62AF32D0800C6E8E1 /* FCMExample */,
+				DB9700462B025F8F00954C20 /* FCMExample-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +227,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB9700452B025F8F00954C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9700512B025F8F00954C20 /* Preview Assets.xcassets in Resources */,
+				DB97004E2B025F8F00954C20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,8 +243,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9700422B025C7A00954C20 /* AppDelegate.swift in Sources */,
 				DB0D69BD2AF32D0800C6E8E1 /* ContentView.swift in Sources */,
 				DB0D69BB2AF32D0800C6E8E1 /* FCMExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9700432B025F8F00954C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB97005B2B02601F00954C20 /* AppDelegate.swift in Sources */,
+				DB97004C2B025F8F00954C20 /* ContentView.swift in Sources */,
+				DB97004A2B025F8F00954C20 /* FCMExample_macApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +313,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -266,6 +368,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -349,6 +452,75 @@
 			};
 			name = Release;
 		};
+		DB9700542B025F8F00954C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FCMExample-mac/FCMExample_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FCMExample-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FCMExample-mac/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.FCMExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB9700552B025F8F00954C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FCMExample-mac/FCMExample_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FCMExample-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FCMExample-mac/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.FCMExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +542,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DB9700532B025F8F00954C20 /* Build configuration list for PBXNativeTarget "FCMExample-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9700542B025F8F00954C20 /* Debug */,
+				DB9700552B025F8F00954C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -385,6 +566,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		DB0D69CB2AF3304900C6E8E1 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB0D69CA2AF3304900C6E8E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		DB9700582B025FAF00954C20 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB0D69CA2AF3304900C6E8E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;

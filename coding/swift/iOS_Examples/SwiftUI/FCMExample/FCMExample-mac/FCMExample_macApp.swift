@@ -1,13 +1,11 @@
 //
-//  FCMExampleApp.swift
-//  FCMExample
+//  FCMExample_macApp.swift
+//  FCMExample-mac
 //
-//  Created by 문철현 on 2023/11/02.
+//  Created by 문철현 on 11/13/23.
 //
 
 import SwiftUI
-//import FirebaseCore
-//import FirebaseMessaging
 
 class StateManager: ObservableObject {
   public static let shared: StateManager = .init()
@@ -27,10 +25,9 @@ class StateManager: ObservableObject {
 }
 
 @main
-struct FCMExampleApp: App {
-  // register app delegate for Firebase setup
-  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+struct FCMExample_macApp: App {
+  @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
+  
   var body: some Scene {
     WindowGroup {
       ContentView()
