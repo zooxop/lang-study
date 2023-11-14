@@ -20,6 +20,7 @@
 		DB9700512B025F8F00954C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9700502B025F8F00954C20 /* Preview Assets.xcassets */; };
 		DB9700592B025FAF00954C20 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DB9700582B025FAF00954C20 /* FirebaseMessaging */; };
 		DB97005B2B02601F00954C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97005A2B02601F00954C20 /* AppDelegate.swift */; };
+		DB97005D2B02E9DC00954C20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		DB0D69AE2AF32D0800C6E8E1 = {
 			isa = PBXGroup;
 			children = (
+				DB97005C2B02E9D600954C20 /* Common */,
 				DB0D69B92AF32D0800C6E8E1 /* FCMExample */,
 				DB9700482B025F8F00954C20 /* FCMExample-mac */,
 				DB0D69B82AF32D0800C6E8E1 /* Products */,
@@ -85,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				DB0D69CE2AF335A000C6E8E1 /* Info.plist */,
-				DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */,
 				DB0D69CD2AF333AA00C6E8E1 /* FCMExample.entitlements */,
 				DB0D69BA2AF32D0800C6E8E1 /* FCMExampleApp.swift */,
 				DB9700412B025C7A00954C20 /* AppDelegate.swift */,
@@ -131,6 +132,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB97005C2B02E9D600954C20 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB0D69C82AF32DAC00C6E8E1 /* GoogleService-Info.plist */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +193,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DB0D69B62AF32D0800C6E8E1 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -233,6 +242,7 @@
 			files = (
 				DB9700512B025F8F00954C20 /* Preview Assets.xcassets in Resources */,
 				DB97004E2B025F8F00954C20 /* Assets.xcassets in Resources */,
+				DB97005D2B02E9DC00954C20 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FCMExample-mac/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -497,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FCMExample-mac/Preview Content\"";
 				DEVELOPMENT_TEAM = AWR77X8V5R;
 				ENABLE_HARDENED_RUNTIME = YES;

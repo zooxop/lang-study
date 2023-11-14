@@ -9,9 +9,11 @@ import SwiftUI
 import FirebaseCore
 import FirebaseMessaging
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, MessagingDelegate {
   
   func applicationDidFinishLaunching(_ notification: Notification) {
+    FirebaseApp.configure()
+    Messaging.messaging().delegate = self
     UNUserNotificationCenter.current().delegate = self
 
     let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
@@ -30,13 +32,38 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     print("Unable to register for remote notifications: \(error.localizedDescription)")
   }
 
+  /// Device Token Register 성공 시 동작.
+  /// FCM을 사용하려면, `Messaging.messaging().apnsToken` 변수에 생성된 `deviceToken`을 할당해주어야 한다.
+  /// ```
+  /// Messaging.messaging().apnsToken = deviceToken
+  /// ```
   func application(
     _ application: NSApplication,
     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
   ) {
-    print("APNs token retrieved: \(deviceToken)")
+    // FCM에 APNs 토큰을 등록한다. -> FCM 토큰 발급이 이루어진다.
+    // FCM 토큰 발급이 정상 동작하면, `messaging(: Messaging, didReceiveRegistrationToken: String?)` 메서드가 호출됨.
+    Messaging.messaging().apnsToken = deviceToken
+    
     let deviceTokenString = deviceToken.map{ String(format: "%02x", $0) }.joined()
-    print(deviceTokenString)
+    print("APNs token retrieved: \(deviceTokenString)")
+  }
+  
+  /// FCM Token 발급이 완료되면 실행된다.
+  /// ```
+  /// 위의 `didRegisterForRemoteNotificationsWithDeviceToken` 에서
+  /// `Messaging.messaging().apnsToken = deviceToken` 코드가 실행되면 FCM 토큰 발급 절차가 진행되고,
+  /// 토큰 발급이 완료되면 이 메서드가 실행됨.
+  /// ```
+  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+    print("Firebase registration token: \(String(describing: fcmToken))")
+
+    let dataDict: [String: String] = ["token": fcmToken ?? ""]
+    NotificationCenter.default.post(
+      name: Notification.Name("FCMToken"),
+      object: nil,
+      userInfo: dataDict
+    )
   }
 }
 
@@ -48,20 +75,12 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     _ application: NSApplication,
     didReceiveRemoteNotification userInfo: [String : Any]
   ) {
+    Messaging.messaging().appDidReceiveMessage(userInfo)
     StateManager.shared.increase()
     print(userInfo)
   }
   
-  /// 푸시클릭시
-  func userNotificationCenter(
-    _ center: UNUserNotificationCenter,
-    didReceive response: UNNotificationResponse
-  ) async {
-    StateManager.shared.increase()
-    print("🟢", #function)
-  }
-  
-  /// 앱화면 보고있는중에 푸시올 때
+  /// 앱이 Foreground 상태일 때 호출.
   func userNotificationCenter(
     _ center: UNUserNotificationCenter,
     willPresent notification: UNNotification
@@ -70,5 +89,14 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     StateManager.shared.increase()
     //return [.sound, .banner, .list]
     return [.list]
+  }
+  
+  /// Push message를 클릭했을 때 호출
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    didReceive response: UNNotificationResponse
+  ) async {
+    StateManager.shared.increase()
+    print("🟢", #function)
   }
 }

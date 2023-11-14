@@ -29,8 +29,9 @@ class ContentViewModel: ObservableObject {
   }
   
   @objc func didRecieveTestNotification(_ notification: Notification) {
-    print("Test Notification")
-    self.value += 1
+    DispatchQueue.main.async {
+      self.value += 1
+    }
   }
 }
 
