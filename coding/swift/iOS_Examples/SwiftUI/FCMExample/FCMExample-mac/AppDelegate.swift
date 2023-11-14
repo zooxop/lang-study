@@ -70,7 +70,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, MessagingDelegate {
 // MARK: - Push Notification 수신
 extension AppDelegate: UNUserNotificationCenterDelegate {
   
-  /// Silent Push일 때만 호출.
+  /// Silent Push 수신 시 호출. (iOS / macOS 각 플랫폼간 차이가 있음)
+  /// ```
+  /// # iOS
+  ///   - "Silent Push" 인 경우만 동작한다.
+  ///   - 수신된 메시지의 Payload에 `"content-available": 1` 값이 포함되어있어야 동작한다.
+  /// # macOS
+  ///   - "content-available" 값의 존재 여부와 상관없이, Remote Push가 수신되면 무조건 실행된다.
+  /// ```
   func application(
     _ application: NSApplication,
     didReceiveRemoteNotification userInfo: [String : Any]
