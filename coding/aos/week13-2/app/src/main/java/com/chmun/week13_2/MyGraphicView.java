@@ -11,7 +11,7 @@ public class MyGraphicView extends View {
     public static int curShape = CIRCLE;
 
     public MyGraphicView(Context context) {
-        
+
     }
 
 }
