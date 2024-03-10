@@ -7,47 +7,35 @@
 
 import Foundation
 
-func solution(_ users:[[Int]], _ emoticons:[Int]) -> [Int] {
-    var discountedPrice = [[Int]]()
-    let discountPercent = [0.9, 0.8, 0.7, 0.6]
-    let discountRate = [10, 20, 30, 40]
-    
-    for i in 0..<emoticons.count {
-        var temp = [Int]()
-        for j in 0..<4 {
-            temp.append(Int(Double(emoticons[i]) * discountPercent[j]))
-        }
-        discountedPrice.append(temp)
+func mainFunc(_ a:Int, _ b:Int, _ n:Int) -> Int {
+  var fund = n
+  var rest = 0
+  var result = 0
+  
+  while fund >= a {
+    result += (fund / a) * b
+    if fund % a != 0 {
+      rest += fund % a
     }
     
-    print(discountedPrice)
+    fund = (fund / a) * b
     
-    for user in users {
-        let userRate = user[0]
-        let userCash = user[1]
-        let maxIdx = (userRate/10) - 1
-        var tempUserPlus = false
-        
-        for i in (maxIdx..<4).reversed() {
-            var pay = 0
-            for j in 0..<emoticons.count {
-                for k in i..<4 {
-                    pay += discountedPrice[j][k]
-                }
-                print(pay)
-            }
-            // print(pay)
-            if pay >= userCash {
-                tempUserPlus = true
-                break
-            }
-        }
-        break
+    if rest > 0 {
+      fund = fund + rest
+      rest = 0
     }
-    
-    return []
+  }
+  
+  return result
 }
 
-// [1, 5400]
-// print(solution([[40, 10000], [25, 10000]], [7000, 9000]))
-print(solution([[25, 10000], [40, 10000]], [7000, 9000]))
+print("output : \(mainFunc(2, 1, 20))")
+print("output : \(mainFunc(3, 1, 20))")
+print("output : \(mainFunc(999999, 4, 999999))")
+print("output : \(mainFunc(3, 2, 20))")
+
+/*
+ a  b  n  result
+ 2  1  20  19
+ 3  1  20  9
+ */
