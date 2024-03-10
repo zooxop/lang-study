@@ -7,35 +7,16 @@
 
 import Foundation
 
-func mainFunc(_ a:Int, _ b:Int, _ n:Int) -> Int {
-  var fund = n
-  var rest = 0
-  var result = 0
+func mainFunc(_ name:[String], _ yearning:[Int], _ photo:[[String]]) -> [Int] {
   
-  while fund >= a {
-    result += (fund / a) * b
-    if fund % a != 0 {
-      rest += fund % a
-    }
-    
-    fund = (fund / a) * b
-    
-    if rest > 0 {
-      fund = fund + rest
-      rest = 0
-    }
-  }
-  
-  return result
+  return []
 }
 
-print("output : \(mainFunc(2, 1, 20))")
-print("output : \(mainFunc(3, 1, 20))")
-print("output : \(mainFunc(999999, 4, 999999))")
-print("output : \(mainFunc(3, 2, 20))")
+print("output : \(mainFunc(["may", "kein", "kain", "radi"], [5, 10, 1, 3], [["may", "kein", "kain", "radi"],["may", "kein", "brin", "deny"], ["kon", "kain", "may", "coni"]]))")
 
 /*
- a  b  n  result
- 2  1  20  19
- 3  1  20  9
+ name  yearning  photo  result
+ ["may", "kein", "kain", "radi"]  [5, 10, 1, 3]  [["may", "kein", "kain", "radi"],["may", "kein", "brin", "deny"], ["kon", "kain", "may", "coni"]]  [19, 15, 6]
+ ["kali", "mari", "don"]  [11, 1, 55]  [["kali", "mari", "don"], ["pony", "tom", "teddy"], ["con", "mona", "don"]]  [67, 0, 55]
+ ["may", "kein", "kain", "radi"]  [5, 10, 1, 3]  [["may"],["kein", "deny", "may"], ["kon", "coni"]]  [5, 15, 0]
  */

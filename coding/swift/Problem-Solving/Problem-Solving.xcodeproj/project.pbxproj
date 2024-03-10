@@ -92,6 +92,13 @@
 			path = KakaoTestPage;
 			sourceTree = "<group>";
 		};
+		DB386B552B9D975200B023C7 /* east */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = east;
+			sourceTree = "<group>";
+		};
 		DB558D3628CF58FD004FA340 /* Level2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +145,7 @@
 		DB67D0B128C4E58B0025697D /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				DB386B552B9D975200B023C7 /* east */,
 				DBF105BF28DEC4FD00A458C9 /* KakaoCodingTest */,
 				DB2B480428DDBDFF005851F7 /* KakaoTestPage */,
 				DB24E02928D1CB6C00698A85 /* Level3 */,
