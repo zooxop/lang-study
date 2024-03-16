@@ -35,6 +35,7 @@ xcuserdata/
 
 #Mac OS
 *.DS_Store
+coding/.DS_Store
 
 # Precompiled Headers
 *.gch
