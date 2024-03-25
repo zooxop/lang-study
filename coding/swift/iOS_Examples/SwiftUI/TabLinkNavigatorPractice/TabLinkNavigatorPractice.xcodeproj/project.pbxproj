@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6B4AB42BB0F4D500E58623 /* TabLinkNavigatorPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AB32BB0F4D500E58623 /* TabLinkNavigatorPracticeApp.swift */; };
+		DB6B4AB82BB0F4D600E58623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6B4AB72BB0F4D600E58623 /* Assets.xcassets */; };
+		DB6B4ABB2BB0F4D600E58623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6B4ABA2BB0F4D600E58623 /* Preview Assets.xcassets */; };
+		DB6B4AC52BB0F6B300E58623 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AC42BB0F6B300E58623 /* AppDependency.swift */; };
+		DB6B4AC72BB1000C00E58623 /* TabRouteBuilderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AC62BB1000C00E58623 /* TabRouteBuilderGroup.swift */; };
+		DB6B4ACC2BB1025900E58623 /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4ACB2BB1025900E58623 /* Tab1View.swift */; };
+		DB6B4ACE2BB1029700E58623 /* Tab1RouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4ACD2BB1029700E58623 /* Tab1RouteBuilder.swift */; };
+		DB6B4AD12BB10A1700E58623 /* Tab2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AD02BB10A1700E58623 /* Tab2View.swift */; };
+		DB6B4AD32BB10A4600E58623 /* Tab2RouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AD22BB10A4600E58623 /* Tab2RouteBuilder.swift */; };
+		DB6B4AD62BB10ADC00E58623 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AD52BB10ADC00E58623 /* LoginView.swift */; };
+		DB6B4AD82BB113B500E58623 /* LoginRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AD72BB113B500E58623 /* LoginRouteBuilder.swift */; };
+		DB6B4ADA2BB115EA00E58623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AD92BB115EA00E58623 /* AppDelegate.swift */; };
+		DB6B4ADC2BB1191C00E58623 /* SingleRouteBuilderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4ADB2BB1191C00E58623 /* SingleRouteBuilderGroup.swift */; };
+		DB6B4ADF2BB1300D00E58623 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4ADE2BB1300D00E58623 /* MainView.swift */; };
+		DB6B4AE12BB1303D00E58623 /* MainRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AE02BB1303D00E58623 /* MainRouteBuilder.swift */; };
+		DB6B4AE42BB1429800E58623 /* CustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AE32BB1429800E58623 /* CustomToolbar.swift */; };
+		DB6B4AE62BB147F200E58623 /* Tab1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AE52BB147F200E58623 /* Tab1ViewModel.swift */; };
+		DB6B4AE82BB1482B00E58623 /* Tab2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B4AE72BB1482B00E58623 /* Tab2ViewModel.swift */; };
+		DB6B4AEB2BB14D9900E58623 /* LinkNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = DB6B4AEA2BB14D9900E58623 /* LinkNavigator */; };
+		DB6B4AEE2BB14E2E00E58623 /* LinkNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = DB6B4AED2BB14E2E00E58623 /* LinkNavigator */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB6B4AB02BB0F4D500E58623 /* TabLinkNavigatorPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabLinkNavigatorPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6B4AB32BB0F4D500E58623 /* TabLinkNavigatorPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLinkNavigatorPracticeApp.swift; sourceTree = "<group>"; };
+		DB6B4AB72BB0F4D600E58623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6B4ABA2BB0F4D600E58623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB6B4AC42BB0F6B300E58623 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		DB6B4AC62BB1000C00E58623 /* TabRouteBuilderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRouteBuilderGroup.swift; sourceTree = "<group>"; };
+		DB6B4ACB2BB1025900E58623 /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
+		DB6B4ACD2BB1029700E58623 /* Tab1RouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1RouteBuilder.swift; sourceTree = "<group>"; };
+		DB6B4AD02BB10A1700E58623 /* Tab2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2View.swift; sourceTree = "<group>"; };
+		DB6B4AD22BB10A4600E58623 /* Tab2RouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2RouteBuilder.swift; sourceTree = "<group>"; };
+		DB6B4AD52BB10ADC00E58623 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DB6B4AD72BB113B500E58623 /* LoginRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouteBuilder.swift; sourceTree = "<group>"; };
+		DB6B4AD92BB115EA00E58623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB6B4ADB2BB1191C00E58623 /* SingleRouteBuilderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRouteBuilderGroup.swift; sourceTree = "<group>"; };
+		DB6B4ADE2BB1300D00E58623 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DB6B4AE02BB1303D00E58623 /* MainRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteBuilder.swift; sourceTree = "<group>"; };
+		DB6B4AE32BB1429800E58623 /* CustomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolbar.swift; sourceTree = "<group>"; };
+		DB6B4AE52BB147F200E58623 /* Tab1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewModel.swift; sourceTree = "<group>"; };
+		DB6B4AE72BB1482B00E58623 /* Tab2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6B4AAD2BB0F4D500E58623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6B4AEE2BB14E2E00E58623 /* LinkNavigator in Frameworks */,
+				DB6B4AEB2BB14D9900E58623 /* LinkNavigator in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6B4AA72BB0F4D500E58623 = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AB22BB0F4D500E58623 /* TabLinkNavigatorPractice */,
+				DB6B4AB12BB0F4D500E58623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6B4AB12BB0F4D500E58623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AB02BB0F4D500E58623 /* TabLinkNavigatorPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6B4AB22BB0F4D500E58623 /* TabLinkNavigatorPractice */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AD92BB115EA00E58623 /* AppDelegate.swift */,
+				DB6B4AB32BB0F4D500E58623 /* TabLinkNavigatorPracticeApp.swift */,
+				DB6B4ADB2BB1191C00E58623 /* SingleRouteBuilderGroup.swift */,
+				DB6B4AC62BB1000C00E58623 /* TabRouteBuilderGroup.swift */,
+				DB6B4AC42BB0F6B300E58623 /* AppDependency.swift */,
+				DB6B4AE22BB1428A00E58623 /* CustomView */,
+				DB6B4AC92BB1024200E58623 /* Views */,
+				DB6B4AB72BB0F4D600E58623 /* Assets.xcassets */,
+				DB6B4AB92BB0F4D600E58623 /* Preview Content */,
+			);
+			path = TabLinkNavigatorPractice;
+			sourceTree = "<group>";
+		};
+		DB6B4AB92BB0F4D600E58623 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4ABA2BB0F4D600E58623 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB6B4AC92BB1024200E58623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AD42BB10ACB00E58623 /* Login */,
+				DB6B4ADD2BB12FFB00E58623 /* Main */,
+				DB6B4ACA2BB1024F00E58623 /* Tab1 */,
+				DB6B4ACF2BB10A0D00E58623 /* Tab2 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB6B4ACA2BB1024F00E58623 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4ACB2BB1025900E58623 /* Tab1View.swift */,
+				DB6B4AE52BB147F200E58623 /* Tab1ViewModel.swift */,
+				DB6B4ACD2BB1029700E58623 /* Tab1RouteBuilder.swift */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		DB6B4ACF2BB10A0D00E58623 /* Tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AD02BB10A1700E58623 /* Tab2View.swift */,
+				DB6B4AE72BB1482B00E58623 /* Tab2ViewModel.swift */,
+				DB6B4AD22BB10A4600E58623 /* Tab2RouteBuilder.swift */,
+			);
+			path = Tab2;
+			sourceTree = "<group>";
+		};
+		DB6B4AD42BB10ACB00E58623 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AD52BB10ADC00E58623 /* LoginView.swift */,
+				DB6B4AD72BB113B500E58623 /* LoginRouteBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DB6B4ADD2BB12FFB00E58623 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4ADE2BB1300D00E58623 /* MainView.swift */,
+				DB6B4AE02BB1303D00E58623 /* MainRouteBuilder.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DB6B4AE22BB1428A00E58623 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B4AE32BB1429800E58623 /* CustomToolbar.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6B4AAF2BB0F4D500E58623 /* TabLinkNavigatorPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6B4ABE2BB0F4D600E58623 /* Build configuration list for PBXNativeTarget "TabLinkNavigatorPractice" */;
+			buildPhases = (
+				DB6B4AAC2BB0F4D500E58623 /* Sources */,
+				DB6B4AAD2BB0F4D500E58623 /* Frameworks */,
+				DB6B4AAE2BB0F4D500E58623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabLinkNavigatorPractice;
+			packageProductDependencies = (
+				DB6B4AEA2BB14D9900E58623 /* LinkNavigator */,
+				DB6B4AED2BB14E2E00E58623 /* LinkNavigator */,
+			);
+			productName = TabLinkNavigatorPractice;
+			productReference = DB6B4AB02BB0F4D500E58623 /* TabLinkNavigatorPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6B4AA82BB0F4D500E58623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DB6B4AAF2BB0F4D500E58623 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DB6B4AAB2BB0F4D500E58623 /* Build configuration list for PBXProject "TabLinkNavigatorPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6B4AA72BB0F4D500E58623;
+			packageReferences = (
+				DB6B4AEC2BB14E2E00E58623 /* XCLocalSwiftPackageReference "../../../../../../LinkNavigator" */,
+			);
+			productRefGroup = DB6B4AB12BB0F4D500E58623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6B4AAF2BB0F4D500E58623 /* TabLinkNavigatorPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6B4AAE2BB0F4D500E58623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6B4ABB2BB0F4D600E58623 /* Preview Assets.xcassets in Resources */,
+				DB6B4AB82BB0F4D600E58623 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6B4AAC2BB0F4D500E58623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6B4AE62BB147F200E58623 /* Tab1ViewModel.swift in Sources */,
+				DB6B4ACC2BB1025900E58623 /* Tab1View.swift in Sources */,
+				DB6B4ADF2BB1300D00E58623 /* MainView.swift in Sources */,
+				DB6B4AE82BB1482B00E58623 /* Tab2ViewModel.swift in Sources */,
+				DB6B4AD12BB10A1700E58623 /* Tab2View.swift in Sources */,
+				DB6B4AD82BB113B500E58623 /* LoginRouteBuilder.swift in Sources */,
+				DB6B4ACE2BB1029700E58623 /* Tab1RouteBuilder.swift in Sources */,
+				DB6B4AC52BB0F6B300E58623 /* AppDependency.swift in Sources */,
+				DB6B4AE12BB1303D00E58623 /* MainRouteBuilder.swift in Sources */,
+				DB6B4AD32BB10A4600E58623 /* Tab2RouteBuilder.swift in Sources */,
+				DB6B4AE42BB1429800E58623 /* CustomToolbar.swift in Sources */,
+				DB6B4AC72BB1000C00E58623 /* TabRouteBuilderGroup.swift in Sources */,
+				DB6B4AD62BB10ADC00E58623 /* LoginView.swift in Sources */,
+				DB6B4ADC2BB1191C00E58623 /* SingleRouteBuilderGroup.swift in Sources */,
+				DB6B4ADA2BB115EA00E58623 /* AppDelegate.swift in Sources */,
+				DB6B4AB42BB0F4D500E58623 /* TabLinkNavigatorPracticeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB6B4ABC2BB0F4D600E58623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6B4ABD2BB0F4D600E58623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6B4ABF2BB0F4D600E58623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TabLinkNavigatorPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.TabLinkNavigatorPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB6B4AC02BB0F4D600E58623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TabLinkNavigatorPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = AWR77X8V5R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chmun.TabLinkNavigatorPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6B4AAB2BB0F4D500E58623 /* Build configuration list for PBXProject "TabLinkNavigatorPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6B4ABC2BB0F4D600E58623 /* Debug */,
+				DB6B4ABD2BB0F4D600E58623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6B4ABE2BB0F4D600E58623 /* Build configuration list for PBXNativeTarget "TabLinkNavigatorPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6B4ABF2BB0F4D600E58623 /* Debug */,
+				DB6B4AC02BB0F4D600E58623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DB6B4AEC2BB14E2E00E58623 /* XCLocalSwiftPackageReference "../../../../../../LinkNavigator" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../../../../LinkNavigator;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB6B4AEA2BB14D9900E58623 /* LinkNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LinkNavigator;
+		};
+		DB6B4AED2BB14E2E00E58623 /* LinkNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LinkNavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB6B4AA82BB0F4D500E58623 /* Project object */;
+}
