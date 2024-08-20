@@ -16,4 +16,7 @@ class GcdAndLcm {
     private fun lcm(a: Int, b: Int): Int {
         return a / gcd(a, b) * b
     }
+
+    // 꼬리재귀로 최대공약수(GCD)를 구하는 코드
+    tailrec fun gcdTail(a: Int, b: Int): Int = if (b == 0) a else gcdTail(b, a % b)
 }
