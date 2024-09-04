@@ -25,7 +25,7 @@ package programmers.level1
 //}
 
 // 잘 푼 풀이 (Stack 개념 이용)
-fun solution(s: String): Int {
+private fun solution(s: String): Int {
     var answer: Int = 0
 
     val stack = mutableListOf<Char>()
