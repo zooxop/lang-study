@@ -5,25 +5,30 @@ import java.io.IOException;
 
 public class BOJRunner {
     public static void main(String[] args) throws IOException {
-        AutoLineStringBuilder input = new AutoLineStringBuilder();
+        TestCaseInputBuilder input = new TestCaseInputBuilder();
 
         // 테스트 케이스 입력 e.g.) input.append("5 10");
+        input.append("9 3");
+        input.append("1 2 3 4 5 6 7 8 9");
 
-
-        System.setIn(new ByteArrayInputStream(input.getBytesForSystemSetIn()));
+        input.inputStringToSystem();
 
         // 코드 실행
         Main.main(args);
     }
 
-    private static class AutoLineStringBuilder {
-        StringBuilder stringBuilder = new StringBuilder();
+    private static class TestCaseInputBuilder {
+        private final StringBuilder stringBuilder = new StringBuilder();
 
         public void append(String text) {
             stringBuilder.append(text).append("\n");
         }
 
-        public byte[] getBytesForSystemSetIn() {
+        public void inputStringToSystem() {
+            System.setIn(new ByteArrayInputStream(getBytesForSystemSetIn()));
+        }
+
+        private byte[] getBytesForSystemSetIn() {
             return stringBuilder.toString().getBytes();
         }
     }
