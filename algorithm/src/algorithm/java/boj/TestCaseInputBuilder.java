@@ -14,6 +14,7 @@ public class TestCaseInputBuilder {
     public void run(String[] args) throws IOException {
         inputStringToSystem();
         Main.main(args);
+        stringBuilder.setLength(0);
         System.out.println("==============");
     }
 
